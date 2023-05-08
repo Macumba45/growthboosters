@@ -1,10 +1,12 @@
-import { FC, memo } from "react";
-
+import { FC, memo } from 'react'
+import HeaderComp from '../../componets/Header'
 
 const Landing: FC = () => {
-  return (
-    <div>GROWTHBOOSTER</div>
-  );
-};
+    return (
+        <>
+            <HeaderComp />
+        </>
+    )
+}
 
-export default memo(Landing);
+export default memo(Landing)
