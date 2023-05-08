@@ -10,6 +10,7 @@ import {
   ButtonContainer,
   SubTitleContainer,
   SubTitleHeader,
+  SpanBold,
 } from './styles'
 import { AnimatePresence, motion } from 'framer-motion'
 import ButtonConsultoria from '../ButtonConsultoria'
@@ -46,7 +47,7 @@ const HeaderComp: FC = () => {
           </ButtonContainer>
           <SubTitleContainer>
             <SubTitleHeader>
-              Te impulsamos a través del marketplace número 1º del mundo
+              Te impulsamos a través del marketplace <SpanBold>número 1º del mundo.</SpanBold>
             </SubTitleHeader>
           </SubTitleContainer>
         </MainContainer>

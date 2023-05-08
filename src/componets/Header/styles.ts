@@ -40,6 +40,7 @@ export const TitleContainer = styled.div`
     margin-top: 12rem;
     @media screen and (max-width: 600px) {
         margin-top: 5rem;
+        min-width: 370px;
     }
 
 `
@@ -49,7 +50,7 @@ export const TitleContainerAmazon = styled.div`
     align-items: center;
     position: absolute;
     text-align: center;
-    margin-top:18em;
+    margin-top:18rem;
     margin-bottom: 2rem;
 
     @media screen and (max-width: 600px) {
@@ -80,14 +81,21 @@ export const Span = styled.span`
     }
 `
 
+export const SpanBold = styled.span`
+    font-family: ${({ theme }) => theme.fonts.roboto};
+    color: ${({ theme }) => theme.colors.primary};
+    font-weight: 600;
+   
+`
+
 export const ButtonContainer = styled.div`
     position: absolute;
     display: flex;
     z-index: 444;
-    margin-top: 28rem;
+    margin-top: 26rem;
 
     @media screen and (max-width: 600px) {
-        margin-top:25rem;
+        margin-top:24rem;
         flex-direction: column;
 
     }
@@ -108,7 +116,7 @@ export const SubTitleHeader = styled.h1`
     font-size: ${({ theme }) => theme.fontSizes.smallest};
     z-index: 999;
     line-height: 2rem;
-    margin-top: 35rem;
+    margin-top: 32rem;
 
 @media screen and (max-width: 600px) {
     margin-top:34rem;
