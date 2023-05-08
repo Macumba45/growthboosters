@@ -37,7 +37,10 @@ export const TitleContainer = styled.div`
     text-align: center;
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-top: 15rem;
+    margin-top: 12rem;
+    @media screen and (max-width: 600px) {
+        margin-top: 5rem;
+    }
 
 `
 
@@ -46,11 +49,11 @@ export const TitleContainerAmazon = styled.div`
     align-items: center;
     position: absolute;
     text-align: center;
-    margin-top: 20rem;
+    margin-top:18em;
     margin-bottom: 2rem;
 
     @media screen and (max-width: 600px) {
-        margin-top: 21rem;
+        margin-top: 15rem;
     }
 `
 
@@ -71,6 +74,7 @@ export const Span = styled.span`
     font-family: ${({ theme }) => theme.fonts.roboto};
     color: ${({ theme }) => theme.colors.primary};
     font-size: ${({ theme }) => theme.fontSizes.medium};
+    font-weight: 600;
     @media screen and (max-width: 600px) {
         font-size: 3rem;
     }
@@ -83,7 +87,7 @@ export const ButtonContainer = styled.div`
     margin-top: 28rem;
 
     @media screen and (max-width: 600px) {
-        margin-top:32rem;
+        margin-top:25rem;
         flex-direction: column;
 
     }
@@ -107,7 +111,7 @@ export const SubTitleHeader = styled.h1`
     margin-top: 35rem;
 
 @media screen and (max-width: 600px) {
-    margin-top:42rem;
+    margin-top:34rem;
     flex-direction: column;
 
 }
