@@ -9,3 +9,21 @@ export const MainContainer = styled.div`
 top: 0;
     */
 `
+
+
+export const ImgLogo = styled.img`
+
+width: 30px;
+margin-right: 1rem;
+
+`
+
+
+export const ImgLogoMobile = styled.img`
+
+width: 30px;
+margin-right: 1rem;
+
+
+`
+

@@ -16,7 +16,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import ButtonConsultoria from '../ButtonConsultoria'
 import ButtonContacto from '../ButtonContacto'
 import NavBar from '../NavBar'
-const video = require('../../assets/video-comp.mp4')
+const video = require('../../assets/videos/video-comp.mp4')
 
 const HeaderComp: FC = () => {
     return (
