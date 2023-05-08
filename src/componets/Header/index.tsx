@@ -15,10 +15,10 @@ import {
 import { AnimatePresence, motion } from 'framer-motion'
 import ButtonConsultoria from '../ButtonConsultoria'
 import ButtonContacto from '../ButtonContacto'
+import NavBar from '../NavBar'
 const video = require('../../assets/video-comp.mp4')
 
 const HeaderComp: FC = () => {
-
   return (
     <AnimatePresence>
       <motion.div
@@ -26,6 +26,7 @@ const HeaderComp: FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
+        <NavBar />
         <MainContainer>
           <TitleContainer>
             <TitleHeader>
@@ -47,7 +48,8 @@ const HeaderComp: FC = () => {
           </ButtonContainer>
           <SubTitleContainer>
             <SubTitleHeader>
-              Te impulsamos a través del marketplace <SpanBold>número 1º del mundo.</SpanBold>
+              Te impulsamos a través del marketplace{' '}
+              <SpanBold>número 1º del mundo.</SpanBold>
             </SubTitleHeader>
           </SubTitleContainer>
         </MainContainer>

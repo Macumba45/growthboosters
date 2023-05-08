@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const MainContainer = styled.div`
     display: flex;
     justify-content: center;
-
 `
 
 export const VideoContainer = styled.div`
@@ -39,10 +38,9 @@ export const TitleContainer = styled.div`
     margin-right: 1rem;
     margin-top: 12rem;
     @media screen and (max-width: 600px) {
-        margin-top: 5rem;
+        margin-top: 6rem;
         min-width: 370px;
     }
-
 `
 
 export const TitleContainerAmazon = styled.div`
@@ -50,11 +48,11 @@ export const TitleContainerAmazon = styled.div`
     align-items: center;
     position: absolute;
     text-align: center;
-    margin-top:18rem;
+    margin-top: 18rem;
     margin-bottom: 2rem;
 
     @media screen and (max-width: 600px) {
-        margin-top: 15rem;
+        margin-top: 17rem;
     }
 `
 
@@ -85,7 +83,6 @@ export const SpanBold = styled.span`
     font-family: ${({ theme }) => theme.fonts.roboto};
     color: ${({ theme }) => theme.colors.primary};
     font-weight: 600;
-   
 `
 
 export const ButtonContainer = styled.div`
@@ -95,12 +92,10 @@ export const ButtonContainer = styled.div`
     margin-top: 26rem;
 
     @media screen and (max-width: 600px) {
-        margin-top:24rem;
+        margin-top: 26rem;
         flex-direction: column;
-
     }
 `
-
 
 export const SubTitleContainer = styled.div`
     display: flex;
@@ -118,9 +113,8 @@ export const SubTitleHeader = styled.h1`
     line-height: 2rem;
     margin-top: 32rem;
 
-@media screen and (max-width: 600px) {
-    margin-top:34rem;
-    flex-direction: column;
-
-}
+    @media screen and (max-width: 600px) {
+        margin-top: 34rem;
+        flex-direction: column;
+    }
 `
