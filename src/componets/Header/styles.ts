@@ -70,7 +70,7 @@ export const TitleHeader = styled.h1`
 `
 
 export const Span = styled.span`
-    font-family: ${({ theme }) => theme.fonts.roboto};
+    font-family: ${({ theme }) => theme.fonts.montserrat};
     color: ${({ theme }) => theme.colors.primary};
     font-size: ${({ theme }) => theme.fontSizes.medium};
     font-weight: 600;
@@ -80,7 +80,7 @@ export const Span = styled.span`
 `
 
 export const SpanBold = styled.span`
-    font-family: ${({ theme }) => theme.fonts.roboto};
+    font-family: ${({ theme }) => theme.fonts.montserrat};
     color: ${({ theme }) => theme.colors.primary};
     font-weight: 600;
 `
@@ -105,7 +105,7 @@ export const SubTitleContainer = styled.div`
     margin-right: 1rem;
 `
 
-export const SubTitleHeader = styled.h1`
+export const SubTitleHeader = styled.h2`
     font-family: ${({ theme }) => theme.fonts.montserrat};
     color: ${({ theme }) => theme.colors.primaryLight};
     font-size: ${({ theme }) => theme.fontSizes.smallest};

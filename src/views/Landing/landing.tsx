@@ -1,15 +1,14 @@
 import { FC, memo } from 'react'
 import HeaderComp from '../../componets/Header'
-import NavBar from '../../componets/NavBar'
+import ServicesComp from '../../componets/Services'
 
 const Landing: FC = () => {
-  return (
-    <>
-
-      <HeaderComp />
-
-    </>
-  )
+    return (
+        <>
+            <HeaderComp />
+            <ServicesComp />
+        </>
+    )
 }
 
 export default memo(Landing)

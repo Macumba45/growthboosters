@@ -1,6 +1,6 @@
 import { FC, memo, useState } from 'react'
-import { useInView } from "react-intersection-observer";
-import { AnimatePresence, motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer'
+import { AnimatePresence, motion } from 'framer-motion'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
@@ -14,9 +14,9 @@ import Button from '@mui/material/Button'
 import Tooltip from '@mui/material/Tooltip'
 import MenuItem from '@mui/material/MenuItem'
 import AdbIcon from '@mui/icons-material/Adb'
-import { MainContainer } from './styles';
+import { MainContainer } from './styles'
 
-const pages = ['Nosotros', 'Servicios', 'Para Particulares']
+const pages = ['¿Quienes somos?', '¿Qué ofrecemos?', '¿Eres particular?']
 
 const NavBarComp: FC = () => {
     const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null)
@@ -31,7 +31,7 @@ const NavBarComp: FC = () => {
     const { ref, inView } = useInView({
         threshold: 0.1,
         triggerOnce: true,
-    });
+    })
 
     const containerVariants = {
         hidden: {
@@ -44,7 +44,7 @@ const NavBarComp: FC = () => {
             transition: {
                 duration: 0.5,
                 delay: 0.2,
-                ease: "easeInOut",
+                ease: 'easeInOut',
             },
         },
         exit: {
@@ -52,26 +52,35 @@ const NavBarComp: FC = () => {
             y: 50,
             transition: {
                 duration: 0.3,
-                ease: "easeInOut",
+                ease: 'easeInOut',
             },
         },
-    };
+    }
 
     return (
         <AnimatePresence>
             <motion.div
                 initial="hidden"
-                animate={inView ? "visible" : "hidden"}
+                animate={inView ? 'visible' : 'hidden'}
                 exit="exit"
                 variants={containerVariants}
                 ref={ref}
             >
                 <MainContainer>
-                    <AppBar sx={{ backgroundColor: 'transparent', boxShadow: 'none' }} position="static">
+                    <AppBar
+                        sx={{
+                            backgroundColor: 'transparent',
+                            boxShadow: 'none',
+                        }}
+                        position="static"
+                    >
                         <Container maxWidth="xl">
                             <Toolbar disableGutters>
                                 <AdbIcon
-                                    sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}
+                                    sx={{
+                                        display: { xs: 'none', md: 'flex' },
+                                        mr: 1,
+                                    }}
                                 />
 
                                 <Box
@@ -105,7 +114,10 @@ const NavBarComp: FC = () => {
                                         open={Boolean(anchorElNav)}
                                         onClose={handleCloseNavMenu}
                                         sx={{
-                                            display: { xs: 'block', md: 'none' },
+                                            display: {
+                                                xs: 'block',
+                                                md: 'none',
+                                            },
                                         }}
                                     >
                                         {pages.map((page) => (
@@ -121,7 +133,10 @@ const NavBarComp: FC = () => {
                                     </Menu>
                                 </Box>
                                 <AdbIcon
-                                    sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }}
+                                    sx={{
+                                        display: { xs: 'flex', md: 'none' },
+                                        mr: 1,
+                                    }}
                                 />
                                 <Box
                                     sx={{
@@ -133,7 +148,11 @@ const NavBarComp: FC = () => {
                                         <Button
                                             key={page}
                                             onClick={handleCloseNavMenu}
-                                            sx={{ my: 2, color: 'white', display: 'block' }}
+                                            sx={{
+                                                my: 2,
+                                                color: 'white',
+                                                display: 'block',
+                                            }}
                                         >
                                             {page}
                                         </Button>
