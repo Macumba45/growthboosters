@@ -1,10 +1,14 @@
-import { FC, memo } from 'react'
+import { FC, memo, useRef } from 'react'
 import { Button } from '@mui/material'
 import { Props } from './type'
 
 const ButtonContacto: FC<Props> = ({ title }) => {
+    const myRef = useRef(null)
+    const scrollToRef = (ref: any) => window.scrollTo(0, ref.current.offsetTop)
+
     return (
         <Button
+            onClick={() => scrollToRef(myRef)}
             sx={{
                 borderColor: '#FF9900',
                 color: '#FF9900',

@@ -9,6 +9,9 @@ export const MainContainer = styled.div`
     margin-right: 1rem;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 600px) {
+       flex-direction: column;
+    }
 
 
   
@@ -58,7 +61,7 @@ export const TitleServices = styled.h1`
     font-size: ${({ theme }) => theme.fontSizes.mediumSmall};
     line-height: 5rem;
     font-weight: 400;
-
+text-align: center;
     @media screen and (max-width: 600px) {
         font-size: 2rem;
         line-height: 3rem;
@@ -82,7 +85,14 @@ export const Container = styled.div`
 
     display: flex;
     align-items: center;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    margin-right: 5rem;
+    margin-bottom: 2rem;
+    @media screen and (min-width: 600px) {
+       flex-direction: column;
+       margin-right: 5rem;
+
+    }
 
 `
