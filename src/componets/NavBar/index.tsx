@@ -11,8 +11,7 @@ import MenuIcon from '@mui/icons-material/Menu'
 import Container from '@mui/material/Container'
 import Button from '@mui/material/Button'
 import MenuItem from '@mui/material/MenuItem'
-import AdbIcon from '@mui/icons-material/Adb'
-import { ImgLogo, ImgLogoMobile, MainContainer } from './styles'
+import { ImgLogo, MainContainer } from './styles'
 
 const pages = ['¿Quienes somos?', '¿Qué ofrecemos?', '¿Eres particular?']
 

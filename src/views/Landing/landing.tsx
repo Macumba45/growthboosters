@@ -4,6 +4,7 @@ import ServicesComp from '../../componets/Services'
 import WorkWithUs from '../../componets/WorkWithUs'
 import ReviewWrapper from '../../componets/Reviews'
 import BottomBar from '../../componets/BottomBar'
+import ContactoComp from '../../componets/Contacto'
 
 const Landing: FC = () => {
     return (
@@ -12,7 +13,8 @@ const Landing: FC = () => {
             <ServicesComp />
             <WorkWithUs />
             <ReviewWrapper />
-            <BottomBar />
+            <ContactoComp />
+            {/* <BottomBar /> */}
         </>
     )
 }

@@ -1,26 +1,35 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-export const MainContainer = styled.div``
-
-export const Container = styled.div`
+export const MainContainer = styled.div`
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;    
+    background-color: ${({ theme }) => theme.colors.primaryLight};
     display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    background-color: ${({ theme }) => theme.colors.primary};
-    @media screen and (min-width: 600px) {
-        height: 120vh;
-    }
-`
-
-export const ContainerCards = styled.div`
-    display: flex;
+    margin-right: 1rem;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 3rem;
+    align-items: center;
+
+
+  
 `
+
+export const Form = styled.form`
+
+width: 400px;
+display: flex;
+justify-content: center;
+
+
+`
+
+
+export const SentMessage = styled.p`
+  font-family: ${({ theme }) => theme.fonts.montserrat};
+  color: ${({ theme }) => theme.colors.secondary};
+  font-size: ${({ theme }) => theme.fontSizes.smallest};
+`;
+
 
 export const TitleContainer = styled.div`
     display: flex;
@@ -39,21 +48,13 @@ export const SubTitleContainer = styled.div`
     text-align: center;
     margin-left: 1rem;
     margin-right: 1rem;
-`
 
-export const SubSubTitleContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-`
+    `
+
 
 export const TitleServices = styled.h1`
     font-family: ${({ theme }) => theme.fonts.montserrat};
-    color: ${({ theme }) => theme.colors.light};
+    color: ${({ theme }) => theme.colors.secondary};
     font-size: ${({ theme }) => theme.fontSizes.mediumSmall};
     line-height: 5rem;
     font-weight: 400;
@@ -66,7 +67,7 @@ export const TitleServices = styled.h1`
 
 export const SubTitleServices = styled.h2`
     font-family: ${({ theme }) => theme.fonts.montserrat};
-    color: ${({ theme }) => theme.colors.primaryLight};
+    color: ${({ theme }) => theme.colors.primary};
     font-size: ${({ theme }) => theme.fontSizes.mediumSmall};
     line-height: 2rem;
     font-weight: 900;
@@ -76,14 +77,12 @@ export const SubTitleServices = styled.h2`
     }
 `
 
-export const SubSubTitleServices = styled.p`
-    font-family: ${({ theme }) => theme.fonts.montserrat};
-    color: ${({ theme }) => theme.colors.primaryLight};
-    font-size: 1rem;
-    line-height: 2rem;
-    font-weight: 300;
 
-    @media screen and (max-width: 600px) {
-        font-size: ${({ theme }) => theme.fontSizes.smallest};
-    }
+export const Container = styled.div`
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 5rem;
+
 `

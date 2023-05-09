@@ -16,6 +16,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import ButtonConsultoria from '../ButtonConsultoria'
 import ButtonContacto from '../ButtonContacto'
 import NavBar from '../NavBar'
+import FloatHomeButton from '../FloatHomeButton'
 const video = require('../../assets/videos/video-comp.mp4')
 
 const HeaderComp: FC = () => {
@@ -27,6 +28,7 @@ const HeaderComp: FC = () => {
                 transition={{ duration: 1 }}
             >
                 <NavBar />
+                <FloatHomeButton />
                 <MainContainer>
                     <TitleContainer>
                         <TitleHeader>
