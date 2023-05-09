@@ -1,12 +1,10 @@
 import { FC, memo, useEffect, useState } from "react";
-import { Fab, Tooltip, Typography, useMediaQuery } from "@mui/material";
-import AddIcCallIcon from "@mui/icons-material/AddIcCall";
-import { useNavigate } from "react-router-dom";
+import { Fab, Tooltip, useMediaQuery } from "@mui/material";
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth'
 
 const FloatHomeButton: FC = () => {
   const [showButton, setShowButton] = useState<boolean>(false);
   const isSmallScreen = useMediaQuery("(max-width:600px)");
-  const navigate = useNavigate()
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -50,7 +48,7 @@ const FloatHomeButton: FC = () => {
             color="primary"
             aria-label="add"
           >
-            <AddIcCallIcon />
+            <CalendarMonthIcon />
           </Fab>
         </CustomTooltip>
       )}
