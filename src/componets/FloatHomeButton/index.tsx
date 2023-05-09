@@ -31,7 +31,7 @@ const FloatHomeButton: FC = () => {
   return (
     <>
       {showButton && (
-        <CustomTooltip title="Llamar ahora">
+        <CustomTooltip title="Agendar cita">
           <Fab
             href="https://calendly.com/agendagrowthboosters"
             size={isSmallScreen ? "medium" : "large"}
