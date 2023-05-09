@@ -2,11 +2,13 @@ import { FC, memo } from 'react'
 import { Button } from '@mui/material'
 import { Props } from './type'
 
-const ButtonConsulta: FC<Props> = ({ title }) => {
+const ButtonConsulta: FC<Props> = ({ title, icon }) => {
     return (
+    
         <Button
+            target="blank"
             sx={{
-                backgroundColor: '#FF9900',
+                backgroundColor: '#ef9018',
                 color: '#F7F7F7',
                 marginBottom: '1rem',
                 marginRight: '1rem',
@@ -20,6 +22,7 @@ const ButtonConsulta: FC<Props> = ({ title }) => {
             variant="contained"
         >
             {title}
+            {icon}
         </Button>
     )
 }

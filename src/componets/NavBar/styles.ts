@@ -6,24 +6,15 @@ export const MainContainer = styled.div`
     display: flex;
     width: 100%;
     /* position: fixed;
-top: 0;
-    */
+top: 0; */
 `
-
 
 export const ImgLogo = styled.img`
-
-width: 30px;
-margin-right: 1rem;
-
+    width: 30px;
+    margin-right: 1rem;
 `
-
 
 export const ImgLogoMobile = styled.img`
-
-width: 30px;
-margin-right: 1rem;
-
-
+    width: 30px;
+    margin-right: 1rem;
 `
-

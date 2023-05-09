@@ -17,8 +17,7 @@ import { ImgLogo, ImgLogoMobile, MainContainer } from './styles'
 const pages = ['¿Quienes somos?', '¿Qué ofrecemos?', '¿Eres particular?']
 
 const NavBarComp: FC = () => {
-
-    const logo = require('../../assets/logos/3_PNG.png');
+    const logo = require('../../assets/logos/3_PNG.png')
     const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null)
 
     const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
@@ -76,8 +75,6 @@ const NavBarComp: FC = () => {
                     >
                         <Container maxWidth="xl">
                             <Toolbar disableGutters>
-
-
                                 <Box
                                     sx={{
                                         flexGrow: 1,
@@ -126,13 +123,9 @@ const NavBarComp: FC = () => {
                                             </MenuItem>
                                         ))}
                                     </Menu>
-
                                 </Box>
                                 <a href="/">
-                                    <ImgLogo
-                                        src={logo}
-                                        alt="Logo"
-                                    />
+                                    <ImgLogo src={logo} alt="Logo" />
                                 </a>
                                 {/* <ImgLogoMobile
                                     src={logo}

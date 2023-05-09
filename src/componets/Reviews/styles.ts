@@ -1,28 +1,35 @@
 import styled from 'styled-components'
+import Carousel from 'react-material-ui-carousel'
 
 export const MainContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    background-color: ${({ theme }) => theme.colors.secondary};
-    width: 100%;
-    height: 60rem;
-    @media screen and (max-width: 600px) {
-        height: 130rem;
-    }
-`
-
-export const Container = styled.div`
-    position: relative;
-    justify-content: center;
     width: 100%;
     height: 100vh;
+    background-color: white;
+    display: flex;
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+`
+
+export const FullWidthCarousel = styled(Carousel)`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+    .carousel-root {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
 `
 
 export const ContainerCards = styled.div`
     display: flex;
+    width: 350px;
+    margin-top: 2rem;
     flex-wrap: wrap;
-    margin-right: 1rem;
-    margin-left: 1rem;
     justify-content: center;
 `
 
@@ -32,7 +39,6 @@ export const TitleContainer = styled.div`
     text-align: center;
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-top: 2rem;
 `
 
 export const SubTitleContainer = styled.div`
@@ -70,7 +76,7 @@ export const TitleServices = styled.h1`
 
 export const SubTitleServices = styled.h2`
     font-family: ${({ theme }) => theme.fonts.montserrat};
-    color: ${({ theme }) => theme.colors.primaryLight};
+    color: ${({ theme }) => theme.colors.secondary};
     font-size: ${({ theme }) => theme.fontSizes.mediumSmall};
     line-height: 2rem;
     font-weight: 900;
