@@ -12,6 +12,8 @@ import {
 } from './styles'
 
 const ReviewsComp: FC = () => {
+
+
     const images = [
         {
             description:
@@ -40,8 +42,11 @@ const ReviewsComp: FC = () => {
                     ¿Qué dicen nuestros clientes?
                 </SubTitleServices>
             </SubTitleContainer>
-            <ContainerCards>
-                <FullWidthCarousel interval={8000}>
+            <ContainerCards className="custom-carousel">
+                <FullWidthCarousel
+                    interval={8000}
+
+                >
                     {images.map((item, index) => (
                         <CardReviews
                             key={index}
@@ -52,7 +57,7 @@ const ReviewsComp: FC = () => {
                     ))}
                 </FullWidthCarousel>
             </ContainerCards>
-        </MainContainer>
+        </MainContainer >
     )
 }
 

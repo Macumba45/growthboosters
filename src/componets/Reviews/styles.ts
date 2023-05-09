@@ -31,6 +31,18 @@ export const ContainerCards = styled.div`
     margin-top: 2rem;
     flex-wrap: wrap;
     justify-content: center;
+
+    .custom-carousel .slick-slide {
+  width: 50%;
+}
+
+.custom-carousel .slick-list {
+  display: flex;
+}
+
+.custom-carousel .slick-slide:not(.slick-active) {
+  opacity: 0.5;
+}
 `
 
 export const TitleContainer = styled.div`

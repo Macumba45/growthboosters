@@ -2,15 +2,14 @@ import { FC, memo } from 'react'
 import { Button } from '@mui/material'
 import { Props } from './type'
 
-const ButtonConsulta: FC<Props> = ({ title, icon }) => {
+const ButtonConsulta: FC<Props> = ({ title, icon, bgColor, marginBottom }) => {
     return (
-    
         <Button
             target="blank"
             sx={{
-                backgroundColor: '#ef9018',
+                backgroundColor: bgColor || '#ef9018', // usar el valor de bgColor si existe, de lo contrario usar el color por defecto
                 color: '#F7F7F7',
-                marginBottom: '1rem',
+                marginBottom: marginBottom || '1rem',
                 marginRight: '1rem',
                 marginLeft: '1rem',
                 fontSize: '1rem',

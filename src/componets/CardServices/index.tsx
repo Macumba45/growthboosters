@@ -43,7 +43,13 @@ const CardServices: FC<Props> = ({ title, img, description }) => {
                         </Typography>
                     </CardContent>
                 </CardActionArea>
-                <CardActions sx={{ height: '4rem', display: 'flex', justifyContent: 'center' }}>
+                <CardActions
+                    sx={{
+                        height: '4rem',
+                        display: 'flex',
+                        justifyContent: 'center',
+                    }}
+                >
                     <ButtonConsultoria title={'Consultoría gratuita'} />
                 </CardActions>
             </Card>

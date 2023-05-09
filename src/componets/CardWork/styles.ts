@@ -8,6 +8,7 @@ export const Container = styled.div`
     height: 400px;
     background-color: ${({ theme }) => theme.colors.secondary};
     border-radius: 20px;
+    border: 1px solid white;
     margin: 1rem;
 `
 

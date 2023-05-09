@@ -6,7 +6,6 @@ export const Container = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 
@@ -20,6 +19,7 @@ export const ContainerCards = styled.div`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 3rem;
 `
 
 export const TitleContainer = styled.div`
@@ -28,6 +28,7 @@ export const TitleContainer = styled.div`
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 2rem;
     margin-left: 1rem;
     margin-right: 1rem;
 `

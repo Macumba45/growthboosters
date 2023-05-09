@@ -13,7 +13,6 @@ const Landing: FC = () => {
             <WorkWithUs />
             <ReviewWrapper />
             <BottomBar />
-
         </>
     )
 }
