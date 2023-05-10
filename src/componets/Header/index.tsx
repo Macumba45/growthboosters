@@ -11,6 +11,8 @@ import {
     SubTitleContainer,
     SubTitleHeader,
     SpanBold,
+    LogoAmazonContainer,
+    LogoAmazon,
 } from './styles'
 import { AnimatePresence, motion } from 'framer-motion'
 import ButtonConsultoria from '../ButtonConsultoria'
@@ -18,6 +20,8 @@ import ButtonContacto from '../ButtonContacto'
 import NavBar from '../NavBar'
 import FloatHomeButton from '../FloatHomeButton'
 const video = require('../../assets/videos/video-comp.mp4')
+const AmazonLogo = require('../../../src/assets/logos/amazonP.png')
+
 
 const HeaderComp: FC = () => {
     return (
@@ -32,15 +36,19 @@ const HeaderComp: FC = () => {
                 <MainContainer>
                     <TitleContainer>
                         <TitleHeader>
-                            Ayudamos a Marcas a Incrementar sus Ventas a través
-                            de
+                            Escalamos tu marca a través de <Span>Amazon.</Span>
+
                         </TitleHeader>
                     </TitleContainer>
-                    <TitleContainerAmazon>
+                    <LogoAmazonContainer>
+                        <LogoAmazon src={AmazonLogo} alt="Amazon Logo" />
+
+                    </LogoAmazonContainer>
+                    {/* <TitleContainerAmazon>
                         <TitleHeader>
                             <Span>Amazon Marketplace</Span>
                         </TitleHeader>
-                    </TitleContainerAmazon>
+                    </TitleContainerAmazon> */}
                     <VideoContainer>
                         <Video src={video} autoPlay loop muted playsInline />
                     </VideoContainer>
@@ -50,8 +58,8 @@ const HeaderComp: FC = () => {
                     </ButtonContainer>
                     <SubTitleContainer>
                         <SubTitleHeader>
-                            Te impulsamos a través del marketplace{' '}
-                            <SpanBold>número 1º del mundo.</SpanBold>
+                            Impulsamos tus ventas a través del marketplaces {<br />}
+                            <SpanBold>NÚMERO 1 EN EL MUNDO</SpanBold>
                         </SubTitleHeader>
                     </SubTitleContainer>
                 </MainContainer>

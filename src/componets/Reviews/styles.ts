@@ -64,7 +64,7 @@ export const SubSubTitleContainer = styled.div`
 `
 
 export const TitleServices = styled.h1`
-    font-family: ${({ theme }) => theme.fonts.montserrat};
+    font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.primary};
     font-size: ${({ theme }) => theme.fontSizes.mediumSmall};
     line-height: 5rem;
@@ -77,7 +77,7 @@ export const TitleServices = styled.h1`
 `
 
 export const SubTitleServices = styled.h2`
-    font-family: ${({ theme }) => theme.fonts.montserrat};
+    font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.secondary};
     font-size: ${({ theme }) => theme.fontSizes.mediumSmall};
     line-height: 2rem;
@@ -89,7 +89,7 @@ export const SubTitleServices = styled.h2`
 `
 
 export const SubSubTitleServices = styled.p`
-    font-family: ${({ theme }) => theme.fonts.montserrat};
+    font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.primaryLight};
     font-size: 1rem;
     line-height: 2rem;

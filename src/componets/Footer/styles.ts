@@ -24,14 +24,14 @@ export const LogoContainer = styled.div`
 `
 
 export const SloganText = styled.h3`
-    font-family: ${({ theme }) => theme.fonts.montserrat};
+    font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.primary};
     font-size: ${({ theme }) => theme.fontSizes.smallest};
     text-align: center;
     line-height: 2rem;
 `
 export const SpanBold = styled.span`
-    font-family: ${({ theme }) => theme.fonts.montserrat};
+    font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.primaryLight};
     font-weight: 600;
 `

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+const AmazonLogo = require('../../../src/assets/logos/amazon.png')
 
 export const MainContainer = styled.div`
     display: flex;
@@ -36,7 +37,7 @@ export const TitleContainer = styled.div`
     text-align: center;
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-top: 12rem;
+    margin-top: 8rem;
     @media screen and (max-width: 600px) {
         margin-top: 6rem;
         min-width: 370px;
@@ -48,29 +49,31 @@ export const TitleContainerAmazon = styled.div`
     align-items: center;
     position: absolute;
     text-align: center;
-    margin-top: 18rem;
+    margin-top: 15rem;
     margin-bottom: 2rem;
 
     @media screen and (max-width: 600px) {
-        margin-top: 17rem;
+        margin-top: 15rem;
     }
 `
 
 export const TitleHeader = styled.h1`
-    font-family: ${({ theme }) => theme.fonts.montserrat};
+    font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.primaryLight};
-    font-size: ${({ theme }) => theme.fontSizes.mediumSmall};
+    font-size: ${({ theme }) => theme.fontSizes.medium};
     z-index: 999;
     line-height: 5rem;
 
     @media screen and (max-width: 600px) {
         font-size: 2rem;
         line-height: 3rem;
+        font-size: ${({ theme }) => theme.fontSizes.mediumSmall};
+
     }
 `
 
 export const Span = styled.span`
-    font-family: ${({ theme }) => theme.fonts.montserrat};
+    font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.primary};
     font-size: ${({ theme }) => theme.fontSizes.medium};
     font-weight: 600;
@@ -80,19 +83,24 @@ export const Span = styled.span`
 `
 
 export const SpanBold = styled.span`
-    font-family: ${({ theme }) => theme.fonts.montserrat};
+    font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.primary};
-    font-weight: 600;
+    font-weight: 700;
+    line-height: 5rem;
+
+    @media screen and (max-width: 600px) {
+      font-size: 1rem;
+    }
 `
 
 export const ButtonContainer = styled.div`
     position: absolute;
     display: flex;
     z-index: 444;
-    margin-top: 26rem;
+    margin-top: 15rem;
 
     @media screen and (max-width: 600px) {
-        margin-top: 26rem;
+        margin-top: 15rem;
         flex-direction: column;
     }
 `
@@ -103,18 +111,50 @@ export const SubTitleContainer = styled.div`
     text-align: center;
     margin-left: 1rem;
     margin-right: 1rem;
-`
-
-export const SubTitleHeader = styled.h2`
-    font-family: ${({ theme }) => theme.fonts.montserrat};
-    color: ${({ theme }) => theme.colors.primaryLight};
-    font-size: ${({ theme }) => theme.fontSizes.smallest};
-    z-index: 999;
-    line-height: 2rem;
-    margin-top: 32rem;
-
+    z-index: 9999;
+    margin-top: 20rem;
+    border-bottom: 5px solid #ef9018;
     @media screen and (max-width: 600px) {
-        margin-top: 34rem;
+        margin-top: 23rem;
         flex-direction: column;
     }
 `
+
+export const SubTitleHeader = styled.h2`
+    font-family: ${({ theme }) => theme.fonts.poppins};
+    color: ${({ theme }) => theme.colors.primaryLight};
+    font-size: 1.8rem;
+    z-index: 999;
+    line-height: 3rem;
+    font-weight: 500;
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+`
+
+
+export const LogoAmazon = styled.img`
+  width: 400px;
+  height: auto;
+
+  @media screen and (max-width: 600px) {
+    width: 200px;
+    }
+`;
+
+export const LogoAmazonContainer = styled.div`
+display: flex;
+justify-content: center;
+margin-top: 32rem;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: absolute;
+    z-index: 999999999999999;
+    @media screen and (max-width: 600px) {
+
+        margin-top: 37rem;
+
+    }
+`;

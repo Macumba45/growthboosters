@@ -17,6 +17,7 @@ const theme = {
     },
     fonts: {
         montserrat: 'Montserrat, sans-serif',
+        poppins: 'Poppins, sans-serif',
         roboto: 'Roboto, sans-serif',
         amazon: "itc-officina-sans-std-bold', sans-serif",
         display: 'Montserrat, sans-serif',

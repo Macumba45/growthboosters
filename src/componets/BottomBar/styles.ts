@@ -12,7 +12,7 @@ export const MainContainer = styled.div`
 `
 
 export const SpanBold = styled.span`
-    font-family: ${({ theme }) => theme.fonts.montserrat};
+    font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.primary};
     font-weight: 600;
 `

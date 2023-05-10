@@ -98,7 +98,7 @@ const ContactoComp: FC = () => {
                 onSubmit={sendEmail}
             >
                 <Grid container direction="column" spacing={2}>
-                    <Grid style={{ fontFamily: 'montserrat' }} item>
+                    <Grid style={{ fontFamily: 'poppins' }} item>
                         <TextField
                             label="Nombre"
                             name="Nombre"
@@ -108,7 +108,7 @@ const ContactoComp: FC = () => {
                             fullWidth
                         />
                     </Grid>
-                    <Grid style={{ fontFamily: 'montserrat' }} item>
+                    <Grid style={{ fontFamily: 'poppins' }} item>
                         <TextField
                             label="Apellidos"
                             variant="outlined"
@@ -118,7 +118,7 @@ const ContactoComp: FC = () => {
                             fullWidth
                         />
                     </Grid>
-                    <Grid style={{ fontFamily: 'montserrat' }} item>
+                    <Grid style={{ fontFamily: 'poppins' }} item>
                         <TextField
                             label="Email"
                             variant="outlined"
@@ -128,7 +128,7 @@ const ContactoComp: FC = () => {
                             fullWidth
                         />
                     </Grid>
-                    <Grid style={{ fontFamily: 'montserrat' }} item>
+                    <Grid style={{ fontFamily: 'poppins' }} item>
                         <TextField
                             label="Número de móvil"
                             variant="outlined"
@@ -138,7 +138,7 @@ const ContactoComp: FC = () => {
                             type="number"
                         />
                     </Grid>
-                    <Grid style={{ fontFamily: 'montserrat' }} item>
+                    <Grid style={{ fontFamily: 'poppins' }} item>
                         <FormControl variant="outlined" fullWidth>
                             <InputLabel id="select-label">
                                 ¿Cómo nos has conocido?
@@ -167,7 +167,7 @@ const ContactoComp: FC = () => {
                             type="submit"
                             variant="contained"
                             style={{
-                                fontFamily: 'montserrat',
+                                fontFamily: 'poppins',
                                 backgroundColor: '#ef9018',
                                 color: 'white',
                                 width: '350px',

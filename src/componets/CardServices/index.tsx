@@ -27,7 +27,7 @@ const CardServices: FC<Props> = ({ title, img, description }) => {
                     <CardMedia component="img" height="130" image={img} />
                     <CardContent>
                         <Typography
-                            sx={{ height: '4rem', fontFamily: 'montserrat' }}
+                            sx={{ height: '4rem', fontFamily: 'poppins' }}
                             gutterBottom
                             variant="h5"
                             component="div"
@@ -35,7 +35,7 @@ const CardServices: FC<Props> = ({ title, img, description }) => {
                             {title}
                         </Typography>
                         <Typography
-                            sx={{ height: '10rem', fontFamily: 'montserrat' }}
+                            sx={{ height: '10rem', fontFamily: 'poppins' }}
                             variant="body2"
                             color="text.secondary"
                         >

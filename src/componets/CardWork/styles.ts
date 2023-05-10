@@ -37,14 +37,14 @@ export const ImgCard = styled(Icon)`
 `
 
 export const TitleCard = styled.h1`
-    font-family: ${({ theme }) => theme.fonts.montserrat};
+    font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.primaryLight};
     font-size: ${({ theme }) => theme.fontSizes.small};
     font-weight: 700;
 `
 
 export const DescriptionCard = styled.p`
-    font-family: ${({ theme }) => theme.fonts.montserrat};
+    font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.primaryLight};
     font-size: ${({ theme }) => theme.fontSizes.smallest};
     font-weight: 200;

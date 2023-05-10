@@ -64,7 +64,7 @@ const WorkWithUs: FC = () => {
                 <ButtonConsultoria
                     bgColor="#232F3E"
                     marginBottom="4rem"
-                    title={'15 min ¡gratis!'}
+                    title={'Agendar consultoría'}
                     icon={
                         <CalendarMonthIcon
                             sx={{ color: 'white', marginLeft: '1rem' }}
