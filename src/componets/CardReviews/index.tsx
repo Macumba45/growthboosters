@@ -12,8 +12,6 @@ import {
 } from './styles'
 
 const CardReviews: FC<Props> = ({ title, icon, description }) => {
-
-
     return (
         <MainContainer>
             <Container>

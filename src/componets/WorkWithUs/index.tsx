@@ -62,8 +62,8 @@ const WorkWithUs: FC = () => {
                     />
                 </ContainerCards>
                 <ButtonConsultoria
-                    bgColor='#232F3E'
-                    marginBottom='4rem'
+                    bgColor="#232F3E"
+                    marginBottom="4rem"
                     title={'15 min ¡gratis!'}
                     icon={
                         <CalendarMonthIcon

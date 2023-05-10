@@ -1,7 +1,16 @@
 import { FC, memo, useEffect, useRef, useState } from 'react'
-import { useNavigate } from 'react-router-dom';
-import SendIcon from "@mui/icons-material/Send";
-import { Container, Form, MainContainer, SentMessage, SubTitleContainer, SubTitleServices, TitleContainer, TitleServices } from './styles'
+import { useNavigate } from 'react-router-dom'
+import SendIcon from '@mui/icons-material/Send'
+import {
+    Container,
+    Form,
+    MainContainer,
+    SentMessage,
+    SubTitleContainer,
+    SubTitleServices,
+    TitleContainer,
+    TitleServices,
+} from './styles'
 import {
     Button,
     FormControl,
@@ -14,98 +23,86 @@ import {
     DialogTitle,
     DialogContent,
     DialogActions,
-} from "@material-ui/core";
-
-
+} from '@material-ui/core'
 
 const ContactoComp: FC = () => {
-
     const options = [
-        { value: "Facebook", label: "Facebook" },
-        { value: "Instagram", label: "Instagram" },
-        { value: "Tiktok", label: "Tiktok" },
-        { value: "Google", label: "Google" },
-        { value: "Youtube", label: "Youtube" },
-        { value: "A friend/coworker", label: "A friend/coworker" },
-        { value: "Ads", label: "Ads" },
-        { value: "LinkedIn", label: "LinkedIn" },
-        { value: "Podcast", label: "Podcast" },
-        { value: "Flip Your Future Book", label: "Flip Your Future Book" },
-        { value: "Other", label: "Other" },
-    ];
+        { value: 'Facebook', label: 'Facebook' },
+        { value: 'Instagram', label: 'Instagram' },
+        { value: 'Tiktok', label: 'Tiktok' },
+        { value: 'Google', label: 'Google' },
+        { value: 'Youtube', label: 'Youtube' },
+        { value: 'A friend/coworker', label: 'A friend/coworker' },
+        { value: 'Ads', label: 'Ads' },
+        { value: 'LinkedIn', label: 'LinkedIn' },
+        { value: 'Podcast', label: 'Podcast' },
+        { value: 'Flip Your Future Book', label: 'Flip Your Future Book' },
+        { value: 'Other', label: 'Other' },
+    ]
 
+    const [isVisible, setIsVisible] = useState(true)
+    const [modalOpen, setModalOpen] = useState(false)
+    const [counter, setCounter] = useState(0)
 
-    const [isVisible, setIsVisible] = useState(true);
-    const [modalOpen, setModalOpen] = useState(false);
-    const [counter, setCounter] = useState(0);
-
-    const navigate = useNavigate();
+    const navigate = useNavigate()
 
     const sendEmail = async (e: any) => {
-        e.preventDefault();
-        setModalOpen(true);
+        e.preventDefault()
+        setModalOpen(true)
 
         const data = {
             name: e.target.Nombre.value,
             apellidos: e.target.Apellidos.value,
             email: e.target._replyto.value,
-            phoneNumber: e.target["Número de móvil"].value,
-            comoNosConociste: e.target["¿Cómo nos has conocido?"].value,
-        };
+            phoneNumber: e.target['Número de móvil'].value,
+            comoNosConociste: e.target['¿Cómo nos has conocido?'].value,
+        }
 
         const response = await fetch(
-            "https://backend-email.vercel.app/api/sendemail",
+            'https://backend-email.vercel.app/api/sendemail',
             {
-                method: "POST",
+                method: 'POST',
                 headers: {
-                    "Content-Type": "application/json",
+                    'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(data),
             }
-        );
+        )
         if (response.ok) {
-            setModalOpen(true);
+            setModalOpen(true)
         }
-        const responseData = await response.json();
-        console.log(data);
-        console.log(responseData);
-    };
+        const responseData = await response.json()
+        console.log(data)
+        console.log(responseData)
+    }
 
     const handleClose = () => {
-        setModalOpen(false);
-        navigate("/contacto");
-    };
+        setModalOpen(false)
+        navigate('/contacto')
+    }
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCounter((prevCounter) => prevCounter + 1);
-            setIsVisible((prevIsVisible) => !prevIsVisible);
-        }, 500);
+            setCounter((prevCounter) => prevCounter + 1)
+            setIsVisible((prevIsVisible) => !prevIsVisible)
+        }, 500)
 
         if (counter >= 6) {
-            clearInterval(interval);
+            clearInterval(interval)
         }
 
         return () => {
-            clearInterval(interval);
-        };
-    }, [counter, isVisible]);
+            clearInterval(interval)
+        }
+    }, [counter, isVisible])
 
-    const contactoRef = useRef<HTMLDivElement>(null);
-
-
+    const contactoRef = useRef<HTMLDivElement>(null)
 
     return (
-
-        <MainContainer
-        id='contacto' 
-        ref={contactoRef}
-        >
+        <MainContainer id="contacto" ref={contactoRef}>
             <Container>
                 <TitleContainer>
-                    <TitleServices>
-                        CONTÁCTANOS
-                    </TitleServices>
+                    <TitleServices>CONTÁCTANOS</TitleServices>
                 </TitleContainer>
                 <SubTitleContainer>
                     <SubTitleServices>
@@ -119,12 +116,8 @@ const ContactoComp: FC = () => {
                 // method="POST"
                 onSubmit={sendEmail}
             >
-                <Grid
-                    container
-                    direction="column"
-                    spacing={2}
-                >
-                    <Grid style={{ fontFamily: "montserrat" }} item>
+                <Grid container direction="column" spacing={2}>
+                    <Grid style={{ fontFamily: 'montserrat' }} item>
                         <TextField
                             label="Nombre"
                             name="Nombre"
@@ -134,7 +127,7 @@ const ContactoComp: FC = () => {
                             fullWidth
                         />
                     </Grid>
-                    <Grid style={{ fontFamily: "montserrat" }} item>
+                    <Grid style={{ fontFamily: 'montserrat' }} item>
                         <TextField
                             label="Apellidos"
                             variant="outlined"
@@ -144,7 +137,7 @@ const ContactoComp: FC = () => {
                             fullWidth
                         />
                     </Grid>
-                    <Grid style={{ fontFamily: "montserrat" }} item>
+                    <Grid style={{ fontFamily: 'montserrat' }} item>
                         <TextField
                             label="Email"
                             variant="outlined"
@@ -154,7 +147,7 @@ const ContactoComp: FC = () => {
                             fullWidth
                         />
                     </Grid>
-                    <Grid style={{ fontFamily: "montserrat" }} item>
+                    <Grid style={{ fontFamily: 'montserrat' }} item>
                         <TextField
                             label="Número de móvil"
                             variant="outlined"
@@ -164,7 +157,7 @@ const ContactoComp: FC = () => {
                             type="number"
                         />
                     </Grid>
-                    <Grid style={{ fontFamily: "montserrat" }} item>
+                    <Grid style={{ fontFamily: 'montserrat' }} item>
                         <FormControl variant="outlined" fullWidth>
                             <InputLabel id="select-label">
                                 ¿Cómo nos has conocido?
@@ -174,10 +167,13 @@ const ContactoComp: FC = () => {
                                 name="¿Cómo nos has conocido?"
                                 label="¿Cómo nos has conocido?"
                                 required
-                                defaultValue={"Facebook"}
+                                defaultValue={'Facebook'}
                             >
                                 {options.map((option) => (
-                                    <MenuItem key={option.value} value={option.value}>
+                                    <MenuItem
+                                        key={option.value}
+                                        value={option.value}
+                                    >
                                         {option.label}
                                     </MenuItem>
                                 ))}
@@ -190,10 +186,10 @@ const ContactoComp: FC = () => {
                             type="submit"
                             variant="contained"
                             style={{
-                                fontFamily: "montserrat",
-                                backgroundColor: "#ef9018",
-                                color: "white",
-                                width: "400px",
+                                fontFamily: 'montserrat',
+                                backgroundColor: '#ef9018',
+                                color: 'white',
+                                width: '400px',
                             }}
                             startIcon={<SendIcon />}
                         >
@@ -205,18 +201,16 @@ const ContactoComp: FC = () => {
             <Dialog open={modalOpen} onClose={handleClose}>
                 <DialogTitle>¡Mensaje enviado!</DialogTitle>
                 <DialogContent>
-                    <SentMessage>Tu mensaje ha sido enviado con éxito.</SentMessage>
+                    <SentMessage>
+                        Tu mensaje ha sido enviado con éxito.
+                    </SentMessage>
                 </DialogContent>
                 <DialogActions>
                     <Button onClick={handleClose}>Cerrar</Button>
                 </DialogActions>
             </Dialog>
-
         </MainContainer>
-
-
     )
 }
 
-
-export default memo(ContactoComp) 
+export default memo(ContactoComp)

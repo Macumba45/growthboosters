@@ -27,12 +27,12 @@ export const FullWidthCarousel = styled(Carousel)`
     }
 `
 
+export const DivContainer = styled.div``
+
 export const ContainerCards = styled.div`
     display: flex;
-    width:100%;
+    width: 100%;
     align-items: center;
-
-   
 `
 
 export const TitleContainer = styled.div`

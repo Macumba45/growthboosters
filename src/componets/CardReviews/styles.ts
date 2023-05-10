@@ -1,10 +1,7 @@
 import styled from 'styled-components'
 import { Icon } from '@mui/material'
 
-export const MainContainer = styled.div`
-
-
-`
+export const MainContainer = styled.div``
 
 export const Container = styled.div`
     width: 350px;

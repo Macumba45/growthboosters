@@ -1,38 +1,30 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const MainContainer = styled.div`
     position: relative;
     width: 100%;
-    height: 100vh;    
+    height: 100vh;
     background-color: ${({ theme }) => theme.colors.primaryLight};
     display: flex;
     margin-right: 1rem;
     justify-content: center;
     align-items: center;
     @media screen and (max-width: 600px) {
-       flex-direction: column;
+        flex-direction: column;
     }
-
-
-  
 `
 
 export const Form = styled.form`
-
-width: 400px;
-display: flex;
-justify-content: center;
-
-
+    width: 400px;
+    display: flex;
+    justify-content: center;
 `
 
-
 export const SentMessage = styled.p`
-  font-family: ${({ theme }) => theme.fonts.montserrat};
-  color: ${({ theme }) => theme.colors.secondary};
-  font-size: ${({ theme }) => theme.fontSizes.smallest};
-`;
-
+    font-family: ${({ theme }) => theme.fonts.montserrat};
+    color: ${({ theme }) => theme.colors.secondary};
+    font-size: ${({ theme }) => theme.fontSizes.smallest};
+`
 
 export const TitleContainer = styled.div`
     display: flex;
@@ -51,9 +43,7 @@ export const SubTitleContainer = styled.div`
     text-align: center;
     margin-left: 1rem;
     margin-right: 1rem;
-
-    `
-
+`
 
 export const TitleServices = styled.h1`
     font-family: ${({ theme }) => theme.fonts.montserrat};
@@ -61,7 +51,7 @@ export const TitleServices = styled.h1`
     font-size: ${({ theme }) => theme.fontSizes.mediumSmall};
     line-height: 5rem;
     font-weight: 400;
-text-align: center;
+    text-align: center;
     @media screen and (max-width: 600px) {
         font-size: 2rem;
         line-height: 3rem;
@@ -80,9 +70,7 @@ export const SubTitleServices = styled.h2`
     }
 `
 
-
 export const Container = styled.div`
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,9 +78,7 @@ export const Container = styled.div`
     flex-direction: column;
     margin-bottom: 2rem;
     @media screen and (min-width: 600px) {
-       flex-direction: column;
-       margin-right: 5rem;
-
+        flex-direction: column;
+        margin-right: 5rem;
     }
-
 `

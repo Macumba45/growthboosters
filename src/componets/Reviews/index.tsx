@@ -11,21 +11,20 @@ import {
     SubTitleContainer,
     ContainerCards,
     FullWidthCarousel,
+    DivContainer,
 } from './styles'
 
-const ReviewsComp: FC = (props) => {
-
-
-    const [isMobile, setIsMobile] = useState(false);
+const ReviewsComp: FC = () => {
+    const [isMobile, setIsMobile] = useState(false)
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth < 768);
-        };
-        handleResize(); // inicializa el estado en función del ancho actual
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
+            setIsMobile(window.innerWidth < 768)
+        }
+        handleResize() // inicializa el estado en función del ancho actual
+        window.addEventListener('resize', handleResize)
+        return () => window.removeEventListener('resize', handleResize)
+    }, [])
     const images = [
         {
             description:
@@ -76,36 +75,56 @@ const ReviewsComp: FC = (props) => {
                 {isMobile ? (
                     <FullWidthCarousel interval={5000}>
                         {imagesGroupedMobile.map((group, index) => (
-                            <div style={{ display: 'flex', justifyContent: 'center' }} key={index}>
+                            <DivContainer
+                                style={{
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                }}
+                                key={index}
+                            >
                                 {group.map((item, subIndex) => (
                                     <CardReviews
                                         key={subIndex}
-                                        icon={<RateReviewIcon sx={{ fontSize: '3rem' }} />}
+                                        icon={
+                                            <RateReviewIcon
+                                                sx={{ fontSize: '3rem' }}
+                                            />
+                                        }
                                         title={item.title}
                                         description={item.description}
                                     />
                                 ))}
-                            </div>
+                            </DivContainer>
                         ))}
                     </FullWidthCarousel>
                 ) : (
                     <FullWidthCarousel interval={5000}>
                         {imagesGrouped.map((group, index) => (
-                            <div style={{ display: 'flex', justifyContent: 'center' }} key={index}>
+                            <DivContainer
+                                style={{
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                }}
+                                key={index}
+                            >
                                 {group.map((item, subIndex) => (
                                     <CardReviews
                                         key={subIndex}
-                                        icon={<RateReviewIcon sx={{ fontSize: '3rem' }} />}
+                                        icon={
+                                            <RateReviewIcon
+                                                sx={{ fontSize: '3rem' }}
+                                            />
+                                        }
                                         title={item.title}
                                         description={item.description}
                                     />
                                 ))}
-                            </div>
+                            </DivContainer>
                         ))}
                     </FullWidthCarousel>
                 )}
             </ContainerCards>
-        </MainContainer >
+        </MainContainer>
     )
 }
 
