@@ -1,30 +1,29 @@
 import { FC, memo, useRef } from 'react'
 import { Button } from '@mui/material'
 import { Props } from './type'
+import { Link } from 'react-scroll'
 
 const ButtonContacto: FC<Props> = ({ title }) => {
-    const myRef = useRef(null)
-    const scrollToRef = (ref: any) => window.scrollTo(0, ref.current.offsetTop)
-
     return (
-        <Button
-            onClick={() => scrollToRef(myRef)}
-            sx={{
-                borderColor: '#FF9900',
-                color: '#FF9900',
-                marginBottom: '1rem',
-                marginRight: '1rem',
-                marginLeft: '1rem',
+        <Link to="contacto" smooth={true}>
+            <Button
+                sx={{
+                    borderColor: '#FF9900',
+                    color: '#FF9900',
+                    marginBottom: '1rem',
+                    marginRight: '1rem',
+                    marginLeft: '1rem',
 
-                '&:hover': {
-                    borderColor: '#FF6600',
-                },
-            }}
-            href="https://calendly.com/agendagrowthboosters"
-            variant="outlined"
-        >
-            {title}
-        </Button>
+                    '&:hover': {
+                        borderColor: '#FF6600',
+                    },
+                }}
+                href="#contacto"
+                variant="outlined"
+            >
+                {title}
+            </Button>
+        </Link>
     )
 }
 

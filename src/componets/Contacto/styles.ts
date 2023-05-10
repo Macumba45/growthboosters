@@ -14,6 +14,10 @@ export const MainContainer = styled.div`
     }
 `
 
+export const SmoothScroll = styled.div`
+    scroll-behavior: smooth;
+`
+
 export const Form = styled.form`
     width: 400px;
     display: flex;

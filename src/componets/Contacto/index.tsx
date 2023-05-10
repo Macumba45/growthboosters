@@ -96,10 +96,8 @@ const ContactoComp: FC = () => {
         }
     }, [counter, isVisible])
 
-    const contactoRef = useRef<HTMLDivElement>(null)
-
     return (
-        <MainContainer id="contacto" ref={contactoRef}>
+        <MainContainer id="contacto">
             <Container>
                 <TitleContainer>
                     <TitleServices>CONTÁCTANOS</TitleServices>
