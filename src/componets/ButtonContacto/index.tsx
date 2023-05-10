@@ -13,12 +13,12 @@ const ButtonContacto: FC<Props> = ({ title }) => {
                     marginBottom: '1rem',
                     marginRight: '1rem',
                     marginLeft: '1rem',
+                    width: '300px',
 
                     '&:hover': {
                         borderColor: '#FF6600',
                     },
                 }}
-                href="#contacto"
                 variant="outlined"
             >
                 {title}

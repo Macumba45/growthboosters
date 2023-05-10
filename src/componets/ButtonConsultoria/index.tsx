@@ -13,6 +13,7 @@ const ButtonConsulta: FC<Props> = ({ title, icon, bgColor, marginBottom }) => {
                 marginRight: '1rem',
                 marginLeft: '1rem',
                 fontSize: '1rem',
+                width: '300px',
                 '&:hover': {
                     backgroundColor: '#FF6600',
                 },
