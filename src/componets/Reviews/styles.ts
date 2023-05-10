@@ -3,7 +3,7 @@ import Carousel from 'react-material-ui-carousel'
 
 export const MainContainer = styled.div`
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: white;
     display: flex;
     margin-top: 5rem;
@@ -16,6 +16,7 @@ export const FullWidthCarousel = styled(Carousel)`
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 0;
     padding: 0;
 
@@ -28,22 +29,10 @@ export const FullWidthCarousel = styled(Carousel)`
 
 export const ContainerCards = styled.div`
     display: flex;
-    width: 350px;
-    margin-top: 2rem;
-    flex-wrap: wrap;
-    justify-content: center;
+    width:100%;
+    align-items: center;
 
-    .custom-carousel .slick-slide {
-  width: 50%;
-}
-
-.custom-carousel .slick-list {
-  display: flex;
-}
-
-.custom-carousel .slick-slide:not(.slick-active) {
-  opacity: 0.5;
-}
+   
 `
 
 export const TitleContainer = styled.div`
@@ -61,7 +50,7 @@ export const SubTitleContainer = styled.div`
     margin-left: 1rem;
     margin-right: 1rem;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
 `
 
 export const SubSubTitleContainer = styled.div`

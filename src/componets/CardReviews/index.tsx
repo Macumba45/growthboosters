@@ -1,4 +1,5 @@
 import { FC, memo } from 'react'
+import { Props } from './type'
 import {
     Container,
     ContainerDescription,
@@ -9,9 +10,10 @@ import {
     MainContainer,
     TitleCard,
 } from './styles'
-import { Props } from './type'
 
 const CardReviews: FC<Props> = ({ title, icon, description }) => {
+
+
     return (
         <MainContainer>
             <Container>

@@ -1,13 +1,18 @@
 import styled from 'styled-components'
 import { Icon } from '@mui/material'
 
-export const MainContainer = styled.div``
+export const MainContainer = styled.div`
+
+
+`
 
 export const Container = styled.div`
     width: 350px;
     height: 500px;
     background-color: ${({ theme }) => theme.colors.primary};
-    border-radius: 20px;
+    border-radius: 100px;
+    margin-left: 1rem;
+    margin-right: 1rem;
 `
 
 export const ContainerImg = styled.div`

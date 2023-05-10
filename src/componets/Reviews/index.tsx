@@ -1,6 +1,8 @@
-import { FC, memo } from 'react'
+import { FC, memo, useEffect, useState } from 'react'
 import RateReviewIcon from '@mui/icons-material/RateReview'
 import CardReviews from '../CardReviews'
+import { chunk } from 'lodash'
+
 import {
     MainContainer,
     TitleContainer,
@@ -11,9 +13,19 @@ import {
     FullWidthCarousel,
 } from './styles'
 
-const ReviewsComp: FC = () => {
+const ReviewsComp: FC = (props) => {
 
 
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+        handleResize(); // inicializa el estado en función del ancho actual
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
     const images = [
         {
             description:
@@ -30,7 +42,25 @@ const ReviewsComp: FC = () => {
                 'Cuatro cambios que me recomendaron y a partir de ayer esto sube como la espuma. Si alguien necesita una asesoría clara, directa y funcional, no dudéis en contar con ellos',
             title: 'Sergio Cari',
         },
+        {
+            description:
+                'Cuatro cambios que me recomendaron y a partir de ayer esto sube como la espuma. Si alguien necesita una asesoría clara, directa y funcional, no dudéis en contar con ellos',
+            title: 'Sergio 3',
+        },
+        {
+            description:
+                'Cuatro cambios que me recomendaron y a partir de ayer esto sube como la espuma. Si alguien necesita una asesoría clara, directa y funcional, no dudéis en contar con ellos',
+            title: 'Sergio 4',
+        },
+        {
+            description:
+                'Cuatro cambios que me recomendaron y a partir de ayer esto sube como la espuma. Si alguien necesita una asesoría clara, directa y funcional, no dudéis en contar con ellos',
+            title: 'Sergio 5',
+        },
     ]
+
+    const imagesGrouped = chunk(images, 3) // Agrupamos los elementos en sub-arreglos de tres
+    const imagesGroupedMobile = chunk(images, 1)
 
     return (
         <MainContainer>
@@ -42,20 +72,38 @@ const ReviewsComp: FC = () => {
                     ¿Qué dicen nuestros clientes?
                 </SubTitleServices>
             </SubTitleContainer>
-            <ContainerCards className="custom-carousel">
-                <FullWidthCarousel
-                    interval={8000}
-
-                >
-                    {images.map((item, index) => (
-                        <CardReviews
-                            key={index}
-                            icon={<RateReviewIcon sx={{ fontSize: '3rem' }} />}
-                            title={item.title}
-                            description={item.description}
-                        />
-                    ))}
-                </FullWidthCarousel>
+            <ContainerCards>
+                {isMobile ? (
+                    <FullWidthCarousel interval={5000}>
+                        {imagesGroupedMobile.map((group, index) => (
+                            <div style={{ display: 'flex', justifyContent: 'center' }} key={index}>
+                                {group.map((item, subIndex) => (
+                                    <CardReviews
+                                        key={subIndex}
+                                        icon={<RateReviewIcon sx={{ fontSize: '3rem' }} />}
+                                        title={item.title}
+                                        description={item.description}
+                                    />
+                                ))}
+                            </div>
+                        ))}
+                    </FullWidthCarousel>
+                ) : (
+                    <FullWidthCarousel interval={5000}>
+                        {imagesGrouped.map((group, index) => (
+                            <div style={{ display: 'flex', justifyContent: 'center' }} key={index}>
+                                {group.map((item, subIndex) => (
+                                    <CardReviews
+                                        key={subIndex}
+                                        icon={<RateReviewIcon sx={{ fontSize: '3rem' }} />}
+                                        title={item.title}
+                                        description={item.description}
+                                    />
+                                ))}
+                            </div>
+                        ))}
+                    </FullWidthCarousel>
+                )}
             </ContainerCards>
         </MainContainer >
     )

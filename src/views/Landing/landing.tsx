@@ -3,8 +3,8 @@ import HeaderComp from '../../componets/Header'
 import ServicesComp from '../../componets/Services'
 import WorkWithUs from '../../componets/WorkWithUs'
 import ReviewWrapper from '../../componets/Reviews'
-import BottomBar from '../../componets/BottomBar'
 import ContactoComp from '../../componets/Contacto'
+import Footer from '../../componets/Footer'
 
 const Landing: FC = () => {
     return (
@@ -14,7 +14,7 @@ const Landing: FC = () => {
             <WorkWithUs />
             <ReviewWrapper />
             <ContactoComp />
-            {/* <BottomBar /> */}
+            <Footer />
         </>
     )
 }

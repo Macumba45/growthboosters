@@ -1,7 +1,6 @@
 import { FC, memo, useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import SendIcon from "@mui/icons-material/Send";
-import { makeStyles } from "@material-ui/styles";
 import { Container, Form, MainContainer, SentMessage, SubTitleContainer, SubTitleServices, TitleContainer, TitleServices } from './styles'
 import {
     Button,
@@ -11,7 +10,6 @@ import {
     MenuItem,
     Select,
     TextField,
-    Typography,
     Dialog,
     DialogTitle,
     DialogContent,
