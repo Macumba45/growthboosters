@@ -13,7 +13,7 @@ const CardServices: FC<Props> = ({ title, img, description }) => {
         <MainContainer>
             <Card
                 sx={{
-                    width: 360,
+                    width: 330,
                     marginBottom: '1rem',
                     marginLeft: '1rem',
                     marginRight: '1rem',

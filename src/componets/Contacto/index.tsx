@@ -1,4 +1,4 @@
-import { FC, memo, useEffect, useState } from 'react'
+import { FC, memo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import SendIcon from '@mui/icons-material/Send'
 import {
@@ -40,9 +40,7 @@ const ContactoComp: FC = () => {
         { value: 'Other', label: 'Other' },
     ]
 
-    const [isVisible, setIsVisible] = useState(true)
     const [modalOpen, setModalOpen] = useState(false)
-    const [counter, setCounter] = useState(0)
 
     const navigate = useNavigate()
 
@@ -80,21 +78,6 @@ const ContactoComp: FC = () => {
         setModalOpen(false)
         navigate('/contacto')
     }
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCounter((prevCounter) => prevCounter + 1)
-            setIsVisible((prevIsVisible) => !prevIsVisible)
-        }, 500)
-
-        if (counter >= 6) {
-            clearInterval(interval)
-        }
-
-        return () => {
-            clearInterval(interval)
-        }
-    }, [counter, isVisible])
 
     return (
         <MainContainer id="contacto">
@@ -187,7 +170,7 @@ const ContactoComp: FC = () => {
                                 fontFamily: 'montserrat',
                                 backgroundColor: '#ef9018',
                                 color: 'white',
-                                width: '400px',
+                                width: '350px',
                             }}
                             startIcon={<SendIcon />}
                         >

@@ -4,7 +4,7 @@ import { Icon } from '@mui/material'
 export const MainContainer = styled.div``
 
 export const Container = styled.div`
-    width: 350px;
+    width: 330px;
     height: 500px;
     background-color: ${({ theme }) => theme.colors.primary};
     border-radius: 100px;
