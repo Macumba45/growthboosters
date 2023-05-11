@@ -22,6 +22,8 @@ const ButtonConsulta: FC<Props> = ({ title, icon, bgColor, marginBottom }) => {
                             color: '#F7F7F7',
                             marginBottom: marginBottom || '1rem',
                             fontSize: '1rem',
+                            width: '300px',
+
                             opacity: 0,
                             '&:hover': {
                                 backgroundColor: '#FF6600',

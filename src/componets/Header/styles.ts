@@ -95,6 +95,7 @@ export const SpanBold = styled.span`
 export const ButtonContainer = styled.div`
     position: absolute;
     display: flex;
+    align-items: center;
     z-index: 444;
     margin-top: 15rem;
 
