@@ -15,25 +15,19 @@ const fac2 = require('../../assets/facturacion/fac2.png')
 const fac3 = require('../../assets/facturacion/fac3.png')
 const fac4 = require('../../assets/facturacion/fac4.png')
 
-
-
 const CardFacturaciones: FC = () => {
     const images: Image[] = [
         {
             src: fac1,
-
         },
         {
             src: fac2,
-
         },
         {
             src: fac3,
-
         },
         {
             src: fac4,
-
         },
     ]
 
@@ -53,7 +47,6 @@ const CardFacturaciones: FC = () => {
                                     <FacturacionesPictures
                                         key={subindex}
                                         src={item.src}
-                                       
                                     />
                                 ))}
                             </DivContainer>

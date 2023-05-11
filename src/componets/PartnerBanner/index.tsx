@@ -16,28 +16,22 @@ const PartnerBanner: FC = () => {
     const serv3 = require('../../assets/partners/kunnan.png')
     const serv4 = require('../../assets/partners/crecete.png')
 
-
-
     const images: Image[] = [
         {
             src: serv3,
             height: '110px',
-
         },
         {
             src: serv2,
             height: '140px',
-
         },
         {
             src: serv1,
             height: '140px',
-
         },
         {
             src: serv4,
             height: '180px',
-
         },
     ]
 
