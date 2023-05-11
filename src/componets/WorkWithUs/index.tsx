@@ -39,7 +39,7 @@ const WorkWithUs: FC = () => {
                 <ContainerCards>
                     <CardWork
                         icon={
-                            <AccessTimeFilledIcon sx={{ fontSize: '5rem' }} />
+                            <AccessTimeFilledIcon sx={{ fontSize: '60px' }} />
                         }
                         title={'COMPROMISO'}
                         description={
@@ -47,14 +47,14 @@ const WorkWithUs: FC = () => {
                         }
                     />
                     <CardWork
-                        icon={<WorkIcon sx={{ fontSize: '5rem' }} />}
+                        icon={<WorkIcon sx={{ fontSize: '60px' }} />}
                         title={'CRECIMIENTO'}
                         description={
                             'Análisis constante del mercado con el fin de descubrir nuevas tendencias de productos con alta potencial de ventas para conseguir el escalado de su negocio.'
                         }
                     />
                     <CardWork
-                        icon={<CheckBoxIcon sx={{ fontSize: '5rem' }} />}
+                        icon={<CheckBoxIcon sx={{ fontSize: '60px' }} />}
                         title={'VISIÓN'}
                         description={
                             'Hemos vivido en nuestra propia piel lo que es escalar nuestras marcas. Por eso contamos con una visión mucho más completa y realista de la plataforma al habernos enfrentado personalmente a ella. '

@@ -41,6 +41,8 @@ export const TitleCard = styled.h1`
     color: ${({ theme }) => theme.colors.primaryLight};
     font-size: ${({ theme }) => theme.fontSizes.small};
     font-weight: 700;
+    text-transform: capitalize;
+
 `
 
 export const DescriptionCard = styled.p`
