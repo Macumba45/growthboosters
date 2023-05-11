@@ -6,12 +6,16 @@ import WorkWithUs from '../../componets/WorkWithUs'
 import ReviewWrapper from '../../componets/Reviews'
 import ContactoComp from '../../componets/Contacto'
 import FacturacionesComp from '../../componets/Facturaciones'
+import PartnerBanner from '../../componets/PartnerBanner'
 import Footer from '../../componets/Footer'
 
 const Landing: FC = () => {
     return (
         <>
             <HeaderComp />
+            <AnimatedView>
+                <PartnerBanner />
+            </AnimatedView>
             <AnimatedView>
                 <ServicesComp />
             </AnimatedView>

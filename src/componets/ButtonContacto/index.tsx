@@ -35,7 +35,6 @@ const ButtonContacto: FC<Props> = ({ title }) => {
                         {title}
                     </Button>
                 </motion.div>
-
             </Link>
         </HoverMotion>
     )

@@ -36,7 +36,6 @@ const ButtonConsulta: FC<Props> = ({ title, icon, bgColor, marginBottom }) => {
                         {icon}
                     </Button>
                 </motion.div>
-
             </MainContainer>
         </HoverMotion>
     )

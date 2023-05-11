@@ -78,9 +78,7 @@ const ReviewsComp: FC = () => {
                         interval={8000}
                     >
                         {imagesGroupedMobile.map((group, index) => (
-                            <DivContainer
-                                key={index}
-                            >
+                            <DivContainer key={index}>
                                 {group.map((item, subIndex) => (
                                     <CardReviews
                                         key={subIndex}

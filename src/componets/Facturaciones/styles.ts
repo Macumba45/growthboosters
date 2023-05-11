@@ -33,7 +33,6 @@ export const SubTitleContainer = styled.div`
     margin-bottom: 3rem;
     @media screen and (max-width: 600px) {
         margin-bottom: 6rem;
-
     }
 `
 

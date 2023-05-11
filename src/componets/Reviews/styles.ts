@@ -27,7 +27,6 @@ export const FullWidthCarousel = styled(Carousel)`
     }
 `
 
-
 export const DivContainer = styled.div`
     display: flex;
     justify-content: center;
