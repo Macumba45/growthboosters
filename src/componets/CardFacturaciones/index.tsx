@@ -1,4 +1,5 @@
 import { FC, memo } from 'react'
+import HoverMotion from '../../animations/hover'
 import { chunk } from 'lodash'
 import {
     ContainerPictures,
@@ -37,23 +38,25 @@ const CardFacturaciones: FC = () => {
 
     return (
         <MainContainer>
-            <ContainerPictures>
-                <FullWidthCarousel
-                    navButtonsAlwaysInvisible={true}
-                    interval={10000}
-                >
-                    {imagesGroupedMobile.map((group, index) => (
-                        <DivContainer key={index}>
-                            {group.map((item, subindex) => (
-                                <FacturacionesPictures
-                                    key={subindex}
-                                    src={item.src}
-                                />
-                            ))}
-                        </DivContainer>
-                    ))}
-                </FullWidthCarousel>
-            </ContainerPictures>
+            <HoverMotion>
+                <ContainerPictures>
+                    <FullWidthCarousel
+                        navButtonsAlwaysInvisible={true}
+                        interval={10000}
+                    >
+                        {imagesGroupedMobile.map((group, index) => (
+                            <DivContainer key={index}>
+                                {group.map((item, subindex) => (
+                                    <FacturacionesPictures
+                                        key={subindex}
+                                        src={item.src}
+                                    />
+                                ))}
+                            </DivContainer>
+                        ))}
+                    </FullWidthCarousel>
+                </ContainerPictures>
+            </HoverMotion>
         </MainContainer>
     )
 }
