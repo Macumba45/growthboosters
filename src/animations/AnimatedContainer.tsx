@@ -51,7 +51,6 @@ const AnimatedView: FC<AnimatedComponentProps> = ({ children }) => {
             exit="exit"
             variants={containerVariants}
             ref={ref}
-        // whileHover={{ scale: 1.1 }}
         >
             {children}
 
