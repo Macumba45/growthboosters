@@ -1,16 +1,19 @@
 import { FC, memo } from 'react'
 import {
+    Container,
     ContainerPics,
     MainContainer,
     PartnerPics,
     TitleContainer,
     TitleServices,
 } from './styles'
+import HoverMotion from '../../animations/hover'
 
 const PartnerBanner: FC = () => {
     const serv1 = require('../../assets/partners/Alibaba-Logo.png')
     const serv2 = require('../../assets/partners/logbox.png')
     const serv3 = require('../../assets/partners/kunnan.png')
+    const serv4 = require('../../assets/partners/crecete.png')
 
     interface Image {
         src: string
@@ -26,6 +29,9 @@ const PartnerBanner: FC = () => {
         {
             src: serv1,
         },
+        {
+            src: serv4,
+        },
     ]
 
     return (
@@ -33,15 +39,19 @@ const PartnerBanner: FC = () => {
             <TitleContainer>
                 <TitleServices>NUESTROS PARTNERS</TitleServices>
             </TitleContainer>
-            <ContainerPics>
+            <Container>
                 {images.map((image, index) => (
-                    <PartnerPics
-                        key={index}
-                        src={image.src}
-                        alt={`Partner ${index + 1}`}
-                    />
+                    <HoverMotion>
+                        <ContainerPics>
+                            <PartnerPics
+                                key={index}
+                                src={image.src}
+                                alt={`Partner ${index + 1}`}
+                            />
+                        </ContainerPics>
+                    </HoverMotion>
                 ))}
-            </ContainerPics>
+            </Container>
         </MainContainer>
     )
 }

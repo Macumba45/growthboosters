@@ -12,7 +12,11 @@ const ButtonContacto: FC<Props> = ({ title }) => {
                 <motion.div
                     initial={{ x: 1000 }}
                     animate={{ x: 0 }}
-                    transition={{ duration: 1, delay: 0.4, ease: [0.43, 0.13, 0.23, 0.96] }} // transición lenta
+                    transition={{
+                        duration: 1,
+                        delay: 0.4,
+                        ease: [0.43, 0.13, 0.23, 0.96],
+                    }} // transición lenta
                 >
                     <Button
                         sx={{
@@ -30,7 +34,10 @@ const ButtonContacto: FC<Props> = ({ title }) => {
                         variant="outlined"
                         component={motion.button}
                         animate={{ opacity: 1 }}
-                        transition={{ duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] }} // transición lenta
+                        transition={{
+                            duration: 0.5,
+                            ease: [0.43, 0.13, 0.23, 0.96],
+                        }} // transición lenta
                     >
                         {title}
                     </Button>

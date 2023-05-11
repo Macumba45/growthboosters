@@ -51,7 +51,7 @@ const HeaderComp: FC = () => {
                 </ButtonContainer>
                 <SubTitleContainer>
                     <SubTitleHeader>
-                        Impulsamos tus ventas a través del marketplaces {<br />}
+                        Impulsamos tus ventas a través del marketplace{<br />}
                         <SpanBold>NÚMERO 1 EN EL MUNDO</SpanBold>
                     </SubTitleHeader>
                 </SubTitleContainer>

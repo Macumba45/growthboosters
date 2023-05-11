@@ -13,7 +13,7 @@ import Button from '@mui/material/Button'
 import MenuItem from '@mui/material/MenuItem'
 import { ImgLogo, MainContainer } from './styles'
 
-const pages = ['¿Quienes somos?', '¿Qué ofrecemos?', '¿Eres particular?']
+const pages = ['¿Quienes somos?', '¿Qué ofrecemos?', 'Para particulares']
 
 const NavBarComp: FC = () => {
     const logo = require('../../assets/logos/3_PNG.png')

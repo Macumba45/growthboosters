@@ -1,4 +1,5 @@
 import { FC, memo } from 'react'
+import CardFacturaciones from '../CardFacturaciones'
 import {
     MainContainer,
     SubTitleContainer,
@@ -6,13 +7,12 @@ import {
     TitleContainer,
     TitleServices,
 } from './styles'
-import CardFacturaciones from '../CardFacturaciones'
 
 const FacturacionesComp: FC = () => {
     return (
         <MainContainer>
             <TitleContainer>
-                <TitleServices>¿QUE HEMOS CONSEGUIDO?</TitleServices>
+                <TitleServices>¿QUÉ HEMOS CONSEGUIDO?</TitleServices>
             </TitleContainer>
             <SubTitleContainer>
                 <SubTitleServices>

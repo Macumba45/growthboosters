@@ -8,32 +8,27 @@ export const MainContainer = styled.div`
     height: 300px;
     @media screen and (max-width: 600px) {
         height: 500px;
-
     }
 `
 
-export const ContainerPics = styled.div`
+export const ContainerPics = styled.div``
+
+export const Container = styled.div`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
-
-   
 `
 
 export const PartnerPics = styled.img`
     width: 250px;
-    height: 100px;
+    height: 120px;
     margin-left: 1rem;
     margin-right: 1rem;
 
-     @media screen and (max-width: 600px) {
+    @media screen and (max-width: 600px) {
         margin-bottom: 1rem;
         margin-top: 1rem;
-
-
     }
-    
 `
 
 export const TitleContainer = styled.div`
