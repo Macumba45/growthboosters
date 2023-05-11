@@ -9,7 +9,7 @@ export const Container = styled.div`
     background-color: ${({ theme }) => theme.colors.secondary};
     border-radius: 20px;
     border: 1px solid white;
-    margin: 1rem 0.2rem 1rem 0.2rem;
+    margin: 1rem 0.4rem 1rem 0.4rem;
 `
 
 export const ContainerImg = styled.div`

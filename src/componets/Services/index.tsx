@@ -14,7 +14,9 @@ import {
 } from './styles'
 
 const ServicesComp: FC = () => {
+
     return (
+
         <MainContainer>
             <Container>
                 <TitleContainer>
@@ -77,6 +79,7 @@ const ServicesComp: FC = () => {
                 </ContainerCards>
             </Container>
         </MainContainer>
+
     )
 }
 

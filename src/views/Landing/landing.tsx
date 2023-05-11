@@ -1,4 +1,5 @@
 import { FC, memo } from 'react'
+import AnimatedView from '../../animations/AnimatedContainer'
 import HeaderComp from '../../componets/Header'
 import ServicesComp from '../../componets/Services'
 import WorkWithUs from '../../componets/WorkWithUs'
@@ -10,10 +11,18 @@ const Landing: FC = () => {
     return (
         <>
             <HeaderComp />
-            <ServicesComp />
-            <WorkWithUs />
-            <ReviewWrapper />
-            <ContactoComp />
+            <AnimatedView>
+                <ServicesComp />
+            </AnimatedView>
+            <AnimatedView>
+                <WorkWithUs />
+            </AnimatedView>
+            <AnimatedView>
+                <ReviewWrapper />
+            </AnimatedView>
+            <AnimatedView>
+                <ContactoComp />
+            </AnimatedView>
             <Footer />
         </>
     )
