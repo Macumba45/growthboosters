@@ -1,46 +1,23 @@
 import styled from 'styled-components'
-import Carousel from 'react-material-ui-carousel'
 
 export const MainContainer = styled.div`
+    position: relative;
     width: 100%;
-    /* height: 100vh; */
-    background-color: white;
-    display: flex;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    flex-direction: column;
-    align-items: center;
-`
-
-export const FullWidthCarousel = styled(Carousel)`
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-
-    .carousel-root {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-`
-
-
-export const DivContainer = styled.div`
-    display: flex;
-    justify-content: center;
+    height: 100vh;
+    background-color: ${({ theme }) => theme.colors.secondary};
 `
 
 export const ContainerCards = styled.div`
     display: flex;
-    width: 100%;
-    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
 `
 
 export const TitleContainer = styled.div`
     display: flex;
+    height: 110px;
+    align-items: center;
     justify-content: center;
     text-align: center;
     margin-left: 1rem;
@@ -53,8 +30,11 @@ export const SubTitleContainer = styled.div`
     text-align: center;
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
+    @media screen and (max-width: 600px) {
+        margin-bottom: 6rem;
+
+    }
 `
 
 export const SubSubTitleContainer = styled.div`
@@ -63,13 +43,13 @@ export const SubSubTitleContainer = styled.div`
     text-align: center;
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 `
 
 export const TitleServices = styled.h1`
     font-family: ${({ theme }) => theme.fonts.poppins};
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.light};
     font-size: ${({ theme }) => theme.fontSizes.mediumSmall};
     line-height: 5rem;
     font-weight: 400;
@@ -82,7 +62,7 @@ export const TitleServices = styled.h1`
 
 export const SubTitleServices = styled.h2`
     font-family: ${({ theme }) => theme.fonts.poppins};
-    color: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.primaryLight};
     font-size: ${({ theme }) => theme.fontSizes.mediumSmall};
     line-height: 2rem;
     font-weight: 900;

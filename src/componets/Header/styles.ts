@@ -75,7 +75,7 @@ export const Span = styled.span`
     font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.primary};
     font-size: ${({ theme }) => theme.fontSizes.medium};
-    font-weight: 600;
+    font-weight: 700;
     @media screen and (max-width: 600px) {
         font-size: 3rem;
     }

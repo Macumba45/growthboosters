@@ -5,6 +5,7 @@ import ServicesComp from '../../componets/Services'
 import WorkWithUs from '../../componets/WorkWithUs'
 import ReviewWrapper from '../../componets/Reviews'
 import ContactoComp from '../../componets/Contacto'
+import FacturacionesComp from '../../componets/Facturaciones'
 import Footer from '../../componets/Footer'
 
 const Landing: FC = () => {
@@ -16,6 +17,9 @@ const Landing: FC = () => {
             </AnimatedView>
             <AnimatedView>
                 <WorkWithUs />
+            </AnimatedView>
+            <AnimatedView>
+                <FacturacionesComp />
             </AnimatedView>
             <AnimatedView>
                 <ReviewWrapper />

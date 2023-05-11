@@ -43,19 +43,19 @@ const ReviewsComp: FC = () => {
         },
         {
             description:
-                'Cuatro cambios que me recomendaron y a partir de ayer esto sube como la espuma. Si alguien necesita una asesoría clara, directa y funcional, no dudéis en contar con ellos',
-            title: 'Sergio 3',
+                'Somos una empresa familiar que la verdad teníamos poca idea del mundo online. Trabajando mano a mano con Antonio y con su equipo hemos conseguido llevar una empresa tradicional al mundo online',
+            title: 'Andrés Zamorano',
         },
         {
             description:
-                'Cuatro cambios que me recomendaron y a partir de ayer esto sube como la espuma. Si alguien necesita una asesoría clara, directa y funcional, no dudéis en contar con ellos',
-            title: 'Sergio 4',
+                'Yo venía de una formación donde supuestamente nos iban a enseñar a vender en Amazon. Después de una consultoria con el qeuipo de GrowthBoosters me di cuenta de que todo lo que me habían enseñado no valia absolutamente para nada. Empezamos a trabajar y consegui mis primeros 1000€ en 4 días',
+            title: 'Javier Sánchez',
         },
-        {
-            description:
-                'Cuatro cambios que me recomendaron y a partir de ayer esto sube como la espuma. Si alguien necesita una asesoría clara, directa y funcional, no dudéis en contar con ellos',
-            title: 'Sergio 5',
-        },
+        // {
+        //     description:
+        //         'Cuatro cambios que me recomendaron y a partir de ayer esto sube como la espuma. Si alguien necesita una asesoría clara, directa y funcional, no dudéis en contar con ellos',
+        //     title: 'Sergio 5',
+        // },
     ]
 
     const imagesGrouped = chunk(images, 3) // Agrupamos los elementos en sub-arreglos de tres
@@ -75,14 +75,10 @@ const ReviewsComp: FC = () => {
                 {isMobile ? (
                     <FullWidthCarousel
                         navButtonsAlwaysInvisible={true}
-                        interval={5000}
+                        interval={8000}
                     >
                         {imagesGroupedMobile.map((group, index) => (
                             <DivContainer
-                                style={{
-                                    display: 'flex',
-                                    justifyContent: 'center',
-                                }}
                                 key={index}
                             >
                                 {group.map((item, subIndex) => (
