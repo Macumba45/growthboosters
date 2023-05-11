@@ -13,6 +13,7 @@ const ButtonConsulta: FC<Props> = ({ title, icon, bgColor, marginBottom }) => {
                     initial={{ x: -1000 }}
                     animate={{ x: 0 }}
                     transition={{ duration: 1.2 }}
+
                 >
                     <Button
                         target="blank"
