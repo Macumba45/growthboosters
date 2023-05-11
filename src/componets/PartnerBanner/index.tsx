@@ -1,4 +1,6 @@
 import { FC, memo } from 'react'
+import HoverMotion from '../../animations/hover'
+import { Image } from './type'
 import {
     Container,
     ContainerPics,
@@ -7,7 +9,6 @@ import {
     TitleContainer,
     TitleServices,
 } from './styles'
-import HoverMotion from '../../animations/hover'
 
 const PartnerBanner: FC = () => {
     const serv1 = require('../../assets/partners/Alibaba-Logo.png')
@@ -15,22 +16,28 @@ const PartnerBanner: FC = () => {
     const serv3 = require('../../assets/partners/kunnan.png')
     const serv4 = require('../../assets/partners/crecete.png')
 
-    interface Image {
-        src: string
-    }
+
 
     const images: Image[] = [
         {
             src: serv3,
+            height: '110px',
+
         },
         {
             src: serv2,
+            height: '140px',
+
         },
         {
             src: serv1,
+            height: '140px',
+
         },
         {
             src: serv4,
+            height: '180px',
+
         },
     ]
 
@@ -40,13 +47,12 @@ const PartnerBanner: FC = () => {
                 <TitleServices>NUESTROS PARTNERS</TitleServices>
             </TitleContainer>
             <Container>
-                {images.map((image, index) => (
-                    <HoverMotion>
+                {images.map((image) => (
+                    <HoverMotion key={image.src}>
                         <ContainerPics>
                             <PartnerPics
-                                key={index}
                                 src={image.src}
-                                alt={`Partner ${index + 1}`}
+                                height={image.height}
                             />
                         </ContainerPics>
                     </HoverMotion>
