@@ -40,7 +40,7 @@ export const TitleContainer = styled.div`
     margin-top: 8rem;
     @media screen and (max-width: 600px) {
         margin-top: 6rem;
-        min-width: 370px;
+        min-width: 380px;
     }
 `
 
@@ -113,6 +113,7 @@ export const SubTitleContainer = styled.div`
     margin-right: 1rem;
     z-index: 9999;
     margin-top: 20rem;
+    min-width: 380px;
     border-bottom: 5px solid #ef9018;
     @media screen and (max-width: 600px) {
         margin-top: 23rem;
