@@ -12,7 +12,7 @@ const ButtonConsulta: FC<Props> = ({ title, icon, bgColor, marginBottom }) => {
                 <motion.div
                     initial={{ x: -1000 }}
                     animate={{ x: 0 }}
-                    transition={{ duration: 1.2 }}
+                    transition={{ duration: 1, delay: 0.4, ease: [0.43, 0.13, 0.23, 0.96] }} // transición lenta
 
                 >
                     <Button
@@ -31,7 +31,7 @@ const ButtonConsulta: FC<Props> = ({ title, icon, bgColor, marginBottom }) => {
                         variant="contained"
                         component={motion.a}
                         animate={{ opacity: 1 }}
-                        transition={{ duration: 1, delay: 0.5 }}
+                        transition={{ duration: 1, delay: 0.4, ease: [0.43, 0.13, 0.23, 0.96] }} // transición lenta
                     >
                         {title}
                         {icon}
