@@ -26,7 +26,7 @@ const CardServices: FC<Props> = ({ title, img, description }) => {
                     }}
                 >
                     <CardActionArea>
-                        <CardMedia component="img" height="130" image={img} />
+                        <CardMedia component="img" height="180" image={img} />
                         <CardContent>
                             <Typography
                                 sx={{ height: '4rem', fontFamily: 'poppins' }}
