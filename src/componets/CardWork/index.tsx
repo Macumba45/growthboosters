@@ -14,7 +14,6 @@ import HoverMotion from '../../animations/hover'
 
 const CardWork: FC<Props> = ({ title, icon, description }) => {
     return (
-
         <HoverMotion>
             <MainContainer>
                 <Container>

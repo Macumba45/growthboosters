@@ -7,10 +7,9 @@ import { CardActionArea, CardActions } from '@mui/material'
 import ButtonConsultoria from '../ButtonConsultoria'
 import { Props } from './type'
 import { MainContainer } from './styles'
-import HoverMotion from '../../animations/hover';
+import HoverMotion from '../../animations/hover'
 
 const CardServices: FC<Props> = ({ title, img, description }) => {
-
     return (
         <HoverMotion>
             <MainContainer>
@@ -52,9 +51,7 @@ const CardServices: FC<Props> = ({ title, img, description }) => {
                             display: 'flex',
                             justifyContent: 'center',
                         }}
-                    >
-
-                    </CardActions>
+                    ></CardActions>
                     <ButtonConsultoria title={'Consultoría gratuita'} />
                 </Card>
             </MainContainer>

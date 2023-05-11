@@ -33,6 +33,7 @@ const FloatHomeButton: FC = () => {
                 <CustomTooltip title="Agendar cita">
                     <Fab
                         href="https://calendly.com/agendagrowthboosters"
+                        target="blank"
                         size={isSmallScreen ? 'medium' : 'large'}
                         sx={{
                             position: 'fixed',

@@ -23,7 +23,6 @@ import {
 const video = require('../../assets/videos/video-comp.mp4')
 const AmazonLogo = require('../../../src/assets/logos/amazonP.png')
 
-
 const HeaderComp: FC = () => {
     return (
         <AnimatedView>
@@ -33,12 +32,10 @@ const HeaderComp: FC = () => {
                 <TitleContainer>
                     <TitleHeader>
                         Escalamos tu marca a través de <Span>Amazon.</Span>
-
                     </TitleHeader>
                 </TitleContainer>
                 <LogoAmazonContainer>
                     <LogoAmazon src={AmazonLogo} alt="Amazon Logo" />
-
                 </LogoAmazonContainer>
                 {/* <TitleContainerAmazon>
                         <TitleHeader>

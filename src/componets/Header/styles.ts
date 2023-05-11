@@ -68,7 +68,6 @@ export const TitleHeader = styled.h1`
         font-size: 2rem;
         line-height: 3rem;
         font-size: ${({ theme }) => theme.fontSizes.mediumSmall};
-
     }
 `
 
@@ -89,7 +88,7 @@ export const SpanBold = styled.span`
     line-height: 5rem;
 
     @media screen and (max-width: 600px) {
-      font-size: 1rem;
+        font-size: 1rem;
     }
 `
 
@@ -133,28 +132,25 @@ export const SubTitleHeader = styled.h2`
     }
 `
 
-
 export const LogoAmazon = styled.img`
-  width: 400px;
-  height: auto;
+    width: 400px;
+    height: auto;
 
-  @media screen and (max-width: 600px) {
-    width: 200px;
+    @media screen and (max-width: 600px) {
+        width: 200px;
     }
-`;
+`
 
 export const LogoAmazonContainer = styled.div`
-display: flex;
-justify-content: center;
-margin-top: 32rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 32rem;
     background-size: cover;
     background-position: center;
     width: 100%;
     position: absolute;
     z-index: 999999999999999;
     @media screen and (max-width: 600px) {
-
         margin-top: 37rem;
-
     }
-`;
+`

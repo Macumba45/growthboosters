@@ -73,7 +73,10 @@ const ReviewsComp: FC = () => {
             </SubTitleContainer>
             <ContainerCards>
                 {isMobile ? (
-                    <FullWidthCarousel navButtonsAlwaysInvisible={true} interval={5000}>
+                    <FullWidthCarousel
+                        navButtonsAlwaysInvisible={true}
+                        interval={5000}
+                    >
                         {imagesGroupedMobile.map((group, index) => (
                             <DivContainer
                                 style={{
