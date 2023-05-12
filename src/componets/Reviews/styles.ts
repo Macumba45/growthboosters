@@ -1,15 +1,21 @@
 import styled from 'styled-components'
 import Carousel from 'react-material-ui-carousel'
 
+const blanco = require('../../assets/background/blanco.jpg')
+
 export const MainContainer = styled.div`
     width: 100%;
-    /* height: 100vh; */
+    background-image:url(${blanco}) ;
+    height: 130vh;
     background-color: white;
     display: flex;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (max-width: 600px) {
+        height: 100vh;
+    }
+    
 `
 
 export const FullWidthCarousel = styled(Carousel)`
@@ -44,6 +50,7 @@ export const TitleContainer = styled.div`
     text-align: center;
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-top: 5rem;
 `
 
 export const SubTitleContainer = styled.div`

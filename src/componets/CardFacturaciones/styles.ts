@@ -16,6 +16,10 @@ export const ContainerPictures = styled.div`
     margin-left: 1rem;
     width: 500px;
     height: auto;
+    @media screen and (max-width: 600px) {
+        width: 350px;
+
+    }
 `
 
 export const FacturacionesPictures = styled.img`

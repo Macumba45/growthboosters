@@ -1,5 +1,8 @@
 import styled from 'styled-components'
 
+// const orange = require('../../assets/background/naranja.jpg')
+
+
 export const MainContainer = styled.div``
 
 export const Container = styled.div`
@@ -8,6 +11,10 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
+    background: rgb(239,144,24);
+background: linear-gradient(180deg, rgba(239,144,24,1) 12%, rgba(120,67,0,1) 91%);
+    
+
 
     background-color: ${({ theme }) => theme.colors.primary};
     @media screen and (min-width: 600px) {
