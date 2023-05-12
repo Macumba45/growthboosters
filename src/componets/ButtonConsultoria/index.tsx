@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import HoverMotion from '../../animations/hover'
 import { MainContainer } from './style'
 
-const ButtonConsulta: FC<Props> = ({ title, icon, bgColor, marginBottom }) => {
+const ButtonConsulta: FC<Props> = ({ title, icon, bgColor, marginBottom, border }) => {
     return (
         <HoverMotion>
             <MainContainer>
@@ -24,6 +24,7 @@ const ButtonConsulta: FC<Props> = ({ title, icon, bgColor, marginBottom }) => {
                             backgroundColor: bgColor || '#ef9018',
                             color: '#F7F7F7',
                             marginBottom: marginBottom || '1rem',
+                            border: border,
                             fontSize: '1rem',
                             width: '300px',
 

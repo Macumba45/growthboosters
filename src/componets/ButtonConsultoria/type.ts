@@ -3,4 +3,6 @@ export type Props = {
     icon?: React.ReactElement
     bgColor?: string | undefined
     marginBottom?: string | undefined
+    border?: string | undefined
+
 }

@@ -70,6 +70,7 @@ const WorkWithUs: FC = () => {
                             sx={{ color: 'white', marginLeft: '1rem' }}
                         />
                     }
+                    border='1px solid #232F3E'
                 />
             </Container>
         </MainContainer>
