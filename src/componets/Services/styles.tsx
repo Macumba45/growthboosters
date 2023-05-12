@@ -2,11 +2,10 @@ import styled from 'styled-components'
 
 const blue = require('../../assets/background/bluerayado.jpg')
 
-
 export const MainContainer = styled.div`
     display: flex;
     flex-direction: column;
-    background-image:url(${blue}) ;
+    background-image: url(${blue});
     background-color: ${({ theme }) => theme.colors.secondary};
     width: 100%;
     height: 60rem;
@@ -28,6 +27,9 @@ export const ContainerCards = styled.div`
     margin-right: 1rem;
     margin-left: 1rem;
     justify-content: center;
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
 `
 
 export const TitleContainer = styled.div`

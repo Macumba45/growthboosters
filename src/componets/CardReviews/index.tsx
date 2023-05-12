@@ -16,15 +16,9 @@ const CardReviews: FC<Props> = ({ title, icon, description }) => {
         <MainContainer>
             <Container>
                 <ContainerImg>
-                    <ImgCard
-                        style={{
-                            marginTop: '2rem',
-                            height: '3rem',
-                            width: '100%',
-                        }}
-                    >
-                        {icon}
-                    </ImgCard>
+                <ImgCard src={icon} />
+
+
                 </ContainerImg>
                 <ContainerTitle>
                     <TitleCard>{title}</TitleCard>

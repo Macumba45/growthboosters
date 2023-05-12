@@ -5,7 +5,7 @@ const blanco = require('../../assets/background/blanco.jpg')
 
 export const MainContainer = styled.div`
     width: 100%;
-    background-image:url(${blanco}) ;
+    background-image: url(${blanco});
     height: 130vh;
     background-color: white;
     display: flex;
@@ -13,9 +13,8 @@ export const MainContainer = styled.div`
     align-items: center;
 
     @media screen and (max-width: 600px) {
-        height: 100vh;
+        height: 110vh;
     }
-    
 `
 
 export const FullWidthCarousel = styled(Carousel)`

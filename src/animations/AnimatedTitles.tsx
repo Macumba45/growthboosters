@@ -11,7 +11,6 @@ type AnimatedComponentProps = MotionProps & {
 }
 
 const AnimatedTitle: FC<AnimatedComponentProps> = ({ children }) => {
-
     return (
         <motion.div animate={{ x: 100 }} transition={{ delay: 1 }}>
             {children}

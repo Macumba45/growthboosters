@@ -62,7 +62,7 @@ const WorkWithUs: FC = () => {
                     />
                 </ContainerCards>
                 <ButtonConsultoria
-                    bgColor="#232F3E"
+                    bgColor="#ef9018"
                     marginBottom="4rem"
                     title={'Agendar consultoría'}
                     icon={

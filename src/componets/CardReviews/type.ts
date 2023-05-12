@@ -1,5 +1,5 @@
 export type Props = {
-    icon: React.ReactElement
+    icon: string;
     title: string | undefined
     description: string
 }

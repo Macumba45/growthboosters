@@ -18,7 +18,6 @@ export const ContainerPictures = styled.div`
     height: auto;
     @media screen and (max-width: 600px) {
         width: 350px;
-
     }
 `
 

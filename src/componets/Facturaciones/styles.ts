@@ -2,10 +2,8 @@ import styled from 'styled-components'
 
 const blue = require('../../assets/background/blue.jpg')
 
-
-
 export const MainContainer = styled.div`
-    background-image:url(${blue}) ;
+    background-image: url(${blue});
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +33,6 @@ export const TitleContainer = styled.div`
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
-    
 `
 
 export const SubTitleContainer = styled.div`
@@ -66,7 +63,6 @@ export const TitleServices = styled.h1`
     font-size: ${({ theme }) => theme.fontSizes.mediumSmall};
     line-height: 5rem;
     font-weight: 400;
-
 
     @media screen and (max-width: 600px) {
         font-size: 2rem;

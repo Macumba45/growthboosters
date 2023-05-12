@@ -1,11 +1,10 @@
 import styled from 'styled-components'
-import { Icon } from '@mui/material'
 
 export const MainContainer = styled.div``
 
 export const Container = styled.div`
     width: 330px;
-    height: 500px;
+    height: 550px;
     background-color: ${({ theme }) => theme.colors.primary};
     border-radius: 100px;
     margin-left: 1rem;
@@ -32,8 +31,12 @@ export const ContainerDescription = styled.div`
     margin-right: 1rem;
 `
 
-export const ImgCard = styled(Icon)`
-    color: white;
+export const ImgCard = styled.img`
+
+width: 80px;
+height: 80px;
+border-radius: 50px;
+margin-top: 2rem;
 `
 
 export const TitleCard = styled.h1`
@@ -42,7 +45,6 @@ export const TitleCard = styled.h1`
     font-size: ${({ theme }) => theme.fontSizes.small};
     font-weight: 700;
     text-transform: capitalize;
-
 `
 
 export const DescriptionCard = styled.p`
