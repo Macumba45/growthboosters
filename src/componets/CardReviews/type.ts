@@ -1,5 +1,5 @@
 export type Props = {
-    icon: string;
+    icon: string
     title: string | undefined
     description: string
 }

@@ -19,7 +19,6 @@ const face2 = require('../../assets/faces/2.PNG')
 const face3 = require('../../assets/faces/3.PNG')
 const face4 = require('../../assets/faces/4.PNG')
 
-
 const ReviewsComp: FC = () => {
     const [isMobile, setIsMobile] = useState(false)
 
@@ -36,35 +35,31 @@ const ReviewsComp: FC = () => {
             description:
                 'Mucho valor. Revisamos listings, fotografías, posibles productos, PPC. En abril/mayo lanzaré tres nuevos productos y, sin duda alguna, haré seguimiento con ellos. Claros, concisos y sin prisa. Atienden, no despachan. La verdad, me sentí como si los tres trabajáramos en el mismo equipo desde hace tiempo.',
             title: 'Alejandro Fernández',
-            icon: face1
+            icon: face1,
         },
         {
             description:
                 'He estado trabajando con ellos para la gestión de mi cuenta en Amazon durante los últimos dos meses y estoy muy contento con los resultados. Desde el principio me proporcionaron una asesoría muy completa. Han sido muy profesionales y siempre están dispuestos a ayudar. Hemos logrado un aumento en las ventas en nuestro canal de Amazon.            ',
             title: 'Ramón Vilches',
-            icon: face2
-
+            icon: face2,
         },
         {
             description:
                 'Cuatro cambios que me recomendaron y a partir de ayer esto sube como la espuma. Si alguien necesita una asesoría clara, directa y funcional, no dudéis en contar con ellos',
             title: 'Sergio Cari',
-            icon: face3
-
+            icon: face3,
         },
         {
             description:
                 'Somos una empresa familiar que la verdad teníamos poca idea del mundo online. Trabajando mano a mano con Antonio y con su equipo hemos conseguido llevar una empresa tradicional al mundo online',
             title: 'Andrés Zamorano',
-            icon: face4
-
+            icon: face4,
         },
         {
             description:
                 'Yo venía de una formación donde supuestamente nos iban a enseñar a vender en Amazon. Después de una consultoria con el qeuipo de GrowthBoosters me di cuenta de que todo lo que me habían enseñado no valia absolutamente para nada. Empezamos a trabajar y consegui mis primeros 1000€ en 4 días',
             title: 'Javier Sánchez',
-            icon: face3
-
+            icon: face3,
         },
     ]
 
@@ -92,9 +87,7 @@ const ReviewsComp: FC = () => {
                                 {group.map((item, subIndex) => (
                                     <CardReviews
                                         key={subIndex}
-                                        icon={
-                                            item.icon
-                                        }
+                                        icon={item.icon}
                                         title={item.title}
                                         description={item.description}
                                     />
@@ -115,9 +108,7 @@ const ReviewsComp: FC = () => {
                                 {group.map((item, subIndex) => (
                                     <CardReviews
                                         key={subIndex}
-                                        icon={
-                                            item.icon
-                                        }
+                                        icon={item.icon}
                                         title={item.title}
                                         description={item.description}
                                     />

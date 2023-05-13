@@ -33,11 +33,10 @@ export const ContainerDescription = styled.div`
 `
 
 export const ImgCard = styled.img`
-
-width: 80px;
-height: 80px;
-border-radius: 50px;
-margin-top: 2rem;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    margin-top: 2rem;
 `
 
 export const TitleCard = styled.h1`

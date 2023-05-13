@@ -16,9 +16,7 @@ const CardReviews: FC<Props> = ({ title, icon, description }) => {
         <MainContainer>
             <Container>
                 <ContainerImg>
-                <ImgCard src={icon} />
-
-
+                    <ImgCard src={icon} />
                 </ContainerImg>
                 <ContainerTitle>
                     <TitleCard>{title}</TitleCard>
