@@ -6,7 +6,7 @@ const blanco = require('../../assets/background/blanco.jpg')
 export const MainContainer = styled.div`
     width: 100%;
     background-image: url(${blanco});
-    height: 145vh;
+    height: 135vh;
     background-color: white;
     display: flex;
     flex-direction: column;
