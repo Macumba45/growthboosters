@@ -1,12 +1,13 @@
 import styled from 'styled-components'
+const backgroundColor = require('./../../assets/reviews/review.jpg')
 
 export const MainContainer = styled.div``
 
 export const Container = styled.div`
     width: 330px;
     height: 550px;
-    background-color: ${({ theme }) => theme.colors.primary};
-    border-radius: 100px;
+    background-image: url(${backgroundColor});
+    border-radius: 10px;
     margin-left: 1rem;
     margin-right: 1rem;
 `

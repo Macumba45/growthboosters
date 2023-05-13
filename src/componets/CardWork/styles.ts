@@ -7,7 +7,7 @@ export const Container = styled.div`
     width: 350px;
     height: 400px;
     background-color: ${({ theme }) => theme.colors.secondary};
-    border-radius: 20px;
+    border-radius: 10px;
     border: 1px solid white;
     margin: 1rem 0.4rem 1rem 0.4rem;
 `
