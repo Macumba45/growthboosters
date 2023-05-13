@@ -7,6 +7,7 @@ export const Container = styled.div`
     width: 330px;
     height: 550px;
     background-image: url(${backgroundColor});
+    background-size: cover;
     border-radius: 10px;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -51,6 +52,6 @@ export const DescriptionCard = styled.p`
     font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.primaryLight};
     font-size: ${({ theme }) => theme.fontSizes.smallest};
-    font-weight: 200;
+    font-weight: 300;
     line-height: 1.8rem;
 `
