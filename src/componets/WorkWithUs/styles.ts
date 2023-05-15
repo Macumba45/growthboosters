@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-// const orange = require('../../assets/background/naranja.jpg')
+const orange = require('../../assets/background/naranja.jpg')
 
 export const MainContainer = styled.div``
 
@@ -10,24 +10,45 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: rgb(199, 111, 1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(${orange});
+    
+    /* background: rgb(199, 111, 1);
     background: linear-gradient(
         180deg,
         rgba(199, 111, 1, 1) 41%,
         rgba(239, 144, 24, 1) 91%
     );
 
-    background-color: ${({ theme }) => theme.colors.primary};
+    background-color: ${({ theme }) => theme.colors.primary}; */
+
+    position: relative; /* Agrega esta línea */
+
+    ::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.229);
+        z-index: 1;
+        mix-blend-mode: multiply; /* Agrega esta línea */
+    }
     @media screen and (min-width: 600px) {
         height: 120vh;
     }
-`
+`;
+
 
 export const ContainerCards = styled.div`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 3rem;
+    z-index: 9999;
+
 `
 
 export const TitleContainer = styled.div`
@@ -39,6 +60,7 @@ export const TitleContainer = styled.div`
     margin-top: 2rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    z-index: 9999;
 `
 
 export const SubTitleContainer = styled.div`
@@ -47,6 +69,8 @@ export const SubTitleContainer = styled.div`
     text-align: center;
     margin-left: 1rem;
     margin-right: 1rem;
+    z-index: 9999;
+
 `
 
 export const SubSubTitleContainer = styled.div`
@@ -57,6 +81,8 @@ export const SubSubTitleContainer = styled.div`
     margin-right: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    z-index: 9999;
+
 `
 
 export const TitleServices = styled.h1`

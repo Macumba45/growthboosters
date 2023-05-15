@@ -1,7 +1,12 @@
 import styled from 'styled-components'
 import { Icon } from '@mui/material'
 
-export const MainContainer = styled.div``
+export const MainContainer = styled.div`
+
+z-index: 9999;
+
+
+`
 
 export const Container = styled.div`
     width: 350px;
@@ -10,6 +15,7 @@ export const Container = styled.div`
     border-radius: 10px;
     border: 1px solid white;
     margin: 1rem 0.4rem 1rem 0.4rem;
+    
 `
 
 export const ContainerImg = styled.div`

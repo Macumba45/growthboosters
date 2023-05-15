@@ -33,6 +33,7 @@ const ButtonConsulta: FC<Props> = ({
                             border: border,
                             fontSize: '1rem',
                             width: '300px',
+                            zIndex: 9999,
 
                             opacity: 0,
                             '&:hover': {

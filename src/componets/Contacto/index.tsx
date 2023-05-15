@@ -49,6 +49,7 @@ const ContactoComp: FC = () => {
         setModalOpen(true)
 
         const data = {
+            id: "growthbooster",
             name: e.target.Nombre.value,
             apellidos: e.target.Apellidos.value,
             email: e.target._replyto.value,
@@ -58,6 +59,8 @@ const ContactoComp: FC = () => {
 
         const response = await fetch(
             'https://backend-email.vercel.app/api/sendemail',
+            // 'http://localhost:5001/api/sendemail',
+
             {
                 method: 'POST',
                 headers: {
@@ -76,7 +79,7 @@ const ContactoComp: FC = () => {
 
     const handleClose = () => {
         setModalOpen(false)
-        navigate('/contacto')
+        navigate('/')
     }
 
     return (
