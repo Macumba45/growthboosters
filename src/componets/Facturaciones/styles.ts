@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const blue = require('../../assets/background/blue1.jpg')
+const blue = require('../../assets/background/blue3.jpg')
 
 export const MainContainer = styled.div`
     background-image: url(${blue});

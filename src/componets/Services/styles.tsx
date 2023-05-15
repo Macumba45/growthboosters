@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const blue = require('../../assets/background/bluerayado.jpg')
+const blue = require('../../assets/background/blue3.jpg')
 
 export const MainContainer = styled.div`
     display: flex;

@@ -60,6 +60,7 @@ const ContactoComp: FC = () => {
         const response = await fetch(
             'https://backend-email.vercel.app/api/sendemail',
             // 'http://localhost:5001/api/sendemail',
+            // 'https://vercel.com/macumba45/backend-email/H9YWMPMcqKF5TBx1RhZ4RT95eJeS',
 
             {
                 method: 'POST',
@@ -72,6 +73,7 @@ const ContactoComp: FC = () => {
         if (response.ok) {
             setModalOpen(true)
         }
+        console.log(response)
         const responseData = await response.json()
         console.log(data)
         console.log(responseData)
