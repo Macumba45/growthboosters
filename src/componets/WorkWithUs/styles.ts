@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const orange = require('../../assets/background/naranja.jpg')
+const orange = require('../../assets/background/naranja4.jpg')
 
 export const MainContainer = styled.div``
 

@@ -44,40 +44,63 @@ const ContactoComp: FC = () => {
 
     const navigate = useNavigate()
 
-    const sendEmail = async (e: any) => {
-        e.preventDefault()
-        setModalOpen(true)
+    // const sendEmail = async (e: any) => {
 
-        const data = {
-            id: "growthbooster",
-            name: e.target.Nombre.value,
-            apellidos: e.target.Apellidos.value,
-            email: e.target._replyto.value,
-            phoneNumber: e.target['Número de móvil'].value,
-            comoNosConociste: e.target['¿Cómo nos has conocido?'].value,
-        }
 
-        const response = await fetch(
-            'https://backend-email.vercel.app/api/sendemail',
-            // 'http://localhost:5001/api/sendemail',
-            // 'https://vercel.com/macumba45/backend-email/H9YWMPMcqKF5TBx1RhZ4RT95eJeS',
+    //     // e.preventDefault()
+    //     // const data = {
+    //     //     id: "growthbooster",
+    //     //     name: e.target.Nombre.value,
+    //     //     apellidos: e.target.Apellidos.value,
+    //     //     email: e.target._replyto.value,
+    //     //     phoneNumber: e.target['Número de móvil'].value,
+    //     //     comoNosConociste: e.target['¿Cómo nos has conocido?'].value,
+    //     // }
 
-            {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(data),
-            }
-        )
-        if (response.ok) {
-            setModalOpen(true)
-        }
-        console.log(response)
-        const responseData = await response.json()
-        console.log(data)
-        console.log(responseData)
-    }
+    //     // const response = await fetch(
+    //     //     // 'https://ubiquitous-entremet-1a2ba6.netlify.app/.netlify/functions/api/api/sendemail',
+    //     //     // 'http://localhost:5001/api/sendemail',
+    //     //     // 'https://vercel.com/macumba45/backend-email-node-mailer/A1EKksG996835zQuvFWGSngV4eWt',
+    //     //     // 'https://backend-email-node-mailer-e80txw5i1-macumba45.vercel.app/',
+    //     //     // 'https://vercel.com/macumba45/backend-email/H9YWMPMcqKF5TBx1RhZ4RT95eJeS',
+    //     //     // 'https://backend-email-node-mailer.vercel.app/',
+    //     //     "https://backend-email-node-mailer-5giqnpbkz-macumba45.vercel.app/api/sendemail",
+    //     //     {
+    //     //         method: 'POST',
+    //     //         headers: {
+    //     //             'Content-Type': 'application/json',
+    //     //         },
+    //     //         body: JSON.stringify(data),
+    //     //     }
+    //     // )
+    //     // if (response.ok) {
+    //     //     setModalOpen(true)
+    //     // }
+    //     // console.log(response)
+    //     // const responseData = await response.json()
+    //     // console.log(data)
+    //     // console.log(responseData)
+    // }
+
+    const handleSubmit = (e: any) => {
+        e.preventDefault();
+
+        const form = e.target;
+        const nombre = form.Nombre.value;
+        const apellidos = form.Apellidos.value;
+        const email = form._replyto.value;
+        const telefono = form['Número de móvil'].value;
+        const comoNosConociste = form['¿Cómo nos has conocido?'].value;
+
+        const subject = 'Nuevo mensaje Growthbooster';
+        const body = `Nombre: ${nombre}\nApellidos: ${apellidos}\nEmail: ${email}\nNúmero de móvil: ${telefono}\n¿Cómo nos has conocido?: ${comoNosConociste}`;
+
+        const mailtoUrl = `mailto:info@growthboosters.eu?subject=${encodeURIComponent(
+            subject
+        )}&body=${encodeURIComponent(body)}`;
+
+        window.location.href = mailtoUrl;
+    };
 
     const handleClose = () => {
         setModalOpen(false)
@@ -100,7 +123,7 @@ const ContactoComp: FC = () => {
             <Form
                 // action="https://formspree.io/f/xbjewjlk"
                 // method="POST"
-                onSubmit={sendEmail}
+                onSubmit={handleSubmit}
             >
                 <Grid container direction="column" spacing={2}>
                     <Grid style={{ fontFamily: 'poppins' }} item>
