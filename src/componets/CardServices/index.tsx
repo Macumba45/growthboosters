@@ -10,6 +10,13 @@ import { MainContainer } from './styles'
 import HoverMotion from '../../animations/hover'
 
 const CardServices: FC<Props> = ({ title, img, description }) => {
+
+    let buttonHref = 'https://calendly.com/agendagrowthboosters'; // Enlace por defecto
+
+    if (title === 'Sesiones de Consultoría') {
+        buttonHref = 'https://calendly.com/agendagrowthboosters/consultoria1a1'; // Enlace específico para "Sesiones de Consultoría"
+    }
+
     return (
         <HoverMotion>
             <MainContainer>
@@ -37,7 +44,7 @@ const CardServices: FC<Props> = ({ title, img, description }) => {
                                 {title}
                             </Typography>
                             <Typography
-                                sx={{ height: '10rem', fontFamily: 'poppins' }}
+                                sx={{ height: '12rem', fontFamily: 'poppins' }}
                                 variant="body2"
                                 color="text.secondary"
                             >
@@ -52,7 +59,7 @@ const CardServices: FC<Props> = ({ title, img, description }) => {
                             justifyContent: 'center',
                         }}
                     ></CardActions>
-                    <ButtonConsultoria title={'Consultoría gratuita'} />
+                    <ButtonConsultoria title={'Consultoría gratuita'} href={buttonHref} />
                 </Card>
             </MainContainer>
         </HoverMotion>

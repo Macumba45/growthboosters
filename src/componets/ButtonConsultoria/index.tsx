@@ -11,6 +11,7 @@ const ButtonConsulta: FC<Props> = ({
     bgColor,
     marginBottom,
     border,
+    href
 }) => {
     return (
         <HoverMotion>
@@ -40,7 +41,7 @@ const ButtonConsulta: FC<Props> = ({
                                 backgroundColor: '#FF6600',
                             },
                         }}
-                        href="https://calendly.com/agendagrowthboosters"
+                        href={href}
                         variant="contained"
                         component={motion.a}
                         animate={{ opacity: 1 }}

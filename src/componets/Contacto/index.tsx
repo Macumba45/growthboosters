@@ -46,7 +46,6 @@ const ContactoComp: FC = () => {
 
     // const sendEmail = async (e: any) => {
 
-
     //     // e.preventDefault()
     //     // const data = {
     //     //     id: "growthbooster",
@@ -83,24 +82,24 @@ const ContactoComp: FC = () => {
     // }
 
     const handleSubmit = (e: any) => {
-        e.preventDefault();
+        e.preventDefault()
 
-        const form = e.target;
-        const nombre = form.Nombre.value;
-        const apellidos = form.Apellidos.value;
-        const email = form._replyto.value;
-        const telefono = form['Número de móvil'].value;
-        const comoNosConociste = form['¿Cómo nos has conocido?'].value;
+        const form = e.target
+        const nombre = form.Nombre.value
+        const apellidos = form.Apellidos.value
+        const email = form._replyto.value
+        const telefono = form['Número de móvil'].value
+        const comoNosConociste = form['¿Cómo nos has conocido?'].value
 
-        const subject = 'Nuevo mensaje Growthbooster';
-        const body = `Nombre: ${nombre}\nApellidos: ${apellidos}\nEmail: ${email}\nNúmero de móvil: ${telefono}\n¿Cómo nos has conocido?: ${comoNosConociste}`;
+        const subject = 'Nuevo mensaje Growthbooster'
+        const body = `Nombre: ${nombre}\nApellidos: ${apellidos}\nEmail: ${email}\nNúmero de móvil: ${telefono}\n¿Cómo nos has conocido?: ${comoNosConociste}`
 
         const mailtoUrl = `mailto:info@growthboosters.eu?subject=${encodeURIComponent(
             subject
-        )}&body=${encodeURIComponent(body)}`;
+        )}&body=${encodeURIComponent(body)}`
 
-        window.location.href = mailtoUrl;
-    };
+        window.location.href = mailtoUrl
+    }
 
     const handleClose = () => {
         setModalOpen(false)

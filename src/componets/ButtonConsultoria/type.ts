@@ -4,4 +4,5 @@ export type Props = {
     bgColor?: string | undefined
     marginBottom?: string | undefined
     border?: string | undefined
+    href?: string | undefined
 }

@@ -53,7 +53,7 @@ const ServicesComp: FC = () => {
                     />
                     <CardServices
                         title="Consultoría Estrategica"
-                        description="Nuestro equipo de consultores de Amazon Marketplace te proporcionará las herramientas y el conocimiento para ayudarte a adaptar y optimizar tu estrategia de ventas. Trabajamos contigo para identificar oportunidades y superar obstáculos, para que puedas maximizar tus ventas en Amazon."
+                        description="Nuestro equipo de consultores de Amazon Marketplace te proporcionará las herramientas y el conocimiento para ayudarte a adaptar y optimizar tu estrategia de ventas. Trabajamos contigo para identificar oportunidades y superar obstáculos, para que puedas maximizar tus ventas en Amazon. ) Este es un servicio mensual de seguimiento, si quieres resolver una cosa puntual puedes contratar una sesión de consultoría."
                         img="https://i.postimg.cc/qMLBv190/serv1.png"
                     />
                     <Divider
@@ -68,6 +68,16 @@ const ServicesComp: FC = () => {
                                 md: 'none',
                             },
                         }}
+                    />
+                    <CardServices
+                        title="Full E-Commerce Operations"
+                        description="Hemos hablado mucho de Amazon, pero nosotros tenemos todo lo que tu marca necesita para tener exito en la venta online. Desde integración con todos los marketplaces, pasando por desorrollo tecnológico a medida hasta logística propia. Una solución 360º para tu negocio."
+                        img="https://i.postimg.cc/j5Pt0czp/serv2.png"
+                    />
+                    <CardServices
+                        title="Sesiones de Consultoría"
+                        description="Sesiones de 1 hora 1 a 1 donde te guiaremos sobre cómo seguir adelante con tu proyecto."
+                        img="https://i.postimg.cc/j5Pt0czp/serv2.png"
                     />
                     <CardServices
                         title="Full E-Commerce Operations"

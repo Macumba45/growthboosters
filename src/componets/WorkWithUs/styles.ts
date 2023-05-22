@@ -13,7 +13,7 @@ export const Container = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(${orange});
-    
+
     /* background: rgb(199, 111, 1);
     background: linear-gradient(
         180deg,
@@ -39,8 +39,7 @@ export const Container = styled.div`
     @media screen and (min-width: 600px) {
         height: 120vh;
     }
-`;
-
+`
 
 export const ContainerCards = styled.div`
     display: flex;
@@ -48,7 +47,6 @@ export const ContainerCards = styled.div`
     flex-wrap: wrap;
     margin-bottom: 3rem;
     z-index: 9999;
-
 `
 
 export const TitleContainer = styled.div`
@@ -70,7 +68,6 @@ export const SubTitleContainer = styled.div`
     margin-left: 1rem;
     margin-right: 1rem;
     z-index: 9999;
-
 `
 
 export const SubSubTitleContainer = styled.div`
@@ -82,7 +79,6 @@ export const SubSubTitleContainer = styled.div`
     margin-top: 1rem;
     margin-bottom: 1rem;
     z-index: 9999;
-
 `
 
 export const TitleServices = styled.h1`
