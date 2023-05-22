@@ -25,7 +25,7 @@ const ButtonContacto: FC<Props> = ({ title }) => {
                             marginBottom: '1rem',
                             marginRight: '1rem',
                             marginLeft: '1rem',
-                            width: '300px',
+                            width: '280px',
 
                             '&:hover': {
                                 borderColor: '#FF6600',
