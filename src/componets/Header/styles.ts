@@ -37,8 +37,7 @@ export const TitleContainer = styled.div`
     margin-left: 1rem;
     margin-right: 1rem;
     margin-top: 8rem;
-
-    width: 900px;
+    width: 1200px;
     @media screen and (max-width: 600px) {
         margin-top: 4rem;
         width: 360px;
