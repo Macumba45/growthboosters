@@ -77,6 +77,7 @@ export const SubTitleContainer = styled.div`
 
 export const SubSubTitleContainer = styled.div`
     display: flex;
+    width: 1000px;
     justify-content: center;
     text-align: center;
     margin-left: 1rem;
@@ -84,6 +85,9 @@ export const SubSubTitleContainer = styled.div`
     margin-top: 1rem;
     margin-bottom: 1rem;
     z-index: 9999;
+    @media screen and (max-width: 600px) {
+        width: 340px;
+    }
 `
 export const SubSubSubTitleContainer = styled.div`
     display: flex;
@@ -99,24 +103,29 @@ export const SubSubSubTitleContainer = styled.div`
 export const SubTitleServices = styled.h2`
     font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.secondary};
-    font-size: ${({ theme }) => theme.fontSizes.mediumSmall};
+    font-size: 1.2rem;
     line-height: 3rem;
     font-weight: 600;
 
     @media screen and (max-width: 600px) {
-        font-size: ${({ theme }) => theme.fontSizes.small};
+        font-size: 1.2rem;
+        line-height: 2rem;
+
     }
 `
 
 export const SubSubTitleServices = styled.p`
     font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.secondary};
-    font-size: 1rem;
-    line-height: 2rem;
+    font-size: 2.2rem;
+    line-height: 4rem;
     font-weight: 500;
 
     @media screen and (max-width: 600px) {
-        font-size: ${({ theme }) => theme.fontSizes.smallest};
+        font-size: 1.5rem;
+        line-height: 2rem;
+
+
     }
 `
 
@@ -129,7 +138,8 @@ export const SubSubSubTitleServices = styled.p`
     font-weight: 800;
 
     @media screen and (max-width: 600px) {
-        font-size: ${({ theme }) => theme.fontSizes.smallest};
+        font-size: 1rem;
+
     }
 `
 

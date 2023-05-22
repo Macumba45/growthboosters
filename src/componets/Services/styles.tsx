@@ -17,10 +17,13 @@ export const MainContainer = styled.div`
 export const Container = styled.div`
     position: relative;
     justify-content: center;
-    width: 100%;
+    margin: 0 auto;
+    width: 1200px;
     height: 100%;
     @media screen and (max-width: 600px) {
         height: 145rem;
+        width: 100%;
+
     }
 `
 

@@ -28,14 +28,16 @@ const WarrantyBanner: FC = () => {
                     <SpanBold>Somos nosotros,</SpanBold> sin intermediarios ni
                     colaboradores externos, quienes te ayudarán con tu proyecto.
                     Personalmente nos encargamos de brindarte asistencia y
-                    orientación. <SpanBold>No habrá terceros involucrados.</SpanBold>
+                    orientación. {<br />} <SpanBold>No habrá terceros involucrados.</SpanBold>
                 </SubTitleServices>
             </SubTitleContainer>
             <SubSubTitleContainer>
                 <SubSubTitleServices>
                     Estamos tan seguros de la calidad y eficacia de nuestro
-                    servicio que si en el primer mes no ves resultados{<br />} <SpanBold>EL
-                        SIGUIENTE TRABAJAMOS GRATIS PARA TÍ, SÍ GRATIS, No pagas.</SpanBold>
+                    servicio que si en el primer mes no ves resultados.
+                    <SpanBold>
+                        {<br />} EL SIGUIENTE TRABAJAMOS GRATIS PARA TÍ,{<br />} SÍ GRATIS. No pagas.
+                    </SpanBold>
                 </SubSubTitleServices>
             </SubSubTitleContainer>
             <SubSubSubTitleContainer>

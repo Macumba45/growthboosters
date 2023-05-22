@@ -31,8 +31,8 @@ const HeaderComp: FC = () => {
             <MainContainer>
                 <TitleContainer>
                     <TitleHeader>
-                        Garantizamos tú <Span>Éxito</Span> en Amazon,
-                        <Span> {<br />} Sí Garantizado.</Span>
+                        Garantizamos tú éxito en <Span>Amazon,</Span>
+                        <Span> {<br />} Sí, Garantizado.</Span>
                     </TitleHeader>
                 </TitleContainer>
                 <LogoAmazonContainer>
