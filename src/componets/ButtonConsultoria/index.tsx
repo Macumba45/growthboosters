@@ -11,7 +11,7 @@ const ButtonConsulta: FC<Props> = ({
     bgColor,
     marginBottom,
     border,
-    href
+    href,
 }) => {
     return (
         <HoverMotion>
@@ -33,7 +33,7 @@ const ButtonConsulta: FC<Props> = ({
                             marginBottom: marginBottom || '1rem',
                             border: border,
                             fontSize: '1rem',
-                            width: '300px',
+                            width: '280px',
                             zIndex: 9999,
 
                             opacity: 0,

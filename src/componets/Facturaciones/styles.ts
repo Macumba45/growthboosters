@@ -13,8 +13,9 @@ export const MainContainer = styled.div`
     justify-content: center;
     flex-direction: column; */
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     background-color: ${({ theme }) => theme.colors.secondary};
+    margin-bottom: 3rem;
 `
 
 export const ContainerCards = styled.div`

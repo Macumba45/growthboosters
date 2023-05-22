@@ -80,8 +80,8 @@ const ServicesComp: FC = () => {
                         img="https://i.postimg.cc/j5Pt0czp/serv2.png"
                     />
                     <CardServices
-                        title="Full E-Commerce Operations"
-                        description="Hemos hablado mucho de Amazon, pero nosotros tenemos todo lo que tu marca necesita para tener exito en la venta online. Desde integración con todos los marketplaces, pasando por desorrollo tecnológico a medida hasta logística propia. Una solución 360º para tu negocio."
+                        title="Formación para empresas"
+                        description="Formamos a tu equipo para que domine todas las áreas y herramientas sobre la diversificación de tu empresa a través de marketplaces. Formación 1 a 1."
                         img="https://i.postimg.cc/j5Pt0czp/serv2.png"
                     />
                 </ContainerCards>

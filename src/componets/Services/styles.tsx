@@ -8,9 +8,9 @@ export const MainContainer = styled.div`
     background-image: url(${blue});
     background-color: ${({ theme }) => theme.colors.secondary};
     width: 100%;
-    height: 60rem;
+    height: 100%;
     @media screen and (max-width: 600px) {
-        height: 145rem;
+        height: 250rem;
     }
 `
 
@@ -18,7 +18,10 @@ export const Container = styled.div`
     position: relative;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    @media screen and (max-width: 600px) {
+        height: 145rem;
+    }
 `
 
 export const ContainerCards = styled.div`

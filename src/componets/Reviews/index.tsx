@@ -1,5 +1,4 @@
 import { FC, memo, useEffect, useState } from 'react'
-import RateReviewIcon from '@mui/icons-material/RateReview'
 import CardReviews from '../CardReviews'
 import { chunk } from 'lodash'
 

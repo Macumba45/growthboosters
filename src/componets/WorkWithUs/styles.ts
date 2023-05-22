@@ -86,7 +86,8 @@ export const TitleServices = styled.h1`
     color: ${({ theme }) => theme.colors.light};
     font-size: ${({ theme }) => theme.fontSizes.mediumSmall};
     line-height: 5rem;
-    font-weight: 400;
+    color: #011b35;
+    font-weight: 500;
 
     @media screen and (max-width: 600px) {
         font-size: 2rem;

@@ -32,7 +32,7 @@ const HeaderComp: FC = () => {
                 <TitleContainer>
                     <TitleHeader>
                         Garantizamos tú <Span>Éxito</Span> en Amazon,
-                        <Span> Sí Garantizado.</Span>
+                        <Span> {<br />} Sí Garantizado.</Span>
                     </TitleHeader>
                 </TitleContainer>
                 <LogoAmazonContainer>

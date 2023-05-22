@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-const AmazonLogo = require('../../../src/assets/logos/amazon.png')
 
 export const MainContainer = styled.div`
     display: flex;
@@ -39,8 +38,8 @@ export const TitleContainer = styled.div`
     margin-right: 1rem;
     margin-top: 8rem;
     @media screen and (max-width: 600px) {
-        margin-top: 6rem;
-        min-width: 380px;
+        margin-top: 4rem;
+        min-width: 360px;
     }
 `
 
@@ -97,10 +96,10 @@ export const ButtonContainer = styled.div`
     display: flex;
     align-items: center;
     z-index: 444;
-    margin-top: 15rem;
+    margin-top: 20rem;
 
     @media screen and (max-width: 600px) {
-        margin-top: 15rem;
+        margin-top: 17rem;
         flex-direction: column;
     }
 `
@@ -112,11 +111,11 @@ export const SubTitleContainer = styled.div`
     margin-left: 1rem;
     margin-right: 1rem;
     z-index: 9999;
-    margin-top: 20rem;
-    min-width: 380px;
+    margin-top: 24rem;
+    min-width: 360px;
     border-bottom: 5px solid #ef9018;
     @media screen and (max-width: 600px) {
-        margin-top: 23rem;
+        margin-top: 25rem;
         flex-direction: column;
     }
 `
@@ -146,13 +145,13 @@ export const LogoAmazon = styled.img`
 export const LogoAmazonContainer = styled.div`
     display: flex;
     justify-content: center;
-    margin-top: 32rem;
+    margin-top: 34rem;
     background-size: cover;
     background-position: center;
     width: 100%;
     position: absolute;
     z-index: 999999999999999;
     @media screen and (max-width: 600px) {
-        margin-top: 37rem;
+        margin-top: 39rem;
     }
 `

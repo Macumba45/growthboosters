@@ -5,6 +5,7 @@ import ServicesComp from '../../componets/Services'
 import WorkWithUs from '../../componets/WorkWithUs'
 import ReviewWrapper from '../../componets/Reviews'
 import ContactoComp from '../../componets/Contacto'
+import WarrantyBanner from '../../componets/WarrantyBanner'
 import FacturacionesComp from '../../componets/Facturaciones'
 import PartnerBanner from '../../componets/PartnerBanner'
 import Footer from '../../componets/Footer'
@@ -24,6 +25,9 @@ const Landing: FC = () => {
             </AnimatedView>
             <AnimatedView>
                 <FacturacionesComp />
+            </AnimatedView>
+            <AnimatedView>
+                <WarrantyBanner />
             </AnimatedView>
             <AnimatedView>
                 <ReviewWrapper />
