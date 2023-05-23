@@ -1,9 +1,9 @@
 import { FC, memo } from 'react'
+import { MainContainer } from './style'
+import HoverMotion from '../../animations/hover'
 import { Button } from '@mui/material'
 import { Props } from './type'
 import { motion } from 'framer-motion'
-import HoverMotion from '../../animations/hover'
-import { MainContainer } from './style'
 
 const ButtonConsulta: FC<Props> = ({
     title,
@@ -13,6 +13,24 @@ const ButtonConsulta: FC<Props> = ({
     border,
     href,
 }) => {
+
+
+    const ButtonStyles = {
+        backgroundColor: bgColor || '#ef9018',
+        color: '#F7F7F7',
+        marginBottom: marginBottom || '1rem',
+        border: border,
+        fontSize: '1rem',
+        width: '280px',
+        zIndex: 9999,
+
+        opacity: 0,
+        '&:hover': {
+            backgroundColor: '#FF6600',
+        },
+    };
+
+
     return (
         <HoverMotion>
             <MainContainer>
@@ -27,20 +45,7 @@ const ButtonConsulta: FC<Props> = ({
                 >
                     <Button
                         target="blank"
-                        sx={{
-                            backgroundColor: bgColor || '#ef9018',
-                            color: '#F7F7F7',
-                            marginBottom: marginBottom || '1rem',
-                            border: border,
-                            fontSize: '1rem',
-                            width: '280px',
-                            zIndex: 9999,
-
-                            opacity: 0,
-                            '&:hover': {
-                                backgroundColor: '#FF6600',
-                            },
-                        }}
+                        style={ButtonStyles}
                         href={href}
                         variant="contained"
                         component={motion.a}

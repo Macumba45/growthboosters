@@ -11,12 +11,18 @@ import MenuIcon from '@mui/icons-material/Menu'
 import Container from '@mui/material/Container'
 import Button from '@mui/material/Button'
 import MenuItem from '@mui/material/MenuItem'
+import { useNavigate } from 'react-router-dom';
 import { ImgLogo, MainContainer } from './styles'
 
-const pages = ['¿Quienes somos?', '¿Qué ofrecemos?', 'Para particulares']
+const logo = require('../../assets/logos/3_PNG.png')
+
 
 const NavBarComp: FC = () => {
-    const logo = require('../../assets/logos/3_PNG.png')
+    const pages = [
+        { label: '¿Quienes somos?', route: '/QuienesSomos' },
+        { label: 'Para particulares', route: '/ParaParticulares' }
+    ];
+    const navigate = useNavigate();
     const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null)
 
     const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
@@ -112,12 +118,9 @@ const NavBarComp: FC = () => {
                                         }}
                                     >
                                         {pages.map((page) => (
-                                            <MenuItem
-                                                key={page}
-                                                onClick={handleCloseNavMenu}
-                                            >
+                                            <MenuItem key={page.label} onClick={() => navigate(page.route)}>
                                                 <Typography textAlign="center">
-                                                    {page}
+                                                    {page.label}
                                                 </Typography>
                                             </MenuItem>
                                         ))}
@@ -137,15 +140,13 @@ const NavBarComp: FC = () => {
                                 >
                                     {pages.map((page) => (
                                         <Button
-                                            key={page}
-                                            onClick={handleCloseNavMenu}
-                                            sx={{
-                                                my: 2,
+                                            key={page.label}
+                                            onClick={() => navigate(page.route)}
+                                            style={{
                                                 color: 'white',
-                                                display: 'block',
                                             }}
                                         >
-                                            {page}
+                                            {page.label}
                                         </Button>
                                     ))}
                                 </Box>

@@ -47,7 +47,7 @@ const HeaderComp: FC = () => {
                     <Video src={video} autoPlay loop muted playsInline />
                 </VideoContainer>
                 <ButtonContainer>
-                    <ButtonConsultoria title="Consultoría Gratuita" />
+                    <ButtonConsultoria href='https://calendly.com/agendagrowthboosters' title="Consultoría Gratuita" />
                     <ButtonContacto title="Contáctanos" />
                 </ButtonContainer>
                 <SubTitleContainer>

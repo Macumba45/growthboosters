@@ -1,7 +1,7 @@
 import { FC, memo, useEffect, useState } from 'react'
+import { MainContainer } from './styles'
 import ButtonConsultoria from '../ButtonConsultoria'
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth'
-import { MainContainer } from './styles'
 
 const BottomBar: FC = () => {
     const [isVisible, setIsVisible] = useState(false)

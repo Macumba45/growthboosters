@@ -1,11 +1,27 @@
 import { FC, memo } from 'react'
-import { Button } from '@mui/material'
-import { Props } from './type'
 import { Link } from 'react-scroll'
+import { Props } from './type'
 import HoverMotion from '../../animations/hover'
 import { motion } from 'framer-motion'
+import { Button } from '@mui/material'
+
 
 const ButtonContacto: FC<Props> = ({ title }) => {
+
+    const ButtonStyles = {
+        borderColor: '#FF9900',
+        color: '#FF9900',
+        marginBottom: '1rem',
+        marginRight: '1rem',
+        marginLeft: '1rem',
+        width: '280px',
+
+        '&:hover': {
+            borderColor: '#FF6600',
+        },
+    };
+
+
     return (
         <HoverMotion>
             <Link to="contacto" smooth={true}>
@@ -19,18 +35,7 @@ const ButtonContacto: FC<Props> = ({ title }) => {
                     }} // transición lenta
                 >
                     <Button
-                        sx={{
-                            borderColor: '#FF9900',
-                            color: '#FF9900',
-                            marginBottom: '1rem',
-                            marginRight: '1rem',
-                            marginLeft: '1rem',
-                            width: '280px',
-
-                            '&:hover': {
-                                borderColor: '#FF6600',
-                            },
-                        }}
+                        style={ButtonStyles}
                         variant="outlined"
                         component={motion.button}
                         animate={{ opacity: 1 }}

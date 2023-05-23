@@ -9,10 +9,12 @@ import WarrantyBanner from '../../componets/WarrantyBanner'
 import FacturacionesComp from '../../componets/Facturaciones'
 import PartnerBanner from '../../componets/PartnerBanner'
 import Footer from '../../componets/Footer'
+import { CssBaseline } from '@mui/material'
 
 const Landing: FC = () => {
     return (
         <>
+            <CssBaseline />
             <HeaderComp />
             <AnimatedView>
                 <PartnerBanner />

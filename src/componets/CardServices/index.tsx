@@ -20,7 +20,7 @@ const CardServices: FC<Props> = ({ title, img, description }) => {
         <HoverMotion>
             <MainContainer>
                 <Card
-                    sx={{
+                    style={{
                         width: 330,
                         marginBottom: '1rem',
                         marginLeft: '1rem',
@@ -28,14 +28,13 @@ const CardServices: FC<Props> = ({ title, img, description }) => {
                         display: 'flex',
                         justifyContent: 'center',
                         flexDirection: 'column',
-                        flexWrap: 'wrap',
                     }}
                 >
-                    <CardActionArea>
+                    <div>
                         <CardMedia component="img" height="180" image={img} />
                         <CardContent>
                             <Typography
-                                sx={{ height: '4rem', fontFamily: 'poppins' }}
+                                style={{ height: '4rem', fontFamily: 'poppins' }}
                                 gutterBottom
                                 variant="h5"
                                 component="div"
@@ -43,16 +42,16 @@ const CardServices: FC<Props> = ({ title, img, description }) => {
                                 {title}
                             </Typography>
                             <Typography
-                                sx={{ height: '15rem', fontFamily: 'poppins' }}
+                                style={{ height: '15rem', fontFamily: 'poppins' }}
                                 variant="body2"
                                 color="text.secondary"
                             >
                                 {description}
                             </Typography>
                         </CardContent>
-                    </CardActionArea>
+                    </div>
                     <CardActions
-                        sx={{
+                        style={{
                             height: '3rem',
                             display: 'flex',
                             justifyContent: 'center',

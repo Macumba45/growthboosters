@@ -1,10 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
+import { StylesProvider } from '@mui/styles';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
-    <React.StrictMode>
+    <StylesProvider injectFirst>
         <App />
-    </React.StrictMode>
+    </StylesProvider>
 )

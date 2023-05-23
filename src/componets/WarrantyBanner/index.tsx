@@ -36,7 +36,7 @@ const WarrantyBanner: FC = () => {
                     Estamos tan seguros de la calidad y eficacia de nuestro
                     servicio que si en el primer mes no ves resultados.
                     <SpanBold>
-                        {<br />} EL SIGUIENTE TRABAJAMOS GRATIS PARA TÍ,{<br />} SÍ GRATIS. No pagas.
+                        {<br />} EL SIGUIENTE TRABAJAMOS GRATIS PARA TÍ.{<br />} SÍ GRATIS. No pagas.
                     </SpanBold>
                 </SubSubTitleServices>
             </SubSubTitleContainer>
