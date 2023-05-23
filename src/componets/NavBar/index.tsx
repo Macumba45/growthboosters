@@ -62,100 +62,100 @@ const NavBarComp: FC = () => {
     }
 
     return (
-        <AnimatePresence>
-            <motion.div
-                initial="hidden"
-                animate={inView ? 'visible' : 'hidden'}
-                exit="exit"
-                variants={containerVariants}
-                ref={ref}
+        // <AnimatePresence>
+        //     <motion.div
+        //         initial="hidden"
+        //         animate={inView ? 'visible' : 'hidden'}
+        //         exit="exit"
+        //         variants={containerVariants}
+        //         ref={ref}
+        //     >
+        <MainContainer>
+            <AppBar
+                style={{
+                    backgroundColor: 'transparent',
+                    boxShadow: 'none',
+                }}
+                position="static"
             >
-                <MainContainer>
-                    <AppBar
-                        sx={{
-                            backgroundColor: 'transparent',
-                            boxShadow: 'none',
-                        }}
-                        position="static"
-                    >
-                        <Container maxWidth="xl">
-                            <Toolbar disableGutters>
-                                <Box
-                                    sx={{
-                                        flexGrow: 1,
-                                        display: { xs: 'flex', md: 'none' },
-                                    }}
-                                >
-                                    <IconButton
-                                        size="large"
-                                        aria-label="account of current user"
-                                        aria-controls="menu-appbar"
-                                        aria-haspopup="true"
-                                        onClick={handleOpenNavMenu}
-                                        color="inherit"
-                                    >
-                                        <MenuIcon />
-                                    </IconButton>
-                                    <Menu
-                                        id="menu-appbar"
-                                        anchorEl={anchorElNav}
-                                        anchorOrigin={{
-                                            vertical: 'bottom',
-                                            horizontal: 'left',
-                                        }}
-                                        keepMounted
-                                        transformOrigin={{
-                                            vertical: 'top',
-                                            horizontal: 'left',
-                                        }}
-                                        open={Boolean(anchorElNav)}
-                                        onClose={handleCloseNavMenu}
-                                        sx={{
-                                            display: {
-                                                xs: 'block',
-                                                md: 'none',
-                                            },
-                                        }}
-                                    >
-                                        {pages.map((page) => (
-                                            <MenuItem key={page.label} onClick={() => navigate(page.route)}>
-                                                <Typography textAlign="center">
-                                                    {page.label}
-                                                </Typography>
-                                            </MenuItem>
-                                        ))}
-                                    </Menu>
-                                </Box>
-                                <a href="/">
-                                    <ImgLogo src={logo} alt="Logo" />
-                                </a>
-                                {/* <ImgLogoMobile
+                <Container maxWidth="xl">
+                    <Toolbar disableGutters>
+                        <Box
+                            sx={{
+                                flexGrow: 1,
+                                display: { xs: 'flex', md: 'none' },
+                            }}
+                        >
+                            <IconButton
+                                size="large"
+                                aria-label="account of current user"
+                                aria-controls="menu-appbar"
+                                aria-haspopup="true"
+                                onClick={handleOpenNavMenu}
+                                color="inherit"
+                            >
+                                <MenuIcon />
+                            </IconButton>
+                            <Menu
+                                id="menu-appbar"
+                                anchorEl={anchorElNav}
+                                anchorOrigin={{
+                                    vertical: 'bottom',
+                                    horizontal: 'left',
+                                }}
+                                keepMounted
+                                transformOrigin={{
+                                    vertical: 'top',
+                                    horizontal: 'left',
+                                }}
+                                open={Boolean(anchorElNav)}
+                                onClose={handleCloseNavMenu}
+                                sx={{
+                                    display: {
+                                        xs: 'block',
+                                        md: 'none',
+                                    },
+                                }}
+                            >
+                                {pages.map((page) => (
+                                    <MenuItem style={{ display: 'flex', flexDirection: 'column', paddingLeft: '1rem', paddingRight: '1rem' }} key={page.label} onClick={() => navigate(page.route)}>
+                                        <Typography textAlign="center">
+                                            {page.label}
+                                        </Typography>
+                                    </MenuItem>
+                                ))}
+                            </Menu>
+                        </Box>
+                        <a href="/">
+                            <ImgLogo src={logo} alt="Logo" />
+                        </a>
+                        {/* <ImgLogoMobile
                                     src={logo}
                                 /> */}
-                                <Box
-                                    sx={{
-                                        flexGrow: 1,
-                                        display: { xs: 'none', md: 'flex' },
+                        <Box
+                            sx={{
+                                flexGrow: 1,
+                                display: { xs: 'none', md: 'flex' },
+                            }}
+                        >
+                            {pages.map((page) => (
+                                <Button
+                                    key={page.label}
+                                    onClick={() => navigate(page.route)}
+                                    style={{
+                                        color: 'white',
                                     }}
                                 >
-                                    {pages.map((page) => (
-                                        <Button
-                                            key={page.label}
-                                            onClick={() => navigate(page.route)}
-                                            style={{
-                                                color: 'white',
-                                            }}
-                                        >
-                                            {page.label}
-                                        </Button>
-                                    ))}
-                                </Box>
-                            </Toolbar>
-                        </Container>
-                    </AppBar>
-                </MainContainer>
-            </motion.div>
-        </AnimatePresence>
+                                    {page.label}
+                                </Button>
+                            ))}
+                        </Box>
+                    </Toolbar>
+                </Container>
+            </AppBar>
+        </MainContainer>
+        //     </motion.div>
+        // </AnimatePresence>
     )
 }
 export default memo(NavBarComp)
