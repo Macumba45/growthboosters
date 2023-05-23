@@ -1,7 +1,8 @@
 import { FC, memo } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Landing from '../views/Landing/landing'
-import QuienesSomos from '../views/QuienesSomos/quienesSomos'
+import Landing from '../views/Landing'
+import QuienesSomos from '../views/QuienesSomos'
+import ParaParticulares from '../views/Particulares'
 
 const Router: FC = () => {
     return (
@@ -9,6 +10,8 @@ const Router: FC = () => {
             <Routes>
                 <Route path="/" element={<Landing />} />
                 <Route path="/QuienesSomos" element={<QuienesSomos />} />
+                <Route path="/ParaParticulares" element={<ParaParticulares />} />
+
             </Routes>
         </BrowserRouter>
     )
