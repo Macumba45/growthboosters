@@ -29,7 +29,7 @@ export const TextHeader = styled.h1`
     font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.secondary};
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 2rem;
     line-height: 3rem;
     width: 600px;
@@ -43,7 +43,7 @@ export const ContainerSubText = styled.h3`
     font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.primary};
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 2rem;
     line-height: 2rem;
 
@@ -58,7 +58,7 @@ export const ContainerSubSubText = styled.p`
     font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.primary};
     font-size: 1rem;
-    font-weight: 200;
+    font-weight: 500;
     margin-bottom: 2rem;
     width: 600px;
     line-height: 2rem;
@@ -110,7 +110,7 @@ export const TextHeaderHacemos = styled.h1`
     font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.primary};
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 2rem;
     line-height: 3rem;
     width: 600px;
@@ -126,7 +126,7 @@ export const ContainerSubTextHacemos = styled.h3`
     font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.primaryLight};
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 2rem;
     line-height: 2rem;
 
@@ -142,7 +142,7 @@ export const ContainerSubSubTextHacemos = styled.p`
     text-align: right;
     color: ${({ theme }) => theme.colors.primaryLight};
     font-size: 1rem;
-    font-weight: 200;
+    font-weight: 500;
     margin-bottom: 2rem;
     width: 600px;
     line-height: 2rem;

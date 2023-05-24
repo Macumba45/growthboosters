@@ -2,7 +2,7 @@ const theme = {
     colors: {
         primary: '#ef9018', // naranja
         primaryLight: '#F7F7F7', // un tono de gris claro
-        secondary: '#232F3E', // un tono de azul oscuro
+        secondary: '#001236', // un tono de azul oscuro
         tertiary: '#FFFFFF', // blanco
         success: '#008000', // verde oscuro
         danger: '#FF0000', // rojo
