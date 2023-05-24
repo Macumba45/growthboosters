@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const MainContainer = styled.div`
     width: 100%;
     @media screen and (max-width: 600px) {
-        height: 1400px;
     }
 `
 
@@ -12,7 +11,12 @@ export const ContainerQuienes = styled.div`
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: ${({ theme }) => theme.colors.primary};
+    background-color: ${({ theme }) => theme.colors.primaryLight};
+    @media screen and (max-width: 600px) {
+        height: 1800px;
+
+
+    }
 
 `
 
@@ -34,16 +38,16 @@ export const TextHeader = styled.h1`
     width: 600px;
     @media screen and (max-width: 600px) {
         width: 330px;
+        flex-direction: column;
+
     }
 
-    @media screen and (max-width: 600px) {
-        flex-direction: column;
-    }
+    
 `
 
 export const ContainerSubText = styled.h3`
     font-family: ${({ theme }) => theme.fonts.poppins};
-    color: ${({ theme }) => theme.colors.primaryLight};
+    color: ${({ theme }) => theme.colors.primary};
     font-size: 1rem;
     font-weight: 400;
     margin-bottom: 2rem;
@@ -58,7 +62,7 @@ export const ContainerSubText = styled.h3`
 `
 export const ContainerSubSubText = styled.p`
     font-family: ${({ theme }) => theme.fonts.poppins};
-    color: ${({ theme }) => theme.colors.primaryLight};
+    color: ${({ theme }) => theme.colors.primary};
     font-size: 1rem;
     font-weight: 200;
     margin-bottom: 2rem;
@@ -94,6 +98,12 @@ export const ContainerHacemos = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     background-color: ${({ theme }) => theme.colors.secondary};
+    @media screen and (max-width: 600px) {
+        height: 1800px;
+
+
+    }
+
 
 `
 
@@ -157,6 +167,7 @@ export const ContainerImageHacemos = styled.div`
     display: flex;
     justify-content: left;
     align-items: center;
+    margin-top: 5rem;
     width: 50%;
     @media screen and (max-width: 600px) {
         justify-content: center;
