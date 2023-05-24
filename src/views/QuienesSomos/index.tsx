@@ -6,15 +6,23 @@ import QuienesSomosContent from '../../componets/QuienesSomosContent'
 import PageTransition from '../../animations'
 import FloatHomeButton from '../../componets/FloatHomeButton'
 import ConsultaQuienesSomos from '../../componets/ConsultaQuienesSomos'
+import AnimatedView from '../../animations/AnimatedContainer'
+
 
 const QuienesSomos: FC = () => {
     return (
         <PageTransition>
             <NavBar />
             <FloatHomeButton />
-            <HeaderQuienesSomos />
-            <QuienesSomosContent />
-            <ConsultaQuienesSomos />
+            <AnimatedView>
+                <HeaderQuienesSomos />
+            </AnimatedView>
+            <AnimatedView>
+                <QuienesSomosContent />
+            </AnimatedView>
+            <AnimatedView>
+                <ConsultaQuienesSomos />
+            </AnimatedView>
             <Footer />
         </PageTransition>
     )
