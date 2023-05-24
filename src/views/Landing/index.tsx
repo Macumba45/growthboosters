@@ -10,11 +10,11 @@ import FacturacionesComp from '../../componets/Facturaciones'
 import PartnerBanner from '../../componets/PartnerBanner'
 import Footer from '../../componets/Footer'
 import { CssBaseline } from '@mui/material'
+import PageTransition from '../../animations'
 
 const Landing: FC = () => {
     return (
-        <>
-            <CssBaseline />
+        <PageTransition>
             <HeaderComp />
             <AnimatedView>
                 <PartnerBanner />
@@ -38,7 +38,7 @@ const Landing: FC = () => {
                 <ContactoComp />
             </AnimatedView>
             <Footer />
-        </>
+        </PageTransition>
     )
 }
 

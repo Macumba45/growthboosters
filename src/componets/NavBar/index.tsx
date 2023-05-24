@@ -14,6 +14,7 @@ import MenuItem from '@mui/material/MenuItem'
 import { useNavigate } from 'react-router-dom'
 import ButtonConsulta from '../ButtonConsultoria'
 import { ImgLogo, MainContainer } from './styles'
+import HoverMotion from '../../animations/hover'
 
 const logo = require('../../assets/logos/3_PNG.png')
 
@@ -36,6 +37,20 @@ const NavBarComp: FC = () => {
         threshold: 0.1,
         triggerOnce: true,
     })
+
+    const ButtonStyles = {
+        backgroundColor: '#ef9018',
+        color: '#F7F7F7',
+        marginBottom: '1rem',
+        fontSize: '0.5rem',
+        width: '100%',
+        zIndex: 9999,
+
+        opacity: 0,
+        '&:hover': {
+            backgroundColor: '#FF6600',
+        },
+    }
 
     const containerVariants = {
         hidden: {
@@ -117,6 +132,13 @@ const NavBarComp: FC = () => {
                                     },
                                 }}
                             >
+                                {window.location.pathname ===
+                                    '/QuienesSomos' && (
+                                    <ButtonConsulta
+                                        style={ButtonStyles}
+                                        title="Agendar Consultoría"
+                                    />
+                                )}
                                 {pages.map((page) => (
                                     <MenuItem
                                         style={{
@@ -128,13 +150,19 @@ const NavBarComp: FC = () => {
                                         key={page.label}
                                         onClick={() => navigate(page.route)}
                                     >
-                                        <Typography textAlign="center">
-                                            {page.label}
-                                        </Typography>
+                                        <HoverMotion key={page.label}>
+                                            <Typography
+                                                key={page.label}
+                                                textAlign="center"
+                                            >
+                                                {page.label}
+                                            </Typography>
+                                        </HoverMotion>
                                     </MenuItem>
                                 ))}
                             </Menu>
                         </Box>
+
                         <a href="/">
                             <ImgLogo src={logo} alt="Logo" />
                         </a>
@@ -148,20 +176,19 @@ const NavBarComp: FC = () => {
                             }}
                         >
                             {pages.map((page) => (
-                                <Button
-                                    key={page.label}
-                                    onClick={() => navigate(page.route)}
-                                    style={{
-                                        color: 'white',
-                                    }}
-                                >
-                                    {page.label}
-                                </Button>
+                                <HoverMotion key={page.label}>
+                                    <Button
+                                        key={page.label}
+                                        onClick={() => navigate(page.route)}
+                                        style={{
+                                            color: 'white',
+                                        }}
+                                    >
+                                        {page.label}
+                                    </Button>
+                                </HoverMotion>
                             ))}
                         </Box>
-                        {window.location.pathname === '/QuienesSomos' && (
-                            <ButtonConsulta title="Agendar Consultoría" />
-                        )}
                     </Toolbar>
                 </Container>
             </AppBar>

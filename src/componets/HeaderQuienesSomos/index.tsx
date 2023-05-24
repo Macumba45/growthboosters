@@ -50,6 +50,7 @@ const HeaderQuienesSomos: FC = () => {
                         <motion.span variants={letterVariants}>r</motion.span>
                         <motion.span variants={letterVariants}>e</motion.span>
                         <motion.span variants={letterVariants}> </motion.span>
+                        {<br />}
                         <motion.span variants={letterVariants}>
                             <SpanBold>G</SpanBold>
                         </motion.span>

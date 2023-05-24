@@ -22,21 +22,32 @@ export const TextHeader = styled.h1`
     color: ${({ theme }) => theme.colors.primaryLight};
     font-size: ${({ theme }) => theme.fontSizes.mediumBig};
     text-align: center;
+    @media screen and (max-width: 600px) {
+        font-size: 3rem;
+    }
 `
 
 export const ContainerImage = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    bottom: 20px;
 `
 
 export const ImageLogo = styled.img`
-    width: 30rem;
+    width: 20rem;
+    @media screen and (max-width: 600px) {
+        width: 15rem;
+    }
 `
 
 export const SpanBold = styled.span`
     font-family: ${({ theme }) => theme.fonts.poppins};
+    font-size: 6rem;
+    line-height: 8rem;
     color: ${({ theme }) => theme.colors.primaryLight};
     font-weight: 800;
     text-decoration: underline;
+    @media screen and (max-width: 600px) {
+        font-size: 2.5rem;
+        line-height: 5rem;
+    }
 `

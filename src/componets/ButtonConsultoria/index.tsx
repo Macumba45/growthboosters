@@ -43,7 +43,7 @@ const ButtonConsulta: FC<Props> = ({
                 >
                     <Button
                         target="blank"
-                        style={ButtonStyles}
+                        style={style || ButtonStyles}
                         href={href}
                         variant="contained"
                         component={motion.a}
