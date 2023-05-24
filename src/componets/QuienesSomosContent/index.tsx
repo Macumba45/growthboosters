@@ -1,13 +1,19 @@
 import { FC, memo } from 'react'
 import {
+    ContainerHacemos,
     ContainerImage,
+    ContainerImageHacemos,
     ContainerQuienes,
     ContainerSubSubText,
+    ContainerSubSubTextHacemos,
     ContainerSubText,
+    ContainerSubTextHacemos,
     ContainerText,
+    ContainerTextHacemos,
     ImageLogo,
     MainContainer,
     TextHeader,
+    TextHeaderHacemos,
 } from './styles'
 
 const QuienesSomosContent: FC = () => {
@@ -41,6 +47,30 @@ const QuienesSomosContent: FC = () => {
                     <ImageLogo src={logo} />
                 </ContainerImage>
             </ContainerQuienes>
+            <ContainerHacemos>
+                <ContainerImageHacemos>
+                    <ImageLogo src={logo} />
+                </ContainerImageHacemos>
+                <ContainerTextHacemos>
+                    <TextHeaderHacemos>
+                        Expertos en Consultoría y Gestión de Amazon Marketplace
+                        para empresas y particulares Nuestro equipo de expertos
+                        en comercio electrónico está comprometido a maximizar su
+                        presencia en Amazon, aumentar sus ventas y mejorar su
+                        visibilidad en línea.
+                    </TextHeaderHacemos>
+                    <ContainerSubTextHacemos>
+                        Trabajamos en estrecha colaboración con nuestros
+                        clientes para asegurarnos de que sus objetivos se
+                        cumplan de manera eficiente y efectiva.
+                    </ContainerSubTextHacemos>
+                    <ContainerSubSubTextHacemos>
+                        Ofrecemos un servicio personalizado, adaptándonos a las
+                        necesidades específicas de cada empresa, para que puedan
+                        obtener los mejores resultados en Amazon.
+                    </ContainerSubSubTextHacemos>
+                </ContainerTextHacemos>
+            </ContainerHacemos>
         </MainContainer>
     )
 }

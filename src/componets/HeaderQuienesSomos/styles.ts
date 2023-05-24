@@ -5,7 +5,7 @@ export const MainContainer = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: black;
+    background-color: ${({ theme }) => theme.colors.secondary};
     width: 100%;
     height: 100vh;
 `
@@ -27,13 +27,10 @@ export const TextHeader = styled.h1`
     }
 `
 
-export const ContainerImage = styled.div`
-    position: absolute;
-    bottom: 20px;
-`
+export const ContainerImage = styled.div``
 
 export const ImageLogo = styled.img`
-    width: 20rem;
+    width: 40rem;
     @media screen and (max-width: 600px) {
         width: 15rem;
     }
@@ -45,7 +42,6 @@ export const SpanBold = styled.span`
     line-height: 8rem;
     color: ${({ theme }) => theme.colors.primaryLight};
     font-weight: 800;
-    text-decoration: underline;
     @media screen and (max-width: 600px) {
         font-size: 2.5rem;
         line-height: 5rem;

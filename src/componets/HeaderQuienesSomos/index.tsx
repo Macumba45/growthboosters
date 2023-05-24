@@ -44,51 +44,32 @@ const HeaderQuienesSomos: FC = () => {
                     animate="visible"
                 >
                     <TextHeader>
-                        <motion.span variants={letterVariants}>S</motion.span>
-                        <motion.span variants={letterVariants}>o</motion.span>
-                        <motion.span variants={letterVariants}>b</motion.span>
-                        <motion.span variants={letterVariants}>r</motion.span>
-                        <motion.span variants={letterVariants}>e</motion.span>
-                        <motion.span variants={letterVariants}> </motion.span>
-                        {<br />}
                         <motion.span variants={letterVariants}>
-                            <SpanBold>G</SpanBold>
+                            <SpanBold>M</SpanBold>
                         </motion.span>
                         <motion.span variants={letterVariants}>
-                            <SpanBold>r</SpanBold>
-                        </motion.span>
-                        <motion.span variants={letterVariants}>
-                            <SpanBold>o</SpanBold>
-                        </motion.span>
-                        <motion.span variants={letterVariants}>
-                            <SpanBold>w</SpanBold>
-                        </motion.span>
-                        <motion.span variants={letterVariants}>
-                            <SpanBold>t</SpanBold>
-                        </motion.span>
-                        <motion.span variants={letterVariants}>
-                            <SpanBold>h</SpanBold>
-                        </motion.span>
-                        <motion.span variants={letterVariants}>
-                            <SpanBold>b</SpanBold>
-                        </motion.span>
-                        <motion.span variants={letterVariants}>
-                            <SpanBold>o</SpanBold>
-                        </motion.span>
-                        <motion.span variants={letterVariants}>
-                            <SpanBold>o</SpanBold>
+                            <SpanBold>á</SpanBold>
                         </motion.span>
                         <motion.span variants={letterVariants}>
                             <SpanBold>s</SpanBold>
                         </motion.span>
                         <motion.span variants={letterVariants}>
-                            <SpanBold>t</SpanBold>
+                            <SpanBold> </SpanBold>
                         </motion.span>
                         <motion.span variants={letterVariants}>
-                            <SpanBold>e</SpanBold>
+                            <SpanBold>S</SpanBold>
+                        </motion.span>
+                        <motion.span variants={letterVariants}>
+                            <SpanBold>o</SpanBold>
+                        </motion.span>
+                        <motion.span variants={letterVariants}>
+                            <SpanBold>b</SpanBold>
                         </motion.span>
                         <motion.span variants={letterVariants}>
                             <SpanBold>r</SpanBold>
+                        </motion.span>
+                        <motion.span variants={letterVariants}>
+                            <SpanBold>e</SpanBold>
                         </motion.span>
                     </TextHeader>
                 </motion.div>
