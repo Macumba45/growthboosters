@@ -71,7 +71,6 @@ export const SubTitleContainer = styled.div`
     z-index: 9999;
     @media screen and (max-width: 600px) {
         width: 330px;
-
     }
 `
 
@@ -110,7 +109,6 @@ export const SubTitleServices = styled.h2`
     @media screen and (max-width: 600px) {
         font-size: 1.2rem;
         line-height: 2rem;
-
     }
 `
 
@@ -124,11 +122,8 @@ export const SubSubTitleServices = styled.p`
     @media screen and (max-width: 600px) {
         font-size: 1.5rem;
         line-height: 2rem;
-
-
     }
 `
-
 
 export const SubSubSubTitleServices = styled.p`
     font-family: ${({ theme }) => theme.fonts.poppins};
@@ -139,7 +134,6 @@ export const SubSubSubTitleServices = styled.p`
 
     @media screen and (max-width: 600px) {
         font-size: 1rem;
-
     }
 `
 

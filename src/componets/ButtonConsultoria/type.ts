@@ -5,4 +5,5 @@ export type Props = {
     marginBottom?: string | undefined
     border?: string | undefined
     href?: string | undefined
+    style?: React.CSSProperties
 }

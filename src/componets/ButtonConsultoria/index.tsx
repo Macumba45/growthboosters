@@ -12,9 +12,8 @@ const ButtonConsulta: FC<Props> = ({
     marginBottom,
     border,
     href,
+    style,
 }) => {
-
-
     const ButtonStyles = {
         backgroundColor: bgColor || '#ef9018',
         color: '#F7F7F7',
@@ -28,8 +27,7 @@ const ButtonConsulta: FC<Props> = ({
         '&:hover': {
             backgroundColor: '#FF6600',
         },
-    };
-
+    }
 
     return (
         <HoverMotion>

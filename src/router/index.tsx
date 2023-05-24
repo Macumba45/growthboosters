@@ -10,8 +10,10 @@ const Router: FC = () => {
             <Routes>
                 <Route path="/" element={<Landing />} />
                 <Route path="/QuienesSomos" element={<QuienesSomos />} />
-                <Route path="/ParaParticulares" element={<ParaParticulares />} />
-
+                <Route
+                    path="/ParaParticulares"
+                    element={<ParaParticulares />}
+                />
             </Routes>
         </BrowserRouter>
     )

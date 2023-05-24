@@ -5,9 +5,7 @@ import HoverMotion from '../../animations/hover'
 import { motion } from 'framer-motion'
 import { Button } from '@mui/material'
 
-
 const ButtonContacto: FC<Props> = ({ title }) => {
-
     const ButtonStyles = {
         borderColor: '#FF9900',
         color: '#FF9900',
@@ -19,8 +17,7 @@ const ButtonContacto: FC<Props> = ({ title }) => {
         '&:hover': {
             borderColor: '#FF6600',
         },
-    };
-
+    }
 
     return (
         <HoverMotion>

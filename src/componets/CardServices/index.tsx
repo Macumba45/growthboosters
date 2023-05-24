@@ -3,7 +3,7 @@ import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
-import { CardActionArea, CardActions } from '@mui/material'
+import { CardActions } from '@mui/material'
 import ButtonConsultoria from '../ButtonConsultoria'
 import { Props } from './type'
 import { MainContainer } from './styles'
@@ -34,7 +34,10 @@ const CardServices: FC<Props> = ({ title, img, description }) => {
                         <CardMedia component="img" height="180" image={img} />
                         <CardContent>
                             <Typography
-                                style={{ height: '4rem', fontFamily: 'poppins' }}
+                                style={{
+                                    height: '4rem',
+                                    fontFamily: 'poppins',
+                                }}
                                 gutterBottom
                                 variant="h5"
                                 component="div"
@@ -42,7 +45,10 @@ const CardServices: FC<Props> = ({ title, img, description }) => {
                                 {title}
                             </Typography>
                             <Typography
-                                style={{ height: '15rem', fontFamily: 'poppins' }}
+                                style={{
+                                    height: '15rem',
+                                    fontFamily: 'poppins',
+                                }}
                                 variant="body2"
                                 color="text.secondary"
                             >

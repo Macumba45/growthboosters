@@ -11,18 +11,18 @@ import MenuIcon from '@mui/icons-material/Menu'
 import Container from '@mui/material/Container'
 import Button from '@mui/material/Button'
 import MenuItem from '@mui/material/MenuItem'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'
+import ButtonConsulta from '../ButtonConsultoria'
 import { ImgLogo, MainContainer } from './styles'
 
 const logo = require('../../assets/logos/3_PNG.png')
 
-
 const NavBarComp: FC = () => {
     const pages = [
         { label: '¿Quienes somos?', route: '/QuienesSomos' },
-        { label: 'Para particulares', route: '/ParaParticulares' }
-    ];
-    const navigate = useNavigate();
+        { label: 'Para particulares', route: '/ParaParticulares' },
+    ]
+    const navigate = useNavigate()
     const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null)
 
     const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
@@ -118,7 +118,16 @@ const NavBarComp: FC = () => {
                                 }}
                             >
                                 {pages.map((page) => (
-                                    <MenuItem style={{ display: 'flex', flexDirection: 'column', paddingLeft: '1rem', paddingRight: '1rem' }} key={page.label} onClick={() => navigate(page.route)}>
+                                    <MenuItem
+                                        style={{
+                                            display: 'flex',
+                                            flexDirection: 'column',
+                                            paddingLeft: '1rem',
+                                            paddingRight: '1rem',
+                                        }}
+                                        key={page.label}
+                                        onClick={() => navigate(page.route)}
+                                    >
                                         <Typography textAlign="center">
                                             {page.label}
                                         </Typography>
@@ -150,6 +159,9 @@ const NavBarComp: FC = () => {
                                 </Button>
                             ))}
                         </Box>
+                        {window.location.pathname === '/QuienesSomos' && (
+                            <ButtonConsulta title="Agendar Consultoría" />
+                        )}
                     </Toolbar>
                 </Container>
             </AppBar>
