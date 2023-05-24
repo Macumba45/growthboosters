@@ -5,6 +5,7 @@ import HeaderQuienesSomos from '../../componets/HeaderQuienesSomos'
 import QuienesSomosContent from '../../componets/QuienesSomosContent'
 import PageTransition from '../../animations'
 import FloatHomeButton from '../../componets/FloatHomeButton'
+import ConsultaQuienesSomos from '../../componets/ConsultaQuienesSomos'
 
 const QuienesSomos: FC = () => {
     return (
@@ -13,6 +14,7 @@ const QuienesSomos: FC = () => {
             <FloatHomeButton />
             <HeaderQuienesSomos />
             <QuienesSomosContent />
+            <ConsultaQuienesSomos />
             <Footer />
         </PageTransition>
     )

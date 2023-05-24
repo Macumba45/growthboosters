@@ -14,10 +14,7 @@ export const ContainerQuienes = styled.div`
     background-color: ${({ theme }) => theme.colors.primaryLight};
     @media screen and (max-width: 600px) {
         height: 1800px;
-
-
     }
-
 `
 
 export const ContainerText = styled.div`
@@ -39,10 +36,7 @@ export const TextHeader = styled.h1`
     @media screen and (max-width: 600px) {
         width: 330px;
         flex-direction: column;
-
     }
-
-    
 `
 
 export const ContainerSubText = styled.h3`
@@ -100,11 +94,7 @@ export const ContainerHacemos = styled.div`
     background-color: ${({ theme }) => theme.colors.secondary};
     @media screen and (max-width: 600px) {
         height: 1800px;
-
-
     }
-
-
 `
 
 export const ContainerTextHacemos = styled.div`

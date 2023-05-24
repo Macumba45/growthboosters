@@ -25,7 +25,7 @@ import {
     DialogActions,
 } from '@material-ui/core'
 
-const ContactoComp: FC = () => {
+const ConsultaQuienesSomos: FC = () => {
     const options = [
         { value: 'Facebook', label: 'Facebook' },
         { value: 'Instagram', label: 'Instagram' },
@@ -221,4 +221,4 @@ const ContactoComp: FC = () => {
     )
 }
 
-export default memo(ContactoComp)
+export default memo(ConsultaQuienesSomos)
