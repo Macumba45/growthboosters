@@ -23,7 +23,6 @@ const CompaniesBanner: FC = () => {
     const miravia = require('../../assets/logosCompanies/miravia.png');
     const privalia = require('../../assets/logosCompanies/privalia.png');
     const zalando = require('../../assets/logosCompanies/zalando.png');
-
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
@@ -62,6 +61,9 @@ const CompaniesBanner: FC = () => {
         },
         {
             src: zalando,
+        },
+        {
+            src: miravia,
         },
     ];
 
