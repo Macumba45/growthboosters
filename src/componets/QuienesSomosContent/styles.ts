@@ -25,7 +25,24 @@ export const ContainerText = styled.div`
     margin-top: 5rem;
 `
 
-export const TextHeader = styled.h1`
+
+export const TextHeaderTitle = styled.h1`
+    font-family: ${({ theme }) => theme.fonts.poppins};
+    color: ${({ theme }) => theme.colors.primary};
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    line-height: 3rem;
+    width: 600px;
+    @media screen and (max-width: 600px) {
+        width: 330px;
+        flex-direction: column;
+    }
+`
+
+
+
+export const TextHeader = styled.h2`
     font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.secondary};
     font-size: 2rem;
@@ -105,7 +122,7 @@ export const ContainerTextHacemos = styled.div`
     margin-top: 5rem;
 `
 
-export const TextHeaderHacemos = styled.h1`
+export const TextHeaderHacemos = styled.h2`
     text-align: right;
     font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.primary};
@@ -161,5 +178,20 @@ export const ContainerImageHacemos = styled.div`
     width: 50%;
     @media screen and (max-width: 600px) {
         justify-content: center;
+    }
+`
+
+export const TextHeaderTitleHacemos = styled.h1`
+    font-family: ${({ theme }) => theme.fonts.poppins};
+    color: ${({ theme }) => theme.colors.primaryLight};
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    line-height: 3rem;
+    width: 600px;
+    text-align: right;
+    @media screen and (max-width: 600px) {
+        width: 330px;
+        flex-direction: column;
     }
 `
