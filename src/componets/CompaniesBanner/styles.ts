@@ -3,10 +3,11 @@ import styled from 'styled-components'
 export const MainContainer = styled.div`
 
 background-color: ${({ theme }) => theme.colors.primaryLight};
-height: 700px;
+height: 500px;
 width: 100%;
 display: flex;
 justify-content: center;
+align-items: center;
 flex-direction: column;
 `
 
@@ -42,7 +43,6 @@ export const PartnerPics = styled.img`
 
 export const TitleContainer = styled.div`
     display: flex;
-    height: 310px;
     align-items: center;
     justify-content: center;
     text-align: center;

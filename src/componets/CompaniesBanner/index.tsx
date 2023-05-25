@@ -71,7 +71,7 @@ const CompaniesBanner: FC = () => {
     return (
         <MainContainer>
             <TitleContainer>
-                <TitleServices>NUESTROS PARTNERS</TitleServices>
+                <TitleServices>NUESTRAS COMPAÑIAS</TitleServices>
             </TitleContainer>
             {isMobile ? (
 
