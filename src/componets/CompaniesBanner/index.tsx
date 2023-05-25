@@ -73,14 +73,15 @@ const CompaniesBanner: FC = () => {
             <TitleContainer>
                 <TitleServices>NUESTRAS COMPAÑIAS</TitleServices>
             </TitleContainer>
-            {isMobile ? (
 
+            {isMobile ? (
                 <Carousel
+                    IndicatorIcon={null}
                     interval={5000}
                     index={2}
-                    animation={'slide'}
+                    animation={'fade'}
                     swipe={false}
-                    sx={{ width: '360px', display: 'flex', flexDirection: 'column', justifyContent: 'center', margin: '0 auto' }}
+                    sx={{ width: '100%', marginBottom: '2rem', height: '300px', display: 'flex', flexDirection: 'column', justifyContent: 'center', margin: '0 auto', alignItems: 'center' }}
 
                 >
 
@@ -116,8 +117,8 @@ const CompaniesBanner: FC = () => {
                         </ContainerPics>
                     ))}
                 </Carousel>
-            )
-            }
+
+            )}
         </MainContainer >
     );
 };
