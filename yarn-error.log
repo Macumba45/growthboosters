@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/gonzalolobo/.nvm/versions/node/v16.19.0/bin/node /Users/gonzalolobo/.nvm/versions/node/v16.19.0/bin/yarn add emotion-Cache
+  /Users/gonzalolobo/.nvm/versions/node/v16.19.0/bin/node /Users/gonzalolobo/.nvm/versions/node/v16.19.0/bin/yarn add React-Carousel-Slider
 
 PATH: 
   /Users/gonzalolobo/.nvm/versions/node/v16.19.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/gonzalolobo/.nvm/versions/node/v16.19.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin
@@ -14,7 +14,7 @@ Platform:
   darwin arm64
 
 Trace: 
-  Error: https://registry.npmjs.org/emotion-Cache: Not found
+  Error: https://registry.npmjs.org/React-Carousel-Slider: Not found
       at Request.params.callback [as _callback] (/Users/gonzalolobo/.nvm/versions/node/v16.19.0/lib/node_modules/yarn/lib/cli.js:66145:18)
       at Request.self.callback (/Users/gonzalolobo/.nvm/versions/node/v16.19.0/lib/node_modules/yarn/lib/cli.js:140890:22)
       at Request.emit (node:events:513:28)

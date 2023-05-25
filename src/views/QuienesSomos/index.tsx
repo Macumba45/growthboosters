@@ -14,9 +14,7 @@ const QuienesSomos: FC = () => {
         <PageTransition>
             <NavBar />
             <FloatHomeButton />
-            <AnimatedView>
-                <HeaderQuienesSomos />
-            </AnimatedView>
+            <HeaderQuienesSomos />
             <AnimatedView>
                 <QuienesSomosContent />
             </AnimatedView>

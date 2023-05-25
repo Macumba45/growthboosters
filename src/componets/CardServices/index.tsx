@@ -21,7 +21,7 @@ const CardServices: FC<Props> = ({ title, img, description }) => {
             <MainContainer>
                 <Card
                     style={{
-                        width: 330,
+                        width: 320,
                         marginBottom: '1rem',
                         marginLeft: '1rem',
                         marginRight: '1rem',

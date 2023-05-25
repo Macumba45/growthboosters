@@ -11,6 +11,7 @@ import PartnerBanner from '../../componets/PartnerBanner'
 import Footer from '../../componets/Footer'
 import { CssBaseline } from '@mui/material'
 import PageTransition from '../../animations'
+import CompaniesBanner from '../../componets/CompaniesBanner'
 
 const Landing: FC = () => {
     return (
@@ -27,6 +28,9 @@ const Landing: FC = () => {
             </AnimatedView>
             <AnimatedView>
                 <FacturacionesComp />
+            </AnimatedView>
+            <AnimatedView>
+                <CompaniesBanner />
             </AnimatedView>
             <AnimatedView>
                 <WarrantyBanner />

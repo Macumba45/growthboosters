@@ -25,7 +25,7 @@ const AmazonLogo = require('../../../src/assets/logos/amazonP.png')
 
 const HeaderComp: FC = () => {
     return (
-        <AnimatedView>
+        <>
             <NavBar />
             <FloatHomeButton />
             <MainContainer>
@@ -60,7 +60,7 @@ const HeaderComp: FC = () => {
                     </SubTitleHeader>
                 </SubTitleContainer>
             </MainContainer>
-        </AnimatedView>
+        </>
     )
 }
 
