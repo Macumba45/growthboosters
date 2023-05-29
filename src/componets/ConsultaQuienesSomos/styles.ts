@@ -49,7 +49,7 @@ export const TitleServices = styled.h1`
     font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.secondary};
     font-size: ${({ theme }) => theme.fontSizes.mediumSmall};
-    line-height: 5rem;    
+    line-height: 5rem;
     font-size: 5rem;
 
     font-weight: 400;

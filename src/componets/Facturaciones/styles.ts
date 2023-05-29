@@ -14,7 +14,8 @@ export const MainContainer = styled.div`
     flex-direction: column; */
     width: 100%;
     height: 110vh;
-    background-color: ${({ theme }) => theme.colors.secondary};`
+    background-color: ${({ theme }) => theme.colors.secondary};
+`
 
 export const ContainerCards = styled.div`
     display: flex;

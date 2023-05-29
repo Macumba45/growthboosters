@@ -8,7 +8,6 @@ import FloatHomeButton from '../../componets/FloatHomeButton'
 import ConsultaQuienesSomos from '../../componets/ConsultaQuienesSomos'
 import AnimatedView from '../../animations/AnimatedContainer'
 
-
 const QuienesSomos: FC = () => {
     return (
         <PageTransition>

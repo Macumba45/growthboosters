@@ -25,7 +25,6 @@ export const ContainerText = styled.div`
     margin-top: 5rem;
 `
 
-
 export const TextHeaderTitle = styled.h1`
     font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.primary};
@@ -39,8 +38,6 @@ export const TextHeaderTitle = styled.h1`
         flex-direction: column;
     }
 `
-
-
 
 export const TextHeader = styled.h2`
     font-family: ${({ theme }) => theme.fonts.poppins};

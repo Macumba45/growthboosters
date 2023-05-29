@@ -24,9 +24,7 @@ const QuienesSomosContent: FC = () => {
         <MainContainer>
             <ContainerQuienes>
                 <ContainerText>
-                    <TextHeaderTitle>
-                        ¿Quienes somos?
-                    </TextHeaderTitle>
+                    <TextHeaderTitle>¿Quienes somos?</TextHeaderTitle>
                     <TextHeader>
                         Los integrantes del equipo somos Sellers Individuales
                         que han emprendido su propio negocio dentro de este
@@ -53,7 +51,6 @@ const QuienesSomosContent: FC = () => {
                 </ContainerImage>
             </ContainerQuienes>
             <ContainerHacemos>
-
                 <ContainerImageHacemos>
                     <ImageLogo src={logo} />
                 </ContainerImageHacemos>

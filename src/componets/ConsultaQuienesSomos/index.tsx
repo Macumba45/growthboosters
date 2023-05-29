@@ -10,7 +10,6 @@ import {
 import ButtonConsultoria from '../ButtonConsultoria'
 
 const ContactoComp: FC = () => {
-
     const ButtonStyles = {
         backgroundColor: '#ef9018',
         color: '#F7F7F7',
@@ -29,15 +28,19 @@ const ContactoComp: FC = () => {
         <MainContainer>
             <Container>
                 <TitleContainer>
-                    <TitleServices>
-                        Tu primera Consultoría
-                    </TitleServices>
+                    <TitleServices>Tu primera Consultoría</TitleServices>
                 </TitleContainer>
                 <SubTitleContainer>
                     <SubTitleServices>
-                        Asesoría Personal con el Equipo GrowthBoosters donde analizaremos su caso personalmente y le ayudaremos de manera personalizada                    </SubTitleServices>
+                        Asesoría Personal con el Equipo GrowthBoosters donde
+                        analizaremos su caso personalmente y le ayudaremos de
+                        manera personalizada{' '}
+                    </SubTitleServices>
                 </SubTitleContainer>
-                <ButtonConsultoria style={ButtonStyles} title={"Consultoría Gratuita"} />
+                <ButtonConsultoria
+                    style={ButtonStyles}
+                    title={'Consultoría Gratuita'}
+                />
             </Container>
         </MainContainer>
     )
