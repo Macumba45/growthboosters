@@ -2,10 +2,10 @@ import { FC, memo, useEffect, useState } from 'react';
 import HoverMotion from '../../animations/hover';
 import { Image } from './type';
 import {
-    Container,
     ContainerPics,
     MainContainer,
     PartnerPics,
+    SpanBold,
     TitleContainer,
     TitleServices,
 } from './styles';
@@ -73,14 +73,14 @@ const CompaniesBanner: FC = () => {
     return (
         <MainContainer>
             <TitleContainer>
-                <TitleServices>NUESTRAS COMPAÑIAS</TitleServices>
+                <TitleServices>Algunos de los marketplace por donde <SpanBold>te podemos impulsar.</SpanBold></TitleServices>
             </TitleContainer>
 
             {isMobile ? (
                 <Carousel
                     IndicatorIcon={null}
                     interval={5000}
-                    index={2}
+                    navButtonsAlwaysVisible={true}
                     animation={'fade'}
                     swipe={false}
                     sx={{ width: '100%', marginBottom: '2rem', height: '300px', display: 'flex', flexDirection: 'column', justifyContent: 'center', margin: '0 auto', alignItems: 'center' }}
@@ -97,6 +97,7 @@ const CompaniesBanner: FC = () => {
             ) : (
                 <Carousel
                     interval={5000}
+                    navButtonsAlwaysVisible={true}
                     IndicatorIcon={null}
                     index={2}
                     animation={'fade'}
@@ -108,11 +109,11 @@ const CompaniesBanner: FC = () => {
                 >
                     {imagesGrouped.map((item, index) => (
                         <ContainerPics>
-
-                            {item.map((image, subIndex) => (
-                                <HoverMotion key={index}>
-                                    <PartnerPics key={subIndex} src={image.src} />
+                            {item.map((image) => (
+                                <HoverMotion >
+                                    <PartnerPics src={image.src} key={index} />
                                 </HoverMotion>
+
 
                             ))}
 

@@ -19,10 +19,11 @@ align-items: center;
 `
 
 export const Container = styled.div`
+width: 300px;
+height: 300px;
 display: flex;
+align-items: center;
 justify-content: center;
-width: 100%;
-
 
 `
 
@@ -63,3 +64,8 @@ export const TitleServices = styled.h1`
 `
 
 
+export const SpanBold = styled.span`
+    font-family: ${({ theme }) => theme.fonts.poppins};
+    color: ${({ theme }) => theme.colors.primary};
+    font-weight: 600;
+`
