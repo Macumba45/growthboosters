@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const orange = require('../../assets/background/naranja4.jpg')
+const orange = require('../../assets/background/naranja5.jpg')
 
 export const MainContainer = styled.div``
 
@@ -13,17 +13,7 @@ export const Container = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(${orange});
-
-    /* background: rgb(199, 111, 1);
-    background: linear-gradient(
-        180deg,
-        rgba(199, 111, 1, 1) 41%,
-        rgba(239, 144, 24, 1) 91%
-    );
-
-    background-color: ${({ theme }) => theme.colors.primary}; */
-
-    position: relative; /* Agrega esta línea */
+    position: relative;
 
     ::before {
         content: '';
@@ -83,10 +73,10 @@ export const SubSubTitleContainer = styled.div`
 
 export const TitleServices = styled.h1`
     font-family: ${({ theme }) => theme.fonts.poppins};
-    color: ${({ theme }) => theme.colors.light};
+    color: white;
     font-size: ${({ theme }) => theme.fontSizes.mediumSmall};
     line-height: 5rem;
-    color: #011b35;
+    color: #ffffff;
     font-weight: 500;
 
     @media screen and (max-width: 600px) {

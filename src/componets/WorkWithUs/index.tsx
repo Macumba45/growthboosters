@@ -4,6 +4,7 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth'
 import WorkIcon from '@mui/icons-material/Work'
 import CheckBoxIcon from '@mui/icons-material/CheckBox'
 import CardWork from '../CardWork'
+import ButtonConsultoria from '../ButtonConsultoria'
 import {
     Container,
     ContainerCards,
@@ -15,7 +16,6 @@ import {
     TitleContainer,
     TitleServices,
 } from './styles'
-import ButtonConsultoria from '../ButtonConsultoria'
 
 const WorkWithUs: FC = () => {
     return (

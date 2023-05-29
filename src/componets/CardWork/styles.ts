@@ -8,9 +8,9 @@ export const MainContainer = styled.div`
 export const Container = styled.div`
     width: 350px;
     height: 400px;
-    background-color: ${({ theme }) => theme.colors.secondary};
+    background-color: ${({ theme }) => theme.colors.primaryLight};
     border-radius: 10px;
-    border: 1px solid white;
+    border: 5px solid ${({ theme }) => theme.colors.primary};;
     margin: 1rem 0.4rem 1rem 0.4rem;
 `
 
@@ -35,19 +35,19 @@ export const ContainerDescription = styled.div`
 `
 
 export const ImgCard = styled(Icon)`
-    color: white;
+    color: black;
 `
 
 export const TitleCard = styled.h1`
     font-family: ${({ theme }) => theme.fonts.poppins};
-    color: ${({ theme }) => theme.colors.primaryLight};
+    color: ${({ theme }) => theme.colors.secondary};
     font-size: ${({ theme }) => theme.fontSizes.small};
     font-weight: 700;
 `
 
 export const DescriptionCard = styled.p`
     font-family: ${({ theme }) => theme.fonts.poppins};
-    color: ${({ theme }) => theme.colors.primaryLight};
+    color: ${({ theme }) => theme.colors.secondary};
     font-size: ${({ theme }) => theme.fontSizes.smallest};
     font-weight: 200;
     line-height: 1.8rem;
