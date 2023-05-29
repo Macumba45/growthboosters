@@ -1,5 +1,5 @@
 import { FC, memo } from 'react'
-import ConsultaQuienesSomos from '../Contacto/index'
+import ConsultaQuienesSomos from '../ConsultaQuienesSomos'
 import {
     ContainerImage,
     ContainerParticulares,
