@@ -92,6 +92,11 @@ export const TextTitleParticulares = styled.h3`
     margin-top: 2rem;
     margin-bottom: 2rem;
     text-align: left;
+    @media screen and (max-width: 600px) {
+        margin-left: 1rem;
+        line-height: 2rem;
+
+    }
     
     
 `
