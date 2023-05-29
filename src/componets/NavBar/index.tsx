@@ -133,12 +133,12 @@ const NavBarComp: FC = () => {
                                 }}
                             >
                                 {window.location.pathname ===
-                                    '/QuienesSomos' && (
-                                    <ButtonConsulta
-                                        style={ButtonStyles}
-                                        title="Agendar Consultoría"
-                                    />
-                                )}
+                                    '/QuienesSomos' || '/ParaParticulares' && (
+                                        <ButtonConsulta
+                                            style={ButtonStyles}
+                                            title="Agendar Consultoría"
+                                        />
+                                    )}
                                 {pages.map((page) => (
                                     <MenuItem
                                         style={{

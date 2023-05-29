@@ -40,6 +40,7 @@ const ContactoComp: FC = () => {
                 <ButtonConsultoria
                     style={ButtonStyles}
                     title={'Consultoría Gratuita'}
+                    href='https://calendly.com/agendagrowthboosters/consultoria1a1'
                 />
             </Container>
         </MainContainer>

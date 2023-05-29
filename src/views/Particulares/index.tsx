@@ -5,14 +5,17 @@ import NavBar from '../../componets/NavBar'
 import PageTransition from '../../animations'
 import HeaderParticulares from '../../componets/HeaderParticulares'
 import ParticularesContent from '../../componets/ParticularesContent'
+import FloatHomeButton from '../../componets/FloatHomeButton'
 
 const ParaParticulares: FC = () => {
     return (
         <PageTransition>
             <NavBar />
+            <FloatHomeButton />
             <HeaderParticulares />
-            <ParticularesContent />
-
+            <AnimatedView>
+                <ParticularesContent />
+            </AnimatedView>
             <Footer />
         </PageTransition>
     )

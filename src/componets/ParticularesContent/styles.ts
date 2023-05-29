@@ -94,7 +94,6 @@ export const TextTitleParticulares = styled.h3`
     text-align: left;
     @media screen and (max-width: 600px) {
         margin-left: 1rem;
-        line-height: 2rem;
 
     }
     
@@ -103,6 +102,7 @@ export const TextTitleParticulares = styled.h3`
 
 export const TextParticulares = styled.p`
     font-family: ${({ theme }) => theme.fonts.poppins};
+    line-height: 3rem;
     color: ${({ theme }) => theme.colors.primaryLight};
     font-size: 1.5rem;
     margin-left: 2rem;
@@ -120,6 +120,7 @@ export const TextParticulares = styled.p`
 export const SubTextParticulares = styled.p`
     font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.secondary};
+    line-height: 3rem;
     font-size: 1.5rem;
     margin-left: 2rem;
     margin-top: 2rem;
@@ -138,4 +139,6 @@ export const SpanBold = styled.span`
     font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.primary};
     font-weight: 600;
+  
+
 `

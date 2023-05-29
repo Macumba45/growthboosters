@@ -22,8 +22,11 @@ export const TextHeader = styled.h1`
     color: ${({ theme }) => theme.colors.primary};
     font-size: ${({ theme }) => theme.fontSizes.mediumBig};
     text-align: center;
+    font-size: 5rem;
+
     @media screen and (max-width: 600px) {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        line-height: 4rem;
     }
 `
 
