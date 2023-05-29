@@ -6,7 +6,6 @@ export const MainContainer = styled.div`
     height: 100vh;
     background-color: ${({ theme }) => theme.colors.primaryLight};
     display: flex;
-    margin-right: 1rem;
     justify-content: center;
     align-items: center;
     @media screen and (max-width: 600px) {
