@@ -30,6 +30,7 @@ const CardServices: FC<Props> = ({ title, img, description, buttonLabel }) => {
                         marginLeft: '1rem',
                         marginRight: '1rem',
                         display: 'flex',
+                        border: '3px solid #ef9018',
                         justifyContent: 'center',
                         flexDirection: 'column',
                     }}

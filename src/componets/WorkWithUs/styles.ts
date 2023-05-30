@@ -97,3 +97,11 @@ export const SubSubTitleServices = styled.p`
         font-size: ${({ theme }) => theme.fontSizes.smallest};
     }
 `
+
+export const Img = styled.img`
+
+
+width: 60px;
+
+
+`

@@ -21,8 +21,7 @@ export const ContainerText = styled.div`
 
     @media screen and (max-width: 600px) {
         margin-top: 2rem;
-    margin-bottom: 2rem;
-
+        margin-bottom: 2rem;
     }
 `
 
@@ -34,7 +33,6 @@ export const TextHeader = styled.h3`
     font-size: 5rem;
     @media screen and (max-width: 600px) {
         font-size: 2rem;
-
     }
 `
 
@@ -49,7 +47,6 @@ export const SubTextHeader = styled.h4`
     @media screen and (max-width: 600px) {
         font-size: 2rem;
         margin-bottom: 2rem;
-
     }
 `
 
@@ -94,10 +91,7 @@ export const TextTitleParticulares = styled.h3`
     text-align: left;
     @media screen and (max-width: 600px) {
         margin-left: 1rem;
-
     }
-    
-    
 `
 
 export const TextParticulares = styled.p`
@@ -113,7 +107,6 @@ export const TextParticulares = styled.p`
         font-size: 1rem;
         margin-left: 1rem;
         line-height: 2rem;
-
     }
 `
 
@@ -131,7 +124,6 @@ export const SubTextParticulares = styled.p`
         font-size: 1rem;
         margin-left: 1rem;
         line-height: 2rem;
-
     }
 `
 
@@ -139,6 +131,4 @@ export const SpanBold = styled.span`
     font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.primary};
     font-weight: 600;
-  
-
 `

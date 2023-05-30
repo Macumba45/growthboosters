@@ -45,7 +45,11 @@ const ParticularesContent: FC = () => {
                     Amazon.
                 </SubTextParticulares>
             </ContainerParticulares>
-            <ConsultaQuienesSomos />
+            <ConsultaQuienesSomos
+                description="¿Quieres crear tu propio negocio? Da el primer paso, ES GRATIS
+Asesoría Gratuita con el equipo GrowthBoosters donde analizaremos su caso y le
+ayudaremos de manera personalizada."
+            />
         </MainContainer>
     )
 }

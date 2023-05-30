@@ -42,7 +42,6 @@ export const SubTitleContainer = styled.div`
     text-align: center;
     margin-left: 1rem;
     margin-right: 1rem;
-    
 `
 
 export const TitleServices = styled.h1`
@@ -67,12 +66,11 @@ export const SubTitleServices = styled.h2`
     line-height: 3rem;
     font-weight: 600;
     margin-top: 2rem;
-    width: 900px;
+    width: 1000px;
 
     @media screen and (max-width: 600px) {
         font-size: ${({ theme }) => theme.fontSizes.small};
         width: 350px;
-
     }
 `
 

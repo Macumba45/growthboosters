@@ -8,8 +8,9 @@ import {
     TitleServices,
 } from './styles'
 import ButtonConsultoria from '../ButtonConsultoria'
+import { Props } from './type'
 
-const ContactoComp: FC = () => {
+const ContactoComp: FC<Props> = ({ description }) => {
     const ButtonStyles = {
         backgroundColor: '#ef9018',
         color: '#F7F7F7',
@@ -31,16 +32,12 @@ const ContactoComp: FC = () => {
                     <TitleServices>Tu primera Consultoría</TitleServices>
                 </TitleContainer>
                 <SubTitleContainer>
-                    <SubTitleServices>
-                        Asesoría Personal con el Equipo GrowthBoosters donde
-                        analizaremos su caso personalmente y le ayudaremos de
-                        manera personalizada{' '}
-                    </SubTitleServices>
+                    <SubTitleServices>{description}</SubTitleServices>
                 </SubTitleContainer>
                 <ButtonConsultoria
                     style={ButtonStyles}
                     title={'Consultoría Gratuita'}
-                    href='https://calendly.com/agendagrowthboosters/consultoria1a1'
+                    href="https://calendly.com/agendagrowthboosters/consultoria1a1"
                 />
             </Container>
         </MainContainer>

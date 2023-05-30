@@ -18,7 +18,10 @@ const QuienesSomos: FC = () => {
                 <QuienesSomosContent />
             </AnimatedView>
             <AnimatedView>
-                <ConsultaQuienesSomos />
+                <ConsultaQuienesSomos
+                    description="Asesoría Gratuita con el equipo Growthboosters donde analizaremos su caso y le
+ayudaremos de manera personalizada."
+                />
             </AnimatedView>
             <Footer />
         </PageTransition>

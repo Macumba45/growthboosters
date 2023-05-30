@@ -132,13 +132,13 @@ const NavBarComp: FC = () => {
                                     },
                                 }}
                             >
-                                {window.location.pathname ===
-                                    '/QuienesSomos' || '/ParaParticulares' && (
+                                {window.location.pathname === '/QuienesSomos' ||
+                                    ('/ParaParticulares' && (
                                         <ButtonConsulta
                                             style={ButtonStyles}
                                             title="Agendar Consultoría"
                                         />
-                                    )}
+                                    ))}
                                 {pages.map((page) => (
                                     <MenuItem
                                         style={{

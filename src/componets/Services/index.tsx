@@ -74,7 +74,7 @@ const ServicesComp: FC = () => {
                         description="Hemos hablado mucho de Amazon, pero nosotros tenemos todo lo que tu marca necesita para tener exito en la venta online. Desde integración con todos los marketplaces, pasando por desorrollo tecnológico a medida hasta logística propia. Una solución 360º para tu negocio."
                         img="https://i.postimg.cc/j5Pt0czp/serv2.png"
                     />
-                     <Divider
+                    <Divider
                         sx={{
                             width: '100px',
                             margin: '1rem auto',
@@ -89,10 +89,12 @@ const ServicesComp: FC = () => {
                     />
                     <CardServices
                         title="Sesiones de Consultoría"
-                        description="Sesiones de 1 hora 1 a 1 donde te guiaremos sobre cómo seguir adelante con tu proyecto."
+                        description="Sesiones 1 a 1 con una duración de 1 hora donde te brindaremos una guía personalizada
+                        que te impulsará a seguir adelante con tu proyecto. Estamos aquí para escucharte,
+                        comprenderte y ofrecerte las estrategias más efectivas para alcanzar tus objetivos."
                         img="https://i.postimg.cc/sDBxX0fz/serv4.png"
                     />
-                     <Divider
+                    <Divider
                         sx={{
                             width: '100px',
                             margin: '1rem auto',
@@ -107,7 +109,12 @@ const ServicesComp: FC = () => {
                     />
                     <CardServices
                         title="Formación para empresas"
-                        description="Formamos a tu equipo para que domine todas las áreas y herramientas sobre la diversificación de tu empresa a través de marketplaces. Formación 1 a 1."
+                        description="Potencia el éxito de tu empresa a través de nuestra exclusiva formación personalizada.
+                        Nuestro programa de formación para empresas te proporciona las habilidades y
+                        conocimientos necesarios para dominar todas las áreas y herramientas relacionadas con la
+                        diversificación de tu negocio a través de marketplaces.
+                        Con sesiones 1 a 1, te garantizamos una atención individualizada y adaptada a las
+                        necesidades de tu equipo."
                         img="https://i.postimg.cc/63j66CDT/serv5.png"
                     />
                 </ContainerCards>

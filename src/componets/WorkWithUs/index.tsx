@@ -1,13 +1,11 @@
 import { FC, memo } from 'react'
-import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled'
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth'
-import WorkIcon from '@mui/icons-material/Work'
-import CheckBoxIcon from '@mui/icons-material/CheckBox'
 import CardWork from '../CardWork'
 import ButtonConsultoria from '../ButtonConsultoria'
 import {
     Container,
     ContainerCards,
+    Img,
     MainContainer,
     SubSubTitleContainer,
     SubSubTitleServices,
@@ -16,6 +14,12 @@ import {
     TitleContainer,
     TitleServices,
 } from './styles'
+
+
+const fabrica = require('../../assets/icons/fabrica.png')
+const manos = require('../../assets/icons/manos.png')
+const ojos = require('../../assets/icons/ojos.png')
+
 
 const WorkWithUs: FC = () => {
     return (
@@ -39,7 +43,7 @@ const WorkWithUs: FC = () => {
                 <ContainerCards>
                     <CardWork
                         icon={
-                            <AccessTimeFilledIcon sx={{ fontSize: '60px' }} />
+                            <Img src={manos} />
                         }
                         title={'COMPROMISO'}
                         description={
@@ -47,14 +51,14 @@ const WorkWithUs: FC = () => {
                         }
                     />
                     <CardWork
-                        icon={<WorkIcon sx={{ fontSize: '60px' }} />}
+                        icon={<Img src={fabrica} />}
                         title={'CRECIMIENTO'}
                         description={
                             'Análisis constante del mercado con el fin de descubrir nuevas tendencias de productos con alta potencial de ventas para conseguir el escalado de su negocio.'
                         }
                     />
                     <CardWork
-                        icon={<CheckBoxIcon sx={{ fontSize: '60px' }} />}
+                        icon={<Img src={ojos} />}
                         title={'VISIÓN'}
                         description={
                             'Hemos vivido en nuestra propia piel lo que es escalar nuestras marcas. Por eso contamos con una visión mucho más completa y realista de la plataforma al habernos enfrentado personalmente a ella. '
@@ -70,7 +74,7 @@ const WorkWithUs: FC = () => {
                             sx={{ color: 'white', marginLeft: '1rem' }}
                         />
                     }
-                    border="1px solid #232F3E"
+                    border="0px solid #232F3E"
                 />
             </Container>
         </MainContainer>
