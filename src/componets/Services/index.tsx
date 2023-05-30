@@ -74,15 +74,41 @@ const ServicesComp: FC = () => {
                         description="Hemos hablado mucho de Amazon, pero nosotros tenemos todo lo que tu marca necesita para tener exito en la venta online. Desde integración con todos los marketplaces, pasando por desorrollo tecnológico a medida hasta logística propia. Una solución 360º para tu negocio."
                         img="https://i.postimg.cc/j5Pt0czp/serv2.png"
                     />
+                     <Divider
+                        sx={{
+                            width: '100px',
+                            margin: '1rem auto',
+                            height: '0.2rem',
+                            backgroundColor: '#ef9018',
+                            border: 'none',
+                            display: {
+                                xs: 'block',
+                                md: 'none',
+                            },
+                        }}
+                    />
                     <CardServices
                         title="Sesiones de Consultoría"
                         description="Sesiones de 1 hora 1 a 1 donde te guiaremos sobre cómo seguir adelante con tu proyecto."
-                        img="https://i.postimg.cc/j5Pt0czp/serv2.png"
+                        img="https://i.postimg.cc/sDBxX0fz/serv4.png"
+                    />
+                     <Divider
+                        sx={{
+                            width: '100px',
+                            margin: '1rem auto',
+                            height: '0.2rem',
+                            backgroundColor: '#ef9018',
+                            border: 'none',
+                            display: {
+                                xs: 'block',
+                                md: 'none',
+                            },
+                        }}
                     />
                     <CardServices
                         title="Formación para empresas"
                         description="Formamos a tu equipo para que domine todas las áreas y herramientas sobre la diversificación de tu empresa a través de marketplaces. Formación 1 a 1."
-                        img="https://i.postimg.cc/j5Pt0czp/serv2.png"
+                        img="https://i.postimg.cc/63j66CDT/serv5.png"
                     />
                 </ContainerCards>
             </Container>

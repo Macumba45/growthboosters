@@ -98,7 +98,7 @@ const CompaniesBanner: FC = () => {
                     }}
                 >
                     {imagesGroupedMobile.map((item, index) => (
-                        <ContainerPics>
+                        <ContainerPics >
                             <PartnerPics key={index} src={item[0].src} />
                         </ContainerPics>
                     ))}

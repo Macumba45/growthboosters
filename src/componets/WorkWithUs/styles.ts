@@ -15,17 +15,6 @@ export const Container = styled.div`
     background-image: url(${orange});
     position: relative;
 
-    ::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.229);
-        z-index: 1;
-        mix-blend-mode: multiply; /* Agrega esta línea */
-    }
     @media screen and (min-width: 600px) {
         height: 120vh;
     }
