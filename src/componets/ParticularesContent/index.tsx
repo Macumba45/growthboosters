@@ -9,7 +9,9 @@ import {
     SpanBold,
     SubTextHeader,
     SubTextParticulares,
+    TextContainerParticulares,
     TextHeader,
+    TextHeaderParticulares,
     TextParticulares,
     TextTitleParticulares,
 } from './styles'
@@ -29,6 +31,11 @@ const ParticularesContent: FC = () => {
                 </SubTextHeader>
                 <ImageLogo src={logo} />
             </ContainerImage>
+            <TextContainerParticulares>
+                <TextHeaderParticulares>
+                    Un seguimiento personal de 3 meses de duración donde te acompañamos a facturar tus primeros miles de euros dentro de Amazon.
+                </TextHeaderParticulares>
+            </TextContainerParticulares>
             <ContainerParticulares>
                 <TextTitleParticulares>Particulares</TextTitleParticulares>
                 <TextParticulares>
@@ -47,8 +54,8 @@ const ParticularesContent: FC = () => {
             </ContainerParticulares>
             <ConsultaQuienesSomos
                 description="¿Quieres crear tu propio negocio? Da el primer paso, ES GRATIS
-Asesoría Gratuita con el equipo GrowthBoosters donde analizaremos su caso y le
-ayudaremos de manera personalizada."
+                            Asesoría Gratuita con el equipo GrowthBoosters donde analizaremos su caso y le
+                            ayudaremos de manera personalizada."
             />
         </MainContainer>
     )

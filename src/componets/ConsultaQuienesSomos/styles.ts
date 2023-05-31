@@ -66,7 +66,7 @@ export const SubTitleServices = styled.h2`
     line-height: 3rem;
     font-weight: 600;
     margin-top: 2rem;
-    width: 1000px;
+    width: 950px;
 
     @media screen and (max-width: 600px) {
         font-size: ${({ theme }) => theme.fontSizes.small};

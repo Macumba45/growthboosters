@@ -40,6 +40,7 @@ export const SubTextHeader = styled.h4`
     font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.secondary};
     font-size: 4rem;
+    width: 800px;
     text-align: center;
     margin-top: 2rem;
     line-height: 4rem;
@@ -47,6 +48,8 @@ export const SubTextHeader = styled.h4`
     @media screen and (max-width: 600px) {
         font-size: 2rem;
         margin-bottom: 2rem;
+        width: 340px;
+
     }
 `
 
@@ -91,6 +94,31 @@ export const TextTitleParticulares = styled.h3`
     text-align: left;
     @media screen and (max-width: 600px) {
         margin-left: 1rem;
+    }
+`
+
+export const TextContainerParticulares = styled.div`
+
+width: 90%;
+background-color: ${({ theme }) => theme.colors.secondary};
+border-radius: 20px;
+  
+`
+
+
+export const TextHeaderParticulares = styled.h3`
+    font-family: ${({ theme }) => theme.fonts.poppins};
+    color: ${({ theme }) => theme.colors.primary};
+    font-weight: 700;
+    font-size: 3rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: left;
+    @media screen and (max-width: 600px) {
+        margin-left: 1rem;
+        font-size: 2.5rem;
+
     }
 `
 
