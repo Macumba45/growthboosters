@@ -11,6 +11,9 @@ import ButtonConsultoria from '../ButtonConsultoria'
 import { Props } from './type'
 
 const ContactoComp: FC<Props> = ({ description }) => {
+
+    const quienesSomos = window.location.pathname === '/QuienesSomos'
+    console.log('quienesSomos', quienesSomos)
     const ButtonStyles = {
         backgroundColor: '#ef9018',
         color: '#F7F7F7',
@@ -34,11 +37,22 @@ const ContactoComp: FC<Props> = ({ description }) => {
                 <SubTitleContainer>
                     <SubTitleServices>{description}</SubTitleServices>
                 </SubTitleContainer>
-                <ButtonConsultoria
-                    style={ButtonStyles}
-                    title={'Consultoría Gratuita'}
-                    href="https://calendly.com/agendagrowthboosters/consultoria1a1"
-                />
+                {quienesSomos ? (
+                    <ButtonConsultoria
+                        style={ButtonStyles}
+                        title={'Consultoría Gratuita'}
+                        href="https://calendly.com/agendagrowthboosters"
+                    />
+                ) : (
+                    <ButtonConsultoria
+                        style={ButtonStyles}
+                        title={'Consultoría Gratuita'}
+                        href="https://calendly.com/agendagrowthboosters/consultoria1a1"
+                    />
+                )}
+
+
+
             </Container>
         </MainContainer>
     )
