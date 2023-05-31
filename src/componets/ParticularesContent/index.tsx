@@ -7,6 +7,7 @@ import {
     ImageLogo,
     MainContainer,
     SpanBold,
+    SpanBold2,
     SubTextHeader,
     SubTextParticulares,
     TextContainerParticulares,
@@ -33,7 +34,7 @@ const ParticularesContent: FC = () => {
             </ContainerImage>
             <TextContainerParticulares>
                 <TextHeaderParticulares>
-                    Un seguimiento personal de 3 meses de duración donde te acompañamos a facturar tus primeros miles de euros dentro de Amazon.
+                    Un seguimiento personal de 3 meses de duración donde te acompañamos a facturar tus primeros miles de euros dentro de <SpanBold2>Amazon.</SpanBold2>
                 </TextHeaderParticulares>
             </TextContainerParticulares>
             <ContainerParticulares>

@@ -108,7 +108,7 @@ border-radius: 20px;
 
 export const TextHeaderParticulares = styled.h3`
     font-family: ${({ theme }) => theme.fonts.poppins};
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.primaryLight};
     font-weight: 700;
     font-size: 3rem;
     margin-left: 2rem;
@@ -160,3 +160,10 @@ export const SpanBold = styled.span`
     color: ${({ theme }) => theme.colors.primary};
     font-weight: 600;
 `
+
+
+export const SpanBold2 = styled.span`
+    font-family: ${({ theme }) => theme.fonts.poppins};
+    color: ${({ theme }) => theme.colors.primary};
+`
+
