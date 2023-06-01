@@ -1,5 +1,5 @@
 import { FC, memo } from 'react'
-import { LogoContainer, MainContainer, SloganText, SpanBold } from './styles'
+import { DesignedBy, LogoContainer, MainContainer, SloganText, SpanBold } from './styles'
 
 const Footer: FC = () => {
     return (
@@ -8,6 +8,8 @@ const Footer: FC = () => {
             <SloganText>
                 Invierte tu tiempo y esfuerzos en tu marca. {<br />}{' '}
                 <SpanBold>Dejanos la gestión a nosotros.</SpanBold>
+                {<br />}
+                <DesignedBy target='blank' href='https://gonzalolobocv.vercel.app/'>Designed by Macumba</DesignedBy>
             </SloganText>
         </MainContainer>
     )

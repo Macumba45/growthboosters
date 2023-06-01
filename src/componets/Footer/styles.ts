@@ -30,6 +30,13 @@ export const SloganText = styled.h3`
     text-align: center;
     line-height: 2rem;
 `
+
+export const DesignedBy = styled.a`
+    font-family: ${({ theme }) => theme.fonts.poppins};
+    color: ${({ theme }) => theme.colors.primary};
+    font-size: 0.5rem;
+    text-align: center;
+`
 export const SpanBold = styled.span`
     font-family: ${({ theme }) => theme.fonts.poppins};
     color: ${({ theme }) => theme.colors.primaryLight};
